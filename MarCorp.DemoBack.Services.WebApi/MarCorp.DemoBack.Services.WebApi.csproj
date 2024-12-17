@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <OutputType>Exe</OutputType>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <UserSecretsId>6dfe5929-44f2-4994-b0da-62ae6e9bcf5e</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="7.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="7.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="7.2.0" />
+    <PackageReference Include="Swashbuckle.Core" Version="5.6.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MarCorp.DemoBack.Aplication.DTO\MarCorp.DemoBack.Application.DTO.csproj" />
+    <ProjectReference Include="..\MarCorp.DemoBack.Aplication.Interface\MarCorp.DemoBack.Application.Interface.csproj" />
+    <ProjectReference Include="..\MarCorp.DemoBack.Aplication.Main\MarCorp.DemoBack.Application.Main.csproj" />
+    <ProjectReference Include="..\MarCorp.DemoBack.Data.Connections\MarCorp.DemoBack.Data.Connections.csproj" />
+    <ProjectReference Include="..\MarCorp.DemoBack.Data.Interface\MarCorp.DemoBack.Data.Interface.csproj" />
+    <ProjectReference Include="..\MarCorp.DemoBack.Data.Repository\MarCorp.DemoBack.Data.Repository.csproj" />
+    <ProjectReference Include="..\MarCorp.DemoBack.Domain.Core\MarCorp.DemoBack.Domain.Core.csproj" />
+    <ProjectReference Include="..\MarCorp.DemoBack.Domain.Interface\MarCorp.DemoBack.Domain.Interface.csproj" />
+    <ProjectReference Include="..\MarCorp.DemoBack.Domain.Models\MarCorp.DemoBack.Domain.Models.csproj" />
+    <ProjectReference Include="..\MarCorp.DemoBack.Support.Common\MarCorp.DemoBack.Support.Common.csproj" />
+    <ProjectReference Include="..\MarCorp.DemoBack.Support.Logging\MarCorp.DemoBack.Support.Logging.csproj" />
+    <ProjectReference Include="..\MarCorp.DemoBack.Support.Mapper\MarCorp.DemoBack.Support.Mapper.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.35" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MarCorp.DemoBack.Data.Connections\MarCorp.DemoBack.Data.Connections.csproj" />
+    <ProjectReference Include="..\MarCorp.DemoBack.Data.Interface\MarCorp.DemoBack.Data.Interface.csproj" />
+    <ProjectReference Include="..\MarCorp.DemoBack.Support.Common\MarCorp.DemoBack.Support.Common.csproj" />
+  </ItemGroup>
+
+</Project>
