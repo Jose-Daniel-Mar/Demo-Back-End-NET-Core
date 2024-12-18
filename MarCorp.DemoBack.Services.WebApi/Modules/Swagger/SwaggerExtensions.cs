@@ -40,7 +40,7 @@ namespace MarCorp.DemoBack.Services.WebApi.Modules.Swagger
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 c.IncludeXmlComments(xmlPath);
 
-                c.AddSecurityDefinition("Authorization", new OpenApiSecurityScheme
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
                     Description = "Authorization by API key.",
                     In = ParameterLocation.Header,
@@ -56,7 +56,7 @@ namespace MarCorp.DemoBack.Services.WebApi.Modules.Swagger
                                 Reference = new OpenApiReference
                                 {
                                     Type = ReferenceType.SecurityScheme,
-                                    Id = "Authorization"
+                                    Id = "Bearer"
                                 }
                             },
                             new string[] { }
