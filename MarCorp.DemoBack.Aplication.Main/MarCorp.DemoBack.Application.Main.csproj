@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MarCorp.DemoBack.Aplication.Interface\MarCorp.DemoBack.Application.Interface.csproj" />
+    <ProjectReference Include="..\MarCorp.DemoBack.Application.Validator\MarCorp.DemoBack.Application.Validator.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Domain.Interface\MarCorp.DemoBack.Domain.Interface.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Domain.Models\MarCorp.DemoBack.Domain.Models.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Support.Common\MarCorp.DemoBack.Support.Common.csproj" />

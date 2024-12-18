@@ -3,8 +3,16 @@ using System.Reflection;
 
 namespace MarCorp.DemoBack.Services.WebApi.Modules.Swagger
 {
+    /// <summary>
+    /// Provides extension methods for configuring Swagger in the application.
+    /// </summary>
     public static class SwaggerExtensions
     {
+        /// <summary>
+        /// Adds Swagger services to the specified IServiceCollection.
+        /// </summary>
+        /// <param name="services">The IServiceCollection to add the services to.</param>
+        /// <returns>The IServiceCollection with the added services.</returns>
         public static IServiceCollection AddSwagger(this IServiceCollection services)
         {
             services.AddSwaggerGen(c =>
@@ -31,6 +39,7 @@ namespace MarCorp.DemoBack.Services.WebApi.Modules.Swagger
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 c.IncludeXmlComments(xmlPath);
+
                 c.AddSecurityDefinition("Authorization", new OpenApiSecurityScheme
                 {
                     Description = "Authorization by API key.",
@@ -41,17 +50,17 @@ namespace MarCorp.DemoBack.Services.WebApi.Modules.Swagger
 
                 c.AddSecurityRequirement(new OpenApiSecurityRequirement
                 {
-                    {
-                        new OpenApiSecurityScheme
                         {
-                            Reference = new OpenApiReference
+                            new OpenApiSecurityScheme
                             {
-                                Type = ReferenceType.SecurityScheme,
-                                Id = "Authorization"
-                            }
-                        },
-                        new string[] { }
-                    }
+                                Reference = new OpenApiReference
+                                {
+                                    Type = ReferenceType.SecurityScheme,
+                                    Id = "Authorization"
+                                }
+                            },
+                            new string[] { }
+                        }
                 });
             });
             return services;

@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Services.W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Support.Logging", "MarCorp.DemoBack.Support.Logging\MarCorp.DemoBack.Support.Logging.csproj", "{8D5B12AA-C3F1-465B-B016-E71A1A1DFB5E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Application.Validator", "MarCorp.DemoBack.Application.Validator\MarCorp.DemoBack.Application.Validator.csproj", "{F4701DAB-44AB-4E03-AF02-8B5EDA30EF01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,10 @@ Global
 		{8D5B12AA-C3F1-465B-B016-E71A1A1DFB5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D5B12AA-C3F1-465B-B016-E71A1A1DFB5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D5B12AA-C3F1-465B-B016-E71A1A1DFB5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4701DAB-44AB-4E03-AF02-8B5EDA30EF01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4701DAB-44AB-4E03-AF02-8B5EDA30EF01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4701DAB-44AB-4E03-AF02-8B5EDA30EF01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4701DAB-44AB-4E03-AF02-8B5EDA30EF01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -115,5 +121,6 @@ Global
 		{4F9A05DB-D749-4C46-89CC-7C71CA7B460B} = {466D27A6-7292-4D62-AD71-84D14153E1F7}
 		{3262AFF5-B520-4FA3-8274-9FCC2739253B} = {078382EF-DAE6-41E9-AAE8-87D2DE906291}
 		{8D5B12AA-C3F1-465B-B016-E71A1A1DFB5E} = {830CD5FC-D05C-4BCC-B7B8-A7473D89ADE3}
+		{F4701DAB-44AB-4E03-AF02-8B5EDA30EF01} = {466D27A6-7292-4D62-AD71-84D14153E1F7}
 	EndGlobalSection
 EndGlobal

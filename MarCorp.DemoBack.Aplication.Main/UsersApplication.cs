@@ -3,6 +3,7 @@ using MarCorp.DemoBack.Application.DTO;
 using MarCorp.DemoBack.Application.Interface;
 using MarCorp.DemoBack.Domain.Interface;
 using MarCorp.DemoBack.Support.Common;
+using MarCorp.DemoBack.Application.Validator;
 
 namespace MarCorp.DemoBack.Application.Main
 {
@@ -10,18 +11,23 @@ namespace MarCorp.DemoBack.Application.Main
     {
         private readonly IUsersDomain _usersDomain;
         private readonly IMapper _mapper;
+        private readonly UsersDTOValidator _usersDtoValidator;
 
-        public UsersApplication(IUsersDomain usersDomain, IMapper iMapper)
+        public UsersApplication(IUsersDomain usersDomain, IMapper iMapper, UsersDTOValidator usersDtoValidator)
         {
             _usersDomain = usersDomain;
             _mapper = iMapper;
+            _usersDtoValidator = usersDtoValidator;
         }
         public Response<UsersDTO> Authenticate(string username, string password)
         {
             var response = new Response<UsersDTO>();
-            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            var validation = _usersDtoValidator.Validate(new UsersDTO { UserName = username, Password = password });
+
+            if (!validation.IsValid)
             {
-                response.Message = "Parámetros no pueden ser vacios.";
+                response.Message = "Errores de validación";
+                response.Errors = validation.Errors;
                 return response;
             }
             try
