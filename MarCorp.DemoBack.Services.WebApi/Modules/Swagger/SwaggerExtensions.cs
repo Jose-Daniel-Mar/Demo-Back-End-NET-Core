@@ -1,4 +1,5 @@
-﻿using Microsoft.OpenApi.Models;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.OpenApi.Models;
 using System.Reflection;
 
 namespace MarCorp.DemoBack.Services.WebApi.Modules.Swagger
@@ -40,27 +41,27 @@ namespace MarCorp.DemoBack.Services.WebApi.Modules.Swagger
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 c.IncludeXmlComments(xmlPath);
 
-                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                var securityScheme = new OpenApiSecurityScheme
                 {
-                    Description = "Authorization by API key.",
+                    Name = "Authorization",
+                    Description = "Enter JWT Bearer token **_only_**",
                     In = ParameterLocation.Header,
-                    Type = SecuritySchemeType.ApiKey,
-                    Name = "Authorization"
-                });
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "bearer",
+                    BearerFormat = "JWT",
+                    Reference = new OpenApiReference
+                    {
+                        Id = JwtBearerDefaults.AuthenticationScheme,
+                        Type = ReferenceType.SecurityScheme
+                    } 
+                };
+
+
+                c.AddSecurityDefinition(securityScheme.Reference.Id, securityScheme);
 
                 c.AddSecurityRequirement(new OpenApiSecurityRequirement
                 {
-                        {
-                            new OpenApiSecurityScheme
-                            {
-                                Reference = new OpenApiReference
-                                {
-                                    Type = ReferenceType.SecurityScheme,
-                                    Id = "Bearer"
-                                }
-                            },
-                            new string[] { }
-                        }
+                    { securityScheme, new List<string>() { } }
                 });
             });
             return services;
