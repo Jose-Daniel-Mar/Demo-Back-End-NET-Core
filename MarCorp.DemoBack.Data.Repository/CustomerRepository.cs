@@ -4,22 +4,23 @@ using MarCorp.DemoBack.Support.Common;
 using System.Data;
 using System.Threading.Tasks;
 using Dapper;
+using MarCorp.DemoBack.Data.Connections;
 
 namespace MarCorp.DemoBack.Data.Repository
 {
     public class CustomerRepository : ICustomerRepository
     {
-        private readonly IConnectionFactory _connectionFactory;
-        public CustomerRepository(IConnectionFactory connectionFactory)
+        private readonly DapperContext _context;
+        public CustomerRepository(DapperContext context)
         {
-            _connectionFactory = connectionFactory;
+            _context = context;
         }
 
         #region Métodos Síncronos        
 
         public bool Insert(Customer customer)
         {
-            using (var connection = _connectionFactory.GetConnection)
+            using (var connection = _context.Createconnection())
             {
                 var query = "CustomersInsert";
                 var parameters = new DynamicParameters();
@@ -42,7 +43,7 @@ namespace MarCorp.DemoBack.Data.Repository
 
         public bool Update(Customer customer)
         {
-            using (var connection = _connectionFactory.GetConnection)
+            using (var connection = _context.Createconnection())
             {
                 var query = "CustomersUpdate";
                 var parameters = new DynamicParameters();
@@ -65,7 +66,7 @@ namespace MarCorp.DemoBack.Data.Repository
 
         public bool Delete(string customerId)
         {
-            using (var connection = _connectionFactory.GetConnection)
+            using (var connection = _context.Createconnection())
             {
                 var query = "CustomersDelete";
                 var parameters = new DynamicParameters();
@@ -77,7 +78,7 @@ namespace MarCorp.DemoBack.Data.Repository
 
         public Customer Get(string customerId)
         {
-            using (var connection = _connectionFactory.GetConnection)
+            using (var connection = _context.Createconnection())
             {
                 var query = "CustomersGetByID";
                 var parameters = new DynamicParameters();
@@ -90,7 +91,7 @@ namespace MarCorp.DemoBack.Data.Repository
 
         public IEnumerable<Customer> GetAll()
         {
-            using (var connection = _connectionFactory.GetConnection)
+            using (var connection = _context.Createconnection())
             {
                 var query = "CustomersList";
 
@@ -105,7 +106,7 @@ namespace MarCorp.DemoBack.Data.Repository
 
         public async Task<bool> InsertAsync(Customer customers)
         {
-            using (var connection = _connectionFactory.GetConnection)
+            using (var connection = _context.Createconnection())
             {
                 var query = "CustomersInsert";
                 var parameters = new DynamicParameters();
@@ -128,7 +129,7 @@ namespace MarCorp.DemoBack.Data.Repository
 
         public async Task<bool> UpdateAsync(Customer customers)
         {
-            using (var connection = _connectionFactory.GetConnection)
+            using (var connection = _context.Createconnection())
             {
                 var query = "CustomersUpdate";
                 var parameters = new DynamicParameters();
@@ -151,7 +152,7 @@ namespace MarCorp.DemoBack.Data.Repository
 
         public async Task<bool> DeleteAsync(string customerId)
         {
-            using (var connection = _connectionFactory.GetConnection)
+            using (var connection = _context.Createconnection())
             {
                 var query = "CustomersDelete";
                 var parameters = new DynamicParameters();
@@ -163,7 +164,7 @@ namespace MarCorp.DemoBack.Data.Repository
 
         public async Task<Customer> GetAsync(string customerId)
         {
-            using (var connection = _connectionFactory.GetConnection)
+            using (var connection = _context.Createconnection())
             {
                 var query = "CustomersGetByID";
                 var parameters = new DynamicParameters();
@@ -176,7 +177,7 @@ namespace MarCorp.DemoBack.Data.Repository
 
         public async Task<IEnumerable<Customer>> GetAllAsync()
         {
-            using (var connection = _connectionFactory.GetConnection)
+            using (var connection = _context.Createconnection())
             {
                 var query = "CustomersList";
 

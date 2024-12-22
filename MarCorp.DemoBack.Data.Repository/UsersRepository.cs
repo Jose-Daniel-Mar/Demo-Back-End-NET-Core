@@ -1,21 +1,21 @@
 ﻿using Dapper;
+using MarCorp.DemoBack.Data.Connections;
 using MarCorp.DemoBack.Data.Interface;
 using MarCorp.DemoBack.Domain.Models.Entities;
-using MarCorp.DemoBack.Support.Common;
 using System.Data;
 
 namespace MarCorp.DemoBack.Data.Repository
 {
     public class UsersRepository : IUsersRepository
     {
-        private readonly IConnectionFactory _connectionFactory;
-        public UsersRepository(IConnectionFactory connectionFactory)
+        private readonly DapperContext _context;
+        public UsersRepository(DapperContext context)
         {
-            _connectionFactory = connectionFactory;
+            _context = context;
         }
         public User Authenticate(string userName, string password)
         {
-            using (var connection = _connectionFactory.GetConnection)
+            using (var connection = _context.Createconnection())
             {
                 var query = "UsersGetByUserAndPassword";
                 var parameters = new DynamicParameters();
