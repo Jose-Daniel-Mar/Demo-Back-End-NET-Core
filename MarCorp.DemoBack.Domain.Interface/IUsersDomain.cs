@@ -6,6 +6,6 @@ namespace MarCorp.DemoBack.Domain.Interface
 {
     public interface IUsersDomain
     {
-        User Authenticate(string username, string password);
+        Task<User> AuthenticateAsync(string username, string password);
     }
 }

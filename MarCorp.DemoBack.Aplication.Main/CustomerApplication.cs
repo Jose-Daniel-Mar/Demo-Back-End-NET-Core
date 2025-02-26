@@ -3,10 +3,7 @@ using MarCorp.DemoBack.Application.DTO;
 using MarCorp.DemoBack.Domain.Models.Entities;
 using MarCorp.DemoBack.Support.Common;
 using MarCorp.DemoBack.Domain.Interface;
-using System;
-using System.Collections.Generic;
 using MarCorp.DemoBack.Application.Interface;
-using System.Threading.Tasks;
 
 namespace MarCorp.DemoBack.Application.Main
 {
@@ -215,7 +212,7 @@ namespace MarCorp.DemoBack.Application.Main
                 if (response.Data != null)
                 {
                     response.IsSuccess = true;
-                    response.Message = "Consulta Exitosa!!!";
+                    response.Message = "Consulta Exitosa";
                 }
             }
             catch (Exception e)

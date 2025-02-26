@@ -19,7 +19,7 @@ namespace MarCorp.DemoBack.Application.Main
             _mapper = iMapper;
             _usersDtoValidator = usersDtoValidator;
         }
-        public Response<UsersDTO> Authenticate(string username, string password)
+        public async Task<Response<UsersDTO>> AuthenticateAsync(string username, string password)
         {
             var response = new Response<UsersDTO>();
             var validation = _usersDtoValidator.Validate(new UsersDTO { UserName = username, Password = password });
@@ -32,7 +32,7 @@ namespace MarCorp.DemoBack.Application.Main
             }
             try
             {
-                var user = _usersDomain.Authenticate(username, password);
+                var user = await _usersDomain.AuthenticateAsync(username, password);
                 response.Data = _mapper.Map<UsersDTO>(user);
                 response.IsSuccess = true;
                 response.Message = "Autenticación Exitosa!!!";

@@ -1,10 +1,8 @@
-﻿using MarCorp.DemoBack.Data.Interface;
-using MarCorp.DemoBack.Domain.Models.Entities;
-using MarCorp.DemoBack.Support.Common;
-using System.Data;
-using System.Threading.Tasks;
-using Dapper;
+﻿using Dapper;
 using MarCorp.DemoBack.Data.Connections;
+using MarCorp.DemoBack.Data.Interface;
+using MarCorp.DemoBack.Domain.Models.Entities;
+using System.Data;
 
 namespace MarCorp.DemoBack.Data.Repository
 {
@@ -177,13 +175,11 @@ namespace MarCorp.DemoBack.Data.Repository
 
         public async Task<IEnumerable<Customer>> GetAllAsync()
         {
-            using (var connection = _context.Createconnection())
-            {
-                var query = "CustomersList";
+            using var connection = _context.Createconnection();
+            var query = "CustomersList";
 
-                var customers = await connection.QueryAsync<Customer>(query, commandType: CommandType.StoredProcedure);
-                return customers;
-            }
+            var customers = await connection.QueryAsync<Customer>(query, commandType: CommandType.StoredProcedure);
+            return customers;
         }
 
         #endregion

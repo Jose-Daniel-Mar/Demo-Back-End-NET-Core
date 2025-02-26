@@ -41,10 +41,10 @@ namespace MarCorp.DemoBack.Services.WebApi.Controllers
         /// <param name="usersDto">The user data transfer object containing login information.</param>
         /// <returns>An IActionResult containing the authentication result.</returns>
         [AllowAnonymous]
-        [HttpPost("Authenticate")]
-        public IActionResult Authenticate([FromBody] UsersDTO usersDto)
+        [HttpPost("AuthenticateAsync")]
+        public async Task<IActionResult> AuthenticateAsync([FromBody] UsersDTO usersDto)
         {
-            var response = _usersApplication.Authenticate(usersDto.UserName, usersDto.Password);
+            var response = await _usersApplication.AuthenticateAsync(usersDto.UserName, usersDto.Password);
             if (response.IsSuccess)
             {
                 if (response.Data != null)

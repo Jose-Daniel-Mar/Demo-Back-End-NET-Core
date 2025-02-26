@@ -1,24 +1,24 @@
-﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using MarCorp.DemoBack.Application.Interface;
+﻿using MarCorp.DemoBack.Application.Interface;
 using MarCorp.DemoBack.Application.Main;
-using MarCorp.DemoBack.Domain.Interface;
-using MarCorp.DemoBack.Domain.Core;
+using MarCorp.DemoBack.Application.Validator;
+using MarCorp.DemoBack.Data.Connections;
 using MarCorp.DemoBack.Data.Interface;
 using MarCorp.DemoBack.Data.Repository;
-using MarCorp.DemoBack.Data.Connections;
+using MarCorp.DemoBack.Domain.Core;
+using MarCorp.DemoBack.Domain.Interface;
 using MarCorp.DemoBack.Support.Common;
 using MarCorp.DemoBack.Support.Logging;
 using MarCorp.DemoBack.Support.Mapper;
-using MarCorp.DemoBack.Application.Validator;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace MarCorp.DemoBack.Application.Test
 {
     [TestClass]
     public sealed class UsersApplicationTest
     {
-        private static IConfiguration _configuration;
-        private static IServiceScopeFactory _scopeFactory;
+        private static IConfiguration? _configuration;
+        private static IServiceScopeFactory? _scopeFactory;
 
         [ClassInitialize]
         public static void Initialize(TestContext _)
@@ -32,7 +32,7 @@ namespace MarCorp.DemoBack.Application.Test
             var services = new ServiceCollection();
 
             services.AddSingleton(_configuration);
-            services.AddSingleton<IConnectionFactory, ConnectionFactory>();
+            services.AddSingleton<DapperContext>();
             services.AddScoped<IUsersApplication, UsersApplication>();
             services.AddScoped<IUsersDomain, UsersDomain>();
             services.AddScoped<IUsersRepository, UsersRepository>();
@@ -45,7 +45,7 @@ namespace MarCorp.DemoBack.Application.Test
         }
 
         [TestMethod]
-        public void Authenticate_CuandoNoSeEnvianParametros_RetornaMensajeErrorValidacion()
+        public async Task Authenticate_CuandoNoSeEnvianParametros_RetornaMensajeErrorValidacion()
         {
             using (var scope = _scopeFactory.CreateScope())
             {
@@ -57,7 +57,7 @@ namespace MarCorp.DemoBack.Application.Test
                 var expected = "Errores de validación";
 
                 // Actuar: intentar iniciar sesión
-                var result = context.Authenticate(username, password);
+                var result = await context.AuthenticateAsync(username, password);
 
                 // Afirmar: verificar que el inicio de sesión fue exitoso
                 Assert.AreEqual(expected, result.Message);
@@ -65,7 +65,7 @@ namespace MarCorp.DemoBack.Application.Test
         }
 
         [TestMethod]
-        public void Authenticate_CuandoSeEnvianParametrosCorrectos_RetornaMensajeExito()
+        public async Task Authenticate_CuandoSeEnvianParametrosCorrectos_RetornaMensajeExito()
         {
             using (var scope = _scopeFactory.CreateScope())
             {
@@ -77,7 +77,7 @@ namespace MarCorp.DemoBack.Application.Test
                 var expected = "Autenticación Exitosa!!!";
 
                 // Actuar: intentar iniciar sesión
-                var result = context.Authenticate(username, password);
+                var result = await context.AuthenticateAsync(username, password);
 
                 // Afirmar: verificar que el inicio de sesión fue exitoso
                 Assert.AreEqual(expected, result.Message);
@@ -85,7 +85,7 @@ namespace MarCorp.DemoBack.Application.Test
         }
 
         [TestMethod]
-        public void Authenticate_CuandoSeEnvianParametrosIncorrectos_RetornaMensajeUsuarioNOExiste()
+        public async Task Authenticate_CuandoSeEnvianParametrosIncorrectos_RetornaMensajeUsuarioNOExiste()
         {
             using (var scope = _scopeFactory.CreateScope())
             {
@@ -97,7 +97,7 @@ namespace MarCorp.DemoBack.Application.Test
                 var expected = "Usuario no existe";
 
                 // Actuar: intentar iniciar sesión
-                var result = context.Authenticate(username, password);
+                var result = await context.AuthenticateAsync(username, password);
 
                 // Afirmar: verificar que el inicio de sesión fue exitoso
                 Assert.AreEqual(expected, result.Message);

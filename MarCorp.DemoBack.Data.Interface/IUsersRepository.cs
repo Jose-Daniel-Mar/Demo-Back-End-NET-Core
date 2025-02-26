@@ -2,8 +2,8 @@
 
 namespace MarCorp.DemoBack.Data.Interface
 {
-    public interface IUsersRepository
+    public interface IUsersRepository : IGenericRepository<User>
     {
-        User Authenticate(string username, string password);
+        Task<User> AuthenticateAsync(string username, string password);
     }
 }
