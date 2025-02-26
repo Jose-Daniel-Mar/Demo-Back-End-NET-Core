@@ -24,7 +24,8 @@ namespace MarCorp.DemoBack.Services.WebApi.Modules.Injection
         public static IServiceCollection AddInjection(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddSingleton<IConfiguration>(configuration);
-            services.AddSingleton<DapperContext>();
+            //services.AddSingleton<DapperContext>();
+            services.AddSingleton<IDapperContext, DapperContext>();
             services.AddScoped<ICustomerApplication, CustomerApplication>();
             services.AddScoped<ICustomerDomain, CustomerDomain>();
             services.AddScoped<ICustomerRepository, CustomerRepository>();

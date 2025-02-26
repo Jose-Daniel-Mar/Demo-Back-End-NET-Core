@@ -1,5 +1,4 @@
 ﻿using Dapper;
-using MarCorp.DemoBack.Data.Connections;
 using MarCorp.DemoBack.Data.Interface;
 using MarCorp.DemoBack.Domain.Models.Entities;
 using System.Data;
@@ -8,8 +7,8 @@ namespace MarCorp.DemoBack.Data.Repository
 {
     public class CustomerRepository : ICustomerRepository
     {
-        private readonly DapperContext _context;
-        public CustomerRepository(DapperContext context)
+        private readonly IDapperContext _context;
+        public CustomerRepository(IDapperContext context)
         {
             _context = context;
         }

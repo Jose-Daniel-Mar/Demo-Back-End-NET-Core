@@ -8,8 +8,8 @@ namespace MarCorp.DemoBack.Data.Repository
 {
     public class UsersRepository : IUsersRepository
     {
-        private readonly DapperContext _context;
-        public UsersRepository(DapperContext context)
+        private readonly IDapperContext _context;
+        public UsersRepository(IDapperContext context)
         {
             _context = context;
         }

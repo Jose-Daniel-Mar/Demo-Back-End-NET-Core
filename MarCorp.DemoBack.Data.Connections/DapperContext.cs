@@ -1,10 +1,11 @@
-﻿using Microsoft.Extensions.Configuration;
-using System.Data;
+﻿using MarCorp.DemoBack.Data.Interface;
 using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
+using System.Data;
 
 namespace MarCorp.DemoBack.Data.Connections
 {
-    public class DapperContext
+    public class DapperContext : IDapperContext
     {
         private readonly IConfiguration _configuration;
         private readonly string _connectionString;

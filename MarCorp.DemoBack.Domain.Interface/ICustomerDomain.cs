@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MarCorp.DemoBack.Domain.Models.Entities;
-using System.Threading.Tasks;
+﻿using MarCorp.DemoBack.Domain.Models.Entities;
 
 namespace MarCorp.DemoBack.Domain.Interface
 {
