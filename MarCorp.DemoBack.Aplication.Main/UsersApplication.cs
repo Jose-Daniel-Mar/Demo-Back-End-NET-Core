@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
+using FluentValidation;
 using MarCorp.DemoBack.Application.DTO;
 using MarCorp.DemoBack.Application.Interface;
 using MarCorp.DemoBack.Domain.Interface;
 using MarCorp.DemoBack.Support.Common;
-using MarCorp.DemoBack.Application.Validator;
 
 namespace MarCorp.DemoBack.Application.Main
 {
@@ -11,9 +11,9 @@ namespace MarCorp.DemoBack.Application.Main
     {
         private readonly IUsersDomain _usersDomain;
         private readonly IMapper _mapper;
-        private readonly UsersDTOValidator _usersDtoValidator;
+        private readonly IValidator<UsersDTO> _usersDtoValidator;
 
-        public UsersApplication(IUsersDomain usersDomain, IMapper iMapper, UsersDTOValidator usersDtoValidator)
+        public UsersApplication(IUsersDomain usersDomain, IMapper iMapper, IValidator<UsersDTO> usersDtoValidator)
         {
             _usersDomain = usersDomain;
             _mapper = iMapper;

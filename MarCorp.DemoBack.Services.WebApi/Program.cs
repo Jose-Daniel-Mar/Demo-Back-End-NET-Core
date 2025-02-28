@@ -1,5 +1,6 @@
 using MarCorp.DemoBack.Services.WebApi.Modules;
 using MarCorp.DemoBack.Services.WebApi.Modules.Authentication;
+using MarCorp.DemoBack.Services.WebApi.Modules.Cors;
 using MarCorp.DemoBack.Services.WebApi.Modules.Injection;
 using MarCorp.DemoBack.Services.WebApi.Modules.Swagger;
 using MarCorp.DemoBack.Services.WebApi.Modules.Validator;
@@ -17,6 +18,7 @@ builder.Services.AddMapper();
 builder.Services.AddInjection(configuration);
 builder.Services.AddValidator();
 builder.Services.AddWatchDog(configuration);
+builder.Services.AddFCors(configuration);
 
 var app = builder.Build();
 
@@ -35,6 +37,7 @@ app.UseSwaggerUI(c =>
 });
 
 app.UseWatchDogExceptionLogger();
+app.UseCors("policyApiMarCorp");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();

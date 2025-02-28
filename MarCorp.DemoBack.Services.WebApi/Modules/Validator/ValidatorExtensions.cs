@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using MarCorp.DemoBack.Services.WebApi.Modules.Validator;
 using MarCorp.DemoBack.Application.Validator;
+using FluentValidation;
+using MarCorp.DemoBack.Application.DTO;
 
 namespace MarCorp.DemoBack.Services.WebApi.Modules.Validator
 {
@@ -16,7 +18,7 @@ namespace MarCorp.DemoBack.Services.WebApi.Modules.Validator
         /// <returns>The updated service collection.</returns>
         public static IServiceCollection AddValidator(this IServiceCollection services)
         {
-            services.AddTransient<UsersDTOValidator>();
+            services.AddTransient<IValidator<UsersDTO>, UsersDTOValidator>();
             return services;
         }
     }
