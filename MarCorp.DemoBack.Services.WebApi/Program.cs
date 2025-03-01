@@ -1,6 +1,8 @@
+using HealthChecks.UI.Client;
 using MarCorp.DemoBack.Services.WebApi.Modules;
 using MarCorp.DemoBack.Services.WebApi.Modules.Authentication;
 using MarCorp.DemoBack.Services.WebApi.Modules.Cors;
+using MarCorp.DemoBack.Services.WebApi.Modules.HealthCheck;
 using MarCorp.DemoBack.Services.WebApi.Modules.Injection;
 using MarCorp.DemoBack.Services.WebApi.Modules.Swagger;
 using MarCorp.DemoBack.Services.WebApi.Modules.Validator;
@@ -12,13 +14,14 @@ var configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentD
 
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
+builder.Services.AddFCors(configuration);
 builder.Services.AddSwagger();
 builder.Services.AddAuthentication(configuration);
 builder.Services.AddMapper();
 builder.Services.AddInjection(configuration);
 builder.Services.AddValidator();
+builder.Services.AddHealthCheck(configuration);
 builder.Services.AddWatchDog(configuration);
-builder.Services.AddFCors(configuration);
 
 var app = builder.Build();
 
@@ -27,21 +30,27 @@ if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
     app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "MarCorp API v1");
+        c.RoutePrefix = string.Empty; // Swagger en la raíz
+    });
 }
 
-app.UseSwagger();
-app.UseSwaggerUI(c =>
-{
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "MarCorp API v1");
-    c.RoutePrefix = string.Empty; // Swagger en la raíz
-});
+
 
 app.UseWatchDogExceptionLogger();
 app.UseCors("policyApiMarCorp");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
-
+app.MapHealthChecksUI();
+app.MapHealthChecks("/health", new Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions
+{
+    Predicate = _ => true,
+    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+});
 app.UseWatchDog(conf =>
 {
     conf.WatchPageUsername = builder.Configuration["WatchDog:WatchPageUsername"];
