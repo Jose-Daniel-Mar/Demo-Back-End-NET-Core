@@ -4,6 +4,8 @@ using MarCorp.DemoBack.Services.WebApi.Modules.Authentication;
 using MarCorp.DemoBack.Services.WebApi.Modules.Cors;
 using MarCorp.DemoBack.Services.WebApi.Modules.HealthCheck;
 using MarCorp.DemoBack.Services.WebApi.Modules.Injection;
+using MarCorp.DemoBack.Services.WebApi.Modules.RateLimiter;
+using MarCorp.DemoBack.Services.WebApi.Modules.Redis;
 using MarCorp.DemoBack.Services.WebApi.Modules.Swagger;
 using MarCorp.DemoBack.Services.WebApi.Modules.Validator;
 using MarCorp.DemoBack.Services.WebApi.Modules.Watch;
@@ -22,6 +24,8 @@ builder.Services.AddInjection(configuration);
 builder.Services.AddValidator();
 builder.Services.AddHealthCheck(configuration);
 builder.Services.AddWatchDog(configuration);
+builder.Services.AddRedisCache(configuration);
+builder.Services.AddRatelimiting(configuration);
 
 var app = builder.Build();
 
@@ -38,13 +42,13 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-
-
 app.UseWatchDogExceptionLogger();
 app.UseCors("policyApiMarCorp");
+app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
-app.MapControllers();
+app.UseRateLimiter();
+app.UseEndpoints(_ => { });
 app.MapHealthChecksUI();
 app.MapHealthChecks("/health", new Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions
 {
@@ -57,4 +61,5 @@ app.UseWatchDog(conf =>
     conf.WatchPagePassword = builder.Configuration["WatchDog:WatchPagePassword"];
 });
 
+app.MapControllers();
 app.Run();

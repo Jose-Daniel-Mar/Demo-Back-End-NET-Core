@@ -10,6 +10,7 @@ namespace MarCorp.DemoBack.Support.Mapper
         {
             CreateMap<Customer, CustomerDTO>().ReverseMap();
             CreateMap<User, UsersDTO>().ReverseMap();
+            CreateMap<Category, CategoriesDTO>().ReverseMap();
         }
     }
 }

@@ -25,13 +25,16 @@ namespace MarCorp.DemoBack.Services.WebApi.Modules.Injection
         {
             services.AddSingleton<IConfiguration>(configuration);
             services.AddSingleton<IDapperContext, DapperContext>();
+            services.AddScoped(typeof(IAppLogger<>), typeof(LoggerAdapter<>));
             services.AddScoped<ICustomerApplication, CustomerApplication>();
             services.AddScoped<ICustomerDomain, CustomerDomain>();
             services.AddScoped<ICustomerRepository, CustomerRepository>();
             services.AddScoped<IUsersRepository, UsersRepository>();
             services.AddScoped<IUsersApplication, UsersApplication>();
             services.AddScoped<IUsersDomain, UsersDomain>();
-            services.AddScoped(typeof(IAppLogger<>), typeof(LoggerAdapter<>));
+            services.AddScoped<ICategoriesRepository, CategoriesRepository>();
+            services.AddScoped<ICategoriesApplication, CategoriesApplication>();
+            services.AddScoped<ICategoriesDomain, CategoriesDomain>();
 
             return services;
         }
