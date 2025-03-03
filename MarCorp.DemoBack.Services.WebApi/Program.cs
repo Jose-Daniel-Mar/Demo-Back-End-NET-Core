@@ -70,7 +70,7 @@ app.UseWatchDog(conf =>
     conf.WatchPageUsername = builder.Configuration["WatchDog:WatchPageUsername"];
     conf.WatchPagePassword = builder.Configuration["WatchDog:WatchPagePassword"];
 });
-
+ 
 app.MapControllers();
 app.Run(); 
 
