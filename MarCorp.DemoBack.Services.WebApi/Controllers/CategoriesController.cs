@@ -1,4 +1,4 @@
-﻿using MarCorp.DemoBack.Application.Interface;
+﻿using MarCorp.DemoBack.Application.Interface.UseCases;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.RateLimiting;

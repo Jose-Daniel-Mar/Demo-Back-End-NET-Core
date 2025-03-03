@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MarCorp.DemoBack.Data.Interface\MarCorp.DemoBack.Data.Interface.csproj" />
+    <ProjectReference Include="..\MarCorp.DemoBack.Application.Interface\MarCorp.DemoBack.Application.Interface.csproj" />
   </ItemGroup>
 
 </Project>

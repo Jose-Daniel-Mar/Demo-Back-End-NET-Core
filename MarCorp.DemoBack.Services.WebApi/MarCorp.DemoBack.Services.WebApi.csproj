@@ -36,11 +36,6 @@
     <ProjectReference Include="..\MarCorp.DemoBack.Application.Interface\MarCorp.DemoBack.Application.Interface.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Application.Main\MarCorp.DemoBack.Application.Main.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Application.Validator\MarCorp.DemoBack.Application.Validator.csproj" />
-    <ProjectReference Include="..\MarCorp.DemoBack.Data.Connections\MarCorp.DemoBack.Data.Connections.csproj" />
-    <ProjectReference Include="..\MarCorp.DemoBack.Data.Interface\MarCorp.DemoBack.Data.Interface.csproj" />
-    <ProjectReference Include="..\MarCorp.DemoBack.Data.Repository\MarCorp.DemoBack.Data.Repository.csproj" />
-    <ProjectReference Include="..\MarCorp.DemoBack.Domain.Core\MarCorp.DemoBack.Domain.Core.csproj" />
-    <ProjectReference Include="..\MarCorp.DemoBack.Domain.Interface\MarCorp.DemoBack.Domain.Interface.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Domain.Models\MarCorp.DemoBack.Domain.Models.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Support.Common\MarCorp.DemoBack.Support.Common.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Support.Logging\MarCorp.DemoBack.Support.Logging.csproj" />

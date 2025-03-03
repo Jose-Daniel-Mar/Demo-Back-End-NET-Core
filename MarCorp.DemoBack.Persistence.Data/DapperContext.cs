@@ -1,9 +1,9 @@
-﻿using MarCorp.DemoBack.Data.Interface;
+﻿using MarCorp.DemoBack.Application.Interface.Persistence;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using System.Data;
 
-namespace MarCorp.DemoBack.Data.Connections
+namespace MarCorp.DemoBack.Persistence.Data
 {
     public class DapperContext : IDapperContext
     {

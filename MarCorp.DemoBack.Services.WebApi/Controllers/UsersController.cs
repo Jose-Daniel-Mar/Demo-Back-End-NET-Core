@@ -1,5 +1,5 @@
 ﻿using MarCorp.DemoBack.Application.DTO;
-using MarCorp.DemoBack.Application.Interface;
+using MarCorp.DemoBack.Application.Interface.UseCases;
 using MarCorp.DemoBack.Services.WebApi.Helpers;
 using MarCorp.DemoBack.Support.Common;
 using Microsoft.AspNetCore.Authorization;

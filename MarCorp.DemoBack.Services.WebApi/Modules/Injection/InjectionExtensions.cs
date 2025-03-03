@@ -1,4 +1,4 @@
-﻿using MarCorp.DemoBack.Application.Interface;
+﻿using MarCorp.DemoBack.Application.Interface.UseCases;
 using MarCorp.DemoBack.Application.Main;
 using MarCorp.DemoBack.Data.Connections;
 using MarCorp.DemoBack.Data.Interface;

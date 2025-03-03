@@ -1,6 +1,6 @@
 ﻿using MarCorp.DemoBack.Domain.Models.Entities;
 
-namespace MarCorp.DemoBack.Data.Interface
+namespace MarCorp.DemoBack.Application.Interface.Persistence
 {
     public interface ICategoriesRepository
     {

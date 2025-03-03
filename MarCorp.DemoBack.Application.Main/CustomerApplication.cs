@@ -3,7 +3,7 @@ using MarCorp.DemoBack.Application.DTO;
 using MarCorp.DemoBack.Domain.Models.Entities;
 using MarCorp.DemoBack.Support.Common;
 using MarCorp.DemoBack.Domain.Interface;
-using MarCorp.DemoBack.Application.Interface;
+using MarCorp.DemoBack.Application.Interface.UseCases;
 
 namespace MarCorp.DemoBack.Application.Main
 {

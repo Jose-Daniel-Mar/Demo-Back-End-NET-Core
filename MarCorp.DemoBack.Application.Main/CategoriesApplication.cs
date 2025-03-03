@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using MarCorp.DemoBack.Application.DTO;
-using MarCorp.DemoBack.Application.Interface;
+using MarCorp.DemoBack.Application.Interface.UseCases;
 using MarCorp.DemoBack.Domain.Interface;
 using MarCorp.DemoBack.Support.Common;
 using Microsoft.Extensions.Caching.Distributed;

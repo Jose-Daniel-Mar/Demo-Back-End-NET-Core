@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MarCorp.DemoBack.Application.Interface;
 using MarCorp.DemoBack.Application.DTO;
 using Microsoft.AspNetCore.Authorization;
+using MarCorp.DemoBack.Application.Interface.UseCases;
 
 namespace MarCorp.DemoBack.Services.WebApi.Controllers
 {

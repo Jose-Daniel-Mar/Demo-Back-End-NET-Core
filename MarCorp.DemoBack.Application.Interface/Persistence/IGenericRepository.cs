@@ -1,4 +1,4 @@
-﻿namespace MarCorp.DemoBack.Data.Interface
+﻿namespace MarCorp.DemoBack.Application.Interface.Persistence
 {
     public interface IGenericRepository<T> where T : class
     {

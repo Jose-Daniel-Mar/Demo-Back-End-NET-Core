@@ -1,9 +1,9 @@
 ﻿using Dapper;
-using MarCorp.DemoBack.Data.Interface;
+using MarCorp.DemoBack.Application.Interface.Persistence;
 using MarCorp.DemoBack.Domain.Models.Entities;
 using System.Data;
 
-namespace MarCorp.DemoBack.Data.Repository
+namespace MarCorp.DemoBack.Persistence.Repository
 {
     public class CustomerRepository : ICustomerRepository
     {
