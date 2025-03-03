@@ -32,9 +32,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MarCorp.DemoBack.Aplication.DTO\MarCorp.DemoBack.Application.DTO.csproj" />
-    <ProjectReference Include="..\MarCorp.DemoBack.Aplication.Interface\MarCorp.DemoBack.Application.Interface.csproj" />
-    <ProjectReference Include="..\MarCorp.DemoBack.Aplication.Main\MarCorp.DemoBack.Application.Main.csproj" />
+    <ProjectReference Include="..\MarCorp.DemoBack.Application.DTO\MarCorp.DemoBack.Application.DTO.csproj" />
+    <ProjectReference Include="..\MarCorp.DemoBack.Application.Interface\MarCorp.DemoBack.Application.Interface.csproj" />
+    <ProjectReference Include="..\MarCorp.DemoBack.Application.Main\MarCorp.DemoBack.Application.Main.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Application.Validator\MarCorp.DemoBack.Application.Validator.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Data.Connections\MarCorp.DemoBack.Data.Connections.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Data.Interface\MarCorp.DemoBack.Data.Interface.csproj" />

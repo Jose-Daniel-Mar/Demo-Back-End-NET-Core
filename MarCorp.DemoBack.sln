@@ -27,13 +27,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Domain.Int
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Domain.Core", "MarCorp.DemoBack.Domain.Core\MarCorp.DemoBack.Domain.Core.csproj", "{BB2DE443-EE80-4779-8F29-F8563A16B9BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Application.DTO", "MarCorp.DemoBack.Aplication.DTO\MarCorp.DemoBack.Application.DTO.csproj", "{FA52F847-0192-4CE8-A819-38DBA846C10B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Application.DTO", "MarCorp.DemoBack.Application.DTO\MarCorp.DemoBack.Application.DTO.csproj", "{FA52F847-0192-4CE8-A819-38DBA846C10B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Support.Mapper", "MarCorp.DemoBack.Support.Mapper\MarCorp.DemoBack.Support.Mapper.csproj", "{7C76FC38-17DF-4826-82A5-C77EB7CF1429}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Application.Interface", "MarCorp.DemoBack.Aplication.Interface\MarCorp.DemoBack.Application.Interface.csproj", "{743D8FAE-0C6C-4081-9D33-4AE6F6142B52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Application.Interface", "MarCorp.DemoBack.Application.Interface\MarCorp.DemoBack.Application.Interface.csproj", "{743D8FAE-0C6C-4081-9D33-4AE6F6142B52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Application.Main", "MarCorp.DemoBack.Aplication.Main\MarCorp.DemoBack.Application.Main.csproj", "{4F9A05DB-D749-4C46-89CC-7C71CA7B460B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Application.Main", "MarCorp.DemoBack.Application.Main\MarCorp.DemoBack.Application.Main.csproj", "{4F9A05DB-D749-4C46-89CC-7C71CA7B460B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Services.WebApi", "MarCorp.DemoBack.Services.WebApi\MarCorp.DemoBack.Services.WebApi.csproj", "{3262AFF5-B520-4FA3-8274-9FCC2739253B}"
 EndProject
