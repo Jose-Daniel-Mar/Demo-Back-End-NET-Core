@@ -3,7 +3,7 @@ using MarCorp.DemoBack.Application.Interface.Persistence;
 using MarCorp.DemoBack.Domain.Models.Entities;
 using System.Data;
 
-namespace MarCorp.DemoBack.Persistence.Repository
+namespace MarCorp.DemoBack.Persistence.Repositories
 {
     public class CategoriesRepository : ICategoriesRepository
     {

@@ -3,7 +3,7 @@ using MarCorp.DemoBack.Support.Common;
 
 namespace MarCorp.DemoBack.Application.Interface.UseCases
 {
-    public interface ICustomerApplication
+    public interface ICustomersApplication
     {
         #region Métodos Síncronos
 

@@ -1,4 +1,6 @@
 using HealthChecks.UI.Client;
+using MarCorp.DemoBack.Persistence;
+using MarCorp.DemoBack.Application.UseCases;
 using MarCorp.DemoBack.Services.WebApi.Modules;
 using MarCorp.DemoBack.Services.WebApi.Modules.Authentication;
 using MarCorp.DemoBack.Services.WebApi.Modules.Cors;
@@ -19,6 +21,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddOpenApi();
 builder.Services.AddFCors(configuration);
+builder.Services.AddPersistenceServices();
+builder.Services.AddApplicationServices();
 builder.Services.AddSwagger();
 builder.Services.AddAuthentication(configuration);
 builder.Services.AddMapper();

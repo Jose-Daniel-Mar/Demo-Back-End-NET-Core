@@ -41,7 +41,7 @@ namespace MarCorp.DemoBack.Services.WebApi.Controllers
         /// <returns>An IActionResult containing the authentication result.</returns>
         [AllowAnonymous]
         [HttpPost("AuthenticateAsync")]
-        public async Task<IActionResult> AuthenticateAsync([FromBody] UsersDTO usersDto)
+        public async Task<IActionResult> AuthenticateAsync([FromBody] UserDTO usersDto)
         {
             var response = await _usersApplication.AuthenticateAsync(usersDto.UserName, usersDto.Password);
             if (response.IsSuccess)
@@ -63,7 +63,7 @@ namespace MarCorp.DemoBack.Services.WebApi.Controllers
         /// </summary>
         /// <param name="usersDto"></param>
         /// <returns></returns>
-        private string BuildToken(Response<UsersDTO> usersDto)
+        private string BuildToken(Response<UserDTO> usersDto)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret.PadRight(32));

@@ -1,33 +1,33 @@
 ﻿using AutoMapper;
 using MarCorp.DemoBack.Application.DTO;
 using MarCorp.DemoBack.Application.Interface.UseCases;
-using MarCorp.DemoBack.Domain.Interface;
 using MarCorp.DemoBack.Support.Common;
 using Microsoft.Extensions.Caching.Distributed;
 using System.Text;
 using System.Text.Json;
+using MarCorp.DemoBack.Application.Interface.Persistence;
 
-namespace MarCorp.DemoBack.Application.Main
+namespace MarCorp.DemoBack.Application.UseCases.Categories
 {
     public class CategoriesApplication : ICategoriesApplication
     {
-        private readonly ICategoriesDomain _categoriesDomain;
+        private readonly ICategoriesRepository _categoriesRepository;
         private readonly IMapper _mapper;
         private readonly IDistributedCache _distributedCache;
         private readonly IAppLogger<CategoriesApplication> _logger;
 
-        public CategoriesApplication(ICategoriesDomain categoriesDomain, IMapper mapper, IDistributedCache distributedCache, IAppLogger<CategoriesApplication> logger)
+        public CategoriesApplication(ICategoriesRepository categoriesRepository, IMapper mapper, IDistributedCache distributedCache, IAppLogger<CategoriesApplication> logger)
         {
-            _categoriesDomain = categoriesDomain;
+            _categoriesRepository = categoriesRepository;
             _mapper = mapper;
             _distributedCache = distributedCache;
             _logger = logger;
         }
-
-        public async Task<Response<IEnumerable<CategoriesDTO>>> GetAllAsync()
+        
+        public async Task<Response<IEnumerable<CategoryDTO>>> GetAllAsync()
         {
             bool redisAvailable = true;
-            var response = new Response<IEnumerable<CategoriesDTO>>();
+            var response = new Response<IEnumerable<CategoryDTO>>();
             var cacheKey = "categoriesList";
 
             // 1. Intento obtener datos de Redis con manejo específico de excepciones
@@ -36,7 +36,7 @@ namespace MarCorp.DemoBack.Application.Main
                 var redisCategories = await _distributedCache.GetAsync(cacheKey);
                 if (redisCategories != null)
                 {
-                    response.Data = JsonSerializer.Deserialize<IEnumerable<CategoriesDTO>>(redisCategories);
+                    response.Data = JsonSerializer.Deserialize<IEnumerable<CategoryDTO>>(redisCategories);
                     response.IsSuccess = true;
                     response.Message = "Exito: Datos desde Redis";
                     return response;
@@ -51,8 +51,8 @@ namespace MarCorp.DemoBack.Application.Main
             // 2. Si Redis falla o no tiene datos, obtener de la base de datos
             try
             {
-                var categories = await _categoriesDomain.GetAllAsync();
-                response.Data = _mapper.Map<IEnumerable<CategoriesDTO>>(categories);
+                var categories = await _categoriesRepository.GetAllAsync();
+                response.Data = _mapper.Map<IEnumerable<CategoryDTO>>(categories);
                 if (response.Data == null)
                 {
                     response.IsSuccess = false;

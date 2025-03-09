@@ -34,9 +34,10 @@
   <ItemGroup>
     <ProjectReference Include="..\MarCorp.DemoBack.Application.DTO\MarCorp.DemoBack.Application.DTO.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Application.Interface\MarCorp.DemoBack.Application.Interface.csproj" />
-    <ProjectReference Include="..\MarCorp.DemoBack.Application.Main\MarCorp.DemoBack.Application.Main.csproj" />
+    <ProjectReference Include="..\MarCorp.DemoBack.Application.Main\MarCorp.DemoBack.Application.UseCases.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Application.Validator\MarCorp.DemoBack.Application.Validator.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Domain.Models\MarCorp.DemoBack.Domain.Models.csproj" />
+    <ProjectReference Include="..\MarCorp.DemoBack.Persistence.Repository\MarCorp.DemoBack.Persistence.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Support.Common\MarCorp.DemoBack.Support.Common.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Support.Logging\MarCorp.DemoBack.Support.Logging.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Support.Mapper\MarCorp.DemoBack.Support.Mapper.csproj" />

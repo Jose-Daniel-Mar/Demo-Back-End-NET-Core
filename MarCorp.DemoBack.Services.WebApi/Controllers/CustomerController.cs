@@ -14,13 +14,13 @@ namespace MarCorp.DemoBack.Services.WebApi.Controllers
     [ApiController]
     public class CustomerController : ControllerBase
     {
-        private readonly ICustomerApplication _customerApplication;
+        private readonly ICustomersApplication _customerApplication;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CustomerController"/> class.
         /// </summary>
         /// <param name="customerApplication">The customer application service.</param>
-        public CustomerController(ICustomerApplication customerApplication)
+        public CustomerController(ICustomersApplication customerApplication)
         {
             _customerApplication = customerApplication;
         }

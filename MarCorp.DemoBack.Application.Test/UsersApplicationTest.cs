@@ -1,11 +1,9 @@
-﻿using MarCorp.DemoBack.Application.Interface.UseCases;
-using MarCorp.DemoBack.Application.Main;
+﻿using MarCorp.DemoBack.Application.Interface.Persistence;
+using MarCorp.DemoBack.Application.Interface.UseCases;
+using MarCorp.DemoBack.Application.UseCases.Users;
 using MarCorp.DemoBack.Application.Validator;
-using MarCorp.DemoBack.Data.Connections;
-using MarCorp.DemoBack.Data.Interface;
-using MarCorp.DemoBack.Data.Repository;
-using MarCorp.DemoBack.Domain.Core;
-using MarCorp.DemoBack.Domain.Interface;
+using MarCorp.DemoBack.Persistence.Contexts;
+using MarCorp.DemoBack.Persistence.Repositories;
 using MarCorp.DemoBack.Support.Common;
 using MarCorp.DemoBack.Support.Logging;
 using MarCorp.DemoBack.Support.Mapper;
@@ -34,7 +32,6 @@ namespace MarCorp.DemoBack.Application.Test
             services.AddSingleton(_configuration);
             services.AddSingleton<DapperContext>();
             services.AddScoped<IUsersApplication, UsersApplication>();
-            services.AddScoped<IUsersDomain, UsersDomain>();
             services.AddScoped<IUsersRepository, UsersRepository>();
             services.AddScoped(typeof(IAppLogger<>), typeof(LoggerAdapter<>));
             services.AddAutoMapper(typeof(MappingsProfile));

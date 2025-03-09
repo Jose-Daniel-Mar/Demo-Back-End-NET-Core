@@ -2,27 +2,27 @@
 using FluentValidation;
 using MarCorp.DemoBack.Application.DTO;
 using MarCorp.DemoBack.Application.Interface.UseCases;
-using MarCorp.DemoBack.Domain.Interface;
+using MarCorp.DemoBack.Application.Interface.Persistence;
 using MarCorp.DemoBack.Support.Common;
 
-namespace MarCorp.DemoBack.Application.Main
+namespace MarCorp.DemoBack.Application.UseCases.Users
 {
     public class UsersApplication : IUsersApplication
     {
-        private readonly IUsersDomain _usersDomain;
+        private readonly IUsersRepository _usersRepository;
         private readonly IMapper _mapper;
-        private readonly IValidator<UsersDTO> _usersDtoValidator;
+        private readonly IValidator<UserDTO> _usersDtoValidator;
 
-        public UsersApplication(IUsersDomain usersDomain, IMapper iMapper, IValidator<UsersDTO> usersDtoValidator)
+        public UsersApplication(IUsersRepository usersRepository, IMapper iMapper, IValidator<UserDTO> usersDtoValidator)
         {
-            _usersDomain = usersDomain;
+            _usersRepository = usersRepository;
             _mapper = iMapper;
             _usersDtoValidator = usersDtoValidator;
         }
-        public async Task<Response<UsersDTO>> AuthenticateAsync(string username, string password)
+        public async Task<Response<UserDTO>> AuthenticateAsync(string username, string password)
         {
-            var response = new Response<UsersDTO>();
-            var validation = _usersDtoValidator.Validate(new UsersDTO { UserName = username, Password = password });
+            var response = new Response<UserDTO>();
+            var validation = _usersDtoValidator.Validate(new UserDTO { UserName = username, Password = password });
 
             if (!validation.IsValid)
             {
@@ -32,8 +32,8 @@ namespace MarCorp.DemoBack.Application.Main
             }
             try
             {
-                var user = await _usersDomain.AuthenticateAsync(username, password);
-                response.Data = _mapper.Map<UsersDTO>(user);
+                var user = await _usersRepository.AuthenticateAsync(username, password);
+                response.Data = _mapper.Map<UserDTO>(user);
                 response.IsSuccess = true;
                 response.Message = "Autenticación Exitosa!!!";
             }

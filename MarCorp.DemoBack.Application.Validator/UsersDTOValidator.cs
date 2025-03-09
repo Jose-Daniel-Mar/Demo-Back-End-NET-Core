@@ -3,7 +3,7 @@ using MarCorp.DemoBack.Application.DTO;
 
 namespace MarCorp.DemoBack.Application.Validator
 {
-    public class UsersDTOValidator : AbstractValidator<UsersDTO>
+    public class UsersDTOValidator : AbstractValidator<UserDTO>
     {
         public UsersDTOValidator()
         {

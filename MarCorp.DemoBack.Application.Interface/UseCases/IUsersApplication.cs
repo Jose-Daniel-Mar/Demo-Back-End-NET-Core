@@ -5,6 +5,6 @@ namespace MarCorp.DemoBack.Application.Interface.UseCases
 {
     public interface IUsersApplication
     {
-        Task<Response<UsersDTO>> AuthenticateAsync(string username, string password);
+        Task<Response<UserDTO>> AuthenticateAsync(string username, string password);
     }
 }

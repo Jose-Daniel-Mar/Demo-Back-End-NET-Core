@@ -18,7 +18,7 @@ namespace MarCorp.DemoBack.Services.WebApi.Modules.Validator
         /// <returns>The updated service collection.</returns>
         public static IServiceCollection AddValidator(this IServiceCollection services)
         {
-            services.AddTransient<IValidator<UsersDTO>, UsersDTOValidator>();
+            services.AddTransient<IValidator<UserDTO>, UsersDTOValidator>();
             return services;
         }
     }

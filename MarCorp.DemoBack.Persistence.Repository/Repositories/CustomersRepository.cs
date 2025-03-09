@@ -3,12 +3,12 @@ using MarCorp.DemoBack.Application.Interface.Persistence;
 using MarCorp.DemoBack.Domain.Models.Entities;
 using System.Data;
 
-namespace MarCorp.DemoBack.Persistence.Repository
+namespace MarCorp.DemoBack.Persistence.Repositories
 {
-    public class CustomerRepository : ICustomerRepository
+    public class CustomersRepository : ICustomersRepository
     {
         private readonly IDapperContext _context;
-        public CustomerRepository(IDapperContext context)
+        public CustomersRepository(IDapperContext context)
         {
             _context = context;
         }

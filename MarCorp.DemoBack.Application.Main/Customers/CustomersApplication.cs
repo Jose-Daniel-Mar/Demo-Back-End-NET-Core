@@ -2,19 +2,19 @@
 using MarCorp.DemoBack.Application.DTO;
 using MarCorp.DemoBack.Domain.Models.Entities;
 using MarCorp.DemoBack.Support.Common;
-using MarCorp.DemoBack.Domain.Interface;
+using MarCorp.DemoBack.Application.Interface.Persistence;
 using MarCorp.DemoBack.Application.Interface.UseCases;
 
-namespace MarCorp.DemoBack.Application.Main
+namespace MarCorp.DemoBack.Application.UseCases.Customers
 {
-    public class CustomerApplication : ICustomerApplication
+    public class CustomersApplication : ICustomersApplication
     {
-        private readonly ICustomerDomain _customersDomain;
+        private readonly ICustomersRepository _customersRepository;
         private readonly IMapper _mapper;
-        private readonly IAppLogger<CustomerApplication> _logger;
-        public CustomerApplication(ICustomerDomain customersDomain, IMapper mapper, IAppLogger<CustomerApplication> logger)
+        private readonly IAppLogger<CustomersApplication> _logger;
+        public CustomersApplication(ICustomersRepository customersRepository, IMapper mapper, IAppLogger<CustomersApplication> logger)
         {
-            _customersDomain = customersDomain;
+            _customersRepository = customersRepository;
             _mapper = mapper;
             _logger = logger;
         }
@@ -27,7 +27,7 @@ namespace MarCorp.DemoBack.Application.Main
             try
             {
                 var customer = _mapper.Map<Customer>(customersDto);
-                response.Data = _customersDomain.Insert(customer);
+                response.Data = _customersRepository.Insert(customer);
                 if (response.Data)
                 {
                     response.IsSuccess = true;
@@ -47,7 +47,7 @@ namespace MarCorp.DemoBack.Application.Main
             try
             {
                 var customer = _mapper.Map<Customer>(customersDto);
-                response.Data = _customersDomain.Update(customer);
+                response.Data = _customersRepository.Update(customer);
                 if (response.Data)
                 {
                     response.IsSuccess = true;
@@ -66,7 +66,7 @@ namespace MarCorp.DemoBack.Application.Main
             var response = new Response<bool>();
             try
             {
-                response.Data = _customersDomain.Delete(customerId);
+                response.Data = _customersRepository.Delete(customerId);
                 if (response.Data)
                 {
                     response.IsSuccess = true;
@@ -85,7 +85,7 @@ namespace MarCorp.DemoBack.Application.Main
             var response = new Response<CustomerDTO>();
             try
             {
-                var customer = _customersDomain.Get(customerId);
+                var customer = _customersRepository.Get(customerId);
                 response.Data = _mapper.Map<CustomerDTO>(customer);
                 if (response.Data != null)
                 {
@@ -105,7 +105,7 @@ namespace MarCorp.DemoBack.Application.Main
             var response = new Response<IEnumerable<CustomerDTO>>();
             try
             {
-                var customers = _customersDomain.GetAll();
+                var customers = _customersRepository.GetAll();
                 response.Data = _mapper.Map<IEnumerable<CustomerDTO>>(customers);
                 if (response.Data != null)
                 {
@@ -131,7 +131,7 @@ namespace MarCorp.DemoBack.Application.Main
             try
             {
                 var customer = _mapper.Map<Customer>(customersDto);
-                response.Data = await _customersDomain.InsertAsync(customer);
+                response.Data = await _customersRepository.InsertAsync(customer);
                 if (response.Data)
                 {
                     response.IsSuccess = true;
@@ -150,7 +150,7 @@ namespace MarCorp.DemoBack.Application.Main
             try
             {
                 var customer = _mapper.Map<Customer>(customersDto);
-                response.Data = await _customersDomain.UpdateAsync(customer);
+                response.Data = await _customersRepository.UpdateAsync(customer);
                 if (response.Data)
                 {
                     response.IsSuccess = true;
@@ -169,7 +169,7 @@ namespace MarCorp.DemoBack.Application.Main
             var response = new Response<bool>();
             try
             {
-                response.Data = await _customersDomain.DeleteAsync(customerId);
+                response.Data = await _customersRepository.DeleteAsync(customerId);
                 if (response.Data)
                 {
                     response.IsSuccess = true;
@@ -188,7 +188,7 @@ namespace MarCorp.DemoBack.Application.Main
             var response = new Response<CustomerDTO>();
             try
             {
-                var customer = await _customersDomain.GetAsync(customerId);
+                var customer = await _customersRepository.GetAsync(customerId);
                 response.Data = _mapper.Map<CustomerDTO>(customer);
                 if (response.Data != null)
                 {
@@ -207,7 +207,7 @@ namespace MarCorp.DemoBack.Application.Main
             var response = new Response<IEnumerable<CustomerDTO>>();
             try
             {
-                var customers = await _customersDomain.GetAllAsync();
+                var customers = await _customersRepository.GetAllAsync();
                 response.Data = _mapper.Map<IEnumerable<CustomerDTO>>(customers);
                 if (response.Data != null)
                 {

@@ -23,21 +23,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Support.Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Application.Interface", "MarCorp.DemoBack.Application.Interface\MarCorp.DemoBack.Application.Interface.csproj", "{743D8FAE-0C6C-4081-9D33-4AE6F6142B52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Application.Main", "MarCorp.DemoBack.Application.Main\MarCorp.DemoBack.Application.Main.csproj", "{4F9A05DB-D749-4C46-89CC-7C71CA7B460B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Application.UseCases", "MarCorp.DemoBack.Application.Main\MarCorp.DemoBack.Application.UseCases.csproj", "{4F9A05DB-D749-4C46-89CC-7C71CA7B460B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Services.WebApi", "MarCorp.DemoBack.Services.WebApi\MarCorp.DemoBack.Services.WebApi.csproj", "{3262AFF5-B520-4FA3-8274-9FCC2739253B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Application.Validator", "MarCorp.DemoBack.Application.Validator\MarCorp.DemoBack.Application.Validator.csproj", "{F4701DAB-44AB-4E03-AF02-8B5EDA30EF01}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prueba", "Prueba", "{B34594AB-21B6-4929-A3A2-2F5E20B28CF6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B34594AB-21B6-4929-A3A2-2F5E20B28CF6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Application.Test", "MarCorp.DemoBack.Application.Test\MarCorp.DemoBack.Application.Test.csproj", "{23152119-D77A-42AF-8611-0CABDF033F66}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Support.Logging", "MarCorp.DemoBack.Support.Logging\MarCorp.DemoBack.Support.Logging.csproj", "{0DC08837-82EE-4A84-A9FA-69C43C735501}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Persistence.Data", "MarCorp.DemoBack.Persistence.Data\MarCorp.DemoBack.Persistence.Data.csproj", "{C983A664-A024-2FEC-4F5E-F12DA98BA58C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Persistence.Repository", "MarCorp.DemoBack.Persistence.Repository\MarCorp.DemoBack.Persistence.Repository.csproj", "{364A6201-73B1-3C45-81AD-A87BA37B227B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarCorp.DemoBack.Persistence", "MarCorp.DemoBack.Persistence.Repository\MarCorp.DemoBack.Persistence.csproj", "{364A6201-73B1-3C45-81AD-A87BA37B227B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,10 +83,6 @@ Global
 		{0DC08837-82EE-4A84-A9FA-69C43C735501}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DC08837-82EE-4A84-A9FA-69C43C735501}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DC08837-82EE-4A84-A9FA-69C43C735501}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C983A664-A024-2FEC-4F5E-F12DA98BA58C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C983A664-A024-2FEC-4F5E-F12DA98BA58C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C983A664-A024-2FEC-4F5E-F12DA98BA58C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C983A664-A024-2FEC-4F5E-F12DA98BA58C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{364A6201-73B1-3C45-81AD-A87BA37B227B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{364A6201-73B1-3C45-81AD-A87BA37B227B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{364A6201-73B1-3C45-81AD-A87BA37B227B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -108,7 +102,6 @@ Global
 		{F4701DAB-44AB-4E03-AF02-8B5EDA30EF01} = {466D27A6-7292-4D62-AD71-84D14153E1F7}
 		{23152119-D77A-42AF-8611-0CABDF033F66} = {B34594AB-21B6-4929-A3A2-2F5E20B28CF6}
 		{0DC08837-82EE-4A84-A9FA-69C43C735501} = {830CD5FC-D05C-4BCC-B7B8-A7473D89ADE3}
-		{C983A664-A024-2FEC-4F5E-F12DA98BA58C} = {DA534132-6ED8-49BE-8E19-49615A7078C5}
 		{364A6201-73B1-3C45-81AD-A87BA37B227B} = {DA534132-6ED8-49BE-8E19-49615A7078C5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

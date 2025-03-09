@@ -2,7 +2,7 @@
 
 namespace MarCorp.DemoBack.Application.Interface.Persistence
 {
-    public interface ICustomerRepository : IGenericRepository<Customer>
+    public interface ICustomersRepository : IGenericRepository<Customer>
     {
     }
 }

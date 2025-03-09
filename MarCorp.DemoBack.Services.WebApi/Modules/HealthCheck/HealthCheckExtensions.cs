@@ -16,7 +16,7 @@
             services.AddHealthChecks()
                 .AddSqlServer(configuration.GetConnectionString("NorthwindConnection"), tags: new[] { "database" })
                 .AddRedis(configuration.GetConnectionString("RedisConnection"), tags: new[] { "cache" })
-                .AddCheck<HealthCheckCustom>("HealthCheckCustom", tags: new[] { "custom" });
+                .AddCheck<HealthCheckCustom>("HealthCheckCustomRandom", tags: new[] { "custom" });
             services.AddHealthChecksUI().AddInMemoryStorage();
 
             return services;

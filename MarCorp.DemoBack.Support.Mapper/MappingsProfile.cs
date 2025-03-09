@@ -9,8 +9,8 @@ namespace MarCorp.DemoBack.Support.Mapper
         public MappingsProfile()
         {
             CreateMap<Customer, CustomerDTO>().ReverseMap();
-            CreateMap<User, UsersDTO>().ReverseMap();
-            CreateMap<Category, CategoriesDTO>().ReverseMap();
+            CreateMap<User, UserDTO>().ReverseMap();
+            CreateMap<Category, CategoryDTO>().ReverseMap();
         }
     }
 }
