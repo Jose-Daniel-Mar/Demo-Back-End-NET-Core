@@ -12,11 +12,13 @@ using MarCorp.DemoBack.Services.WebApi.Modules.Swagger;
 using MarCorp.DemoBack.Services.WebApi.Modules.Validator;
 using MarCorp.DemoBack.Services.WebApi.Modules.Watch;
 using WatchDog;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 
+// 1. Configuración inicial ---------------------------------------------------
 var builder = WebApplication.CreateBuilder(args);
 var configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", optional: true, reloadOnChange: true).Build();
 
-
+// 2. Registro de servicios y dependencias --------------------------------------------------
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddOpenApi();
@@ -42,6 +44,7 @@ builder.Services.AddSession(options =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+// Herramientas de desarrollo
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
@@ -50,35 +53,48 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "MarCorp API v1");
+        c.EnablePersistAuthorization();
         c.RoutePrefix = "swagger";
     });
+    
 }
 
-app.UseWatchDogExceptionLogger();
-app.UseHttpsRedirection();
+// Seguridad y protocolos
+app.UseHttpsRedirection();  // Redirección HTTP a HTTPS
+
+// Políticas CORS (debe estar después de Routing y antes de Auth)
 app.UseCors("policyApiMarCorp");
+
+// Autenticación y autorización (orden crítico)
 app.UseRouting();
-app.UseSession();
-app.UseAuthentication();
-app.UseAuthorization();
+app.UseSession();           // Sessions middleware
+app.UseAuthentication();    // Identity
+app.UseAuthorization();     // Policies/Roles
+
+// Limitación de tasa de peticiones
 app.UseRateLimiter();
-app.UseEndpoints(_ => { });
-app.MapHealthChecksUI();
-app.MapHealthChecks("/health", new Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions
+
+// Health Checks Configuration
+app.MapHealthChecksUI();  // UI de monitoreo
+app.MapHealthChecks("/health", new HealthCheckOptions
 {
-    Predicate = _ => true,
+    Predicate = _ => true,  // Incluir todos los checks
     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
 });
-app.UseWatchDog(conf =>
-{
+
+// WatchDog (monitoreo en tiempo real)
+app.UseWatchDog(conf => {
     conf.WatchPageUsername = builder.Configuration["WatchDog:WatchPageUsername"];
     conf.WatchPagePassword = builder.Configuration["WatchDog:WatchPagePassword"];
 });
- 
+
+// Endpoints finales
 app.MapControllers();
-app.Run(); 
+
+app.Run();
 
 /// <summary>
 /// The main entry point for the application.
+/// Nota: Esta clase partial es requerida para integración con tests.
 /// </summary>
 public partial class Program { };
