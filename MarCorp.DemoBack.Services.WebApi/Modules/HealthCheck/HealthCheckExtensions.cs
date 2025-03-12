@@ -1,4 +1,7 @@
-﻿namespace MarCorp.DemoBack.Services.WebApi.Modules.HealthCheck
+﻿using MarCorp.DemoBack.Application.UseCases.Categories;
+using MarCorp.DemoBack.Support.Common;
+
+namespace MarCorp.DemoBack.Services.WebApi.Modules.HealthCheck
 {
     /// <summary>
     /// Extension methods for adding health checks to the service collection.
@@ -13,9 +16,12 @@
         /// <returns>The service collection with the health check services added.</returns>
         public static IServiceCollection AddHealthCheck(this IServiceCollection services, IConfiguration configuration)
         {
+            var serviceProvider = services.BuildServiceProvider();
+            var logger = serviceProvider.GetRequiredService<IAppLogger<RedisHealthCheck>>();
+
             services.AddHealthChecks()
                 .AddSqlServer(configuration.GetConnectionString("NorthwindConnection"), tags: new[] { "database" })
-                .AddRedis(configuration.GetConnectionString("RedisConnection"), tags: new[] { "cache" })
+                .AddCheck("redis", new RedisHealthCheck(configuration, logger), tags: new[] { "cache" })
                 .AddCheck<HealthCheckCustom>("HealthCheckCustomRandom", tags: new[] { "custom" });
             services.AddHealthChecksUI().AddInMemoryStorage();
 

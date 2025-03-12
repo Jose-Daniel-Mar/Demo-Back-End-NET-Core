@@ -68,8 +68,33 @@ app.UseCors("policyApiMarCorp");
 // Autenticación y autorización (orden crítico)
 app.UseRouting();
 app.UseSession();           // Sessions middleware
-app.UseAuthentication();    // Identity
-app.UseAuthorization();     // Policies/Roles
+
+// WatchDog (monitoreo en tiempo real)
+app.UseWatchDog(conf => {
+    conf.WatchPageUsername = builder.Configuration["WatchDog:WatchPageUsername"];
+    conf.WatchPagePassword = builder.Configuration["WatchDog:WatchPagePassword"];
+});
+app.Use(async (context, next) =>
+{
+    if (context.Request.Path.StartsWithSegments("/wtchdlogger") ||
+        context.Request.Path.StartsWithSegments("/WTCHDwatchpage"))
+    {
+        // Para rutas de WatchDog, saltarse la autenticación JWT
+        await next();
+    }
+    else
+    {
+        // Para otras rutas, aplicar autenticación normal
+        context.Request.Headers.Authorization = context.Request.Headers.Authorization;
+        await next();
+    }
+});
+
+// Identity
+app.UseAuthentication();
+
+// Policies/Roles
+app.UseAuthorization(); 
 
 // Limitación de tasa de peticiones
 app.UseRateLimiter();
@@ -80,12 +105,6 @@ app.MapHealthChecks("/health", new HealthCheckOptions
 {
     Predicate = _ => true,  // Incluir todos los checks
     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
-});
-
-// WatchDog (monitoreo en tiempo real)
-app.UseWatchDog(conf => {
-    conf.WatchPageUsername = builder.Configuration["WatchDog:WatchPageUsername"];
-    conf.WatchPagePassword = builder.Configuration["WatchDog:WatchPagePassword"];
 });
 
 // Endpoints finales
