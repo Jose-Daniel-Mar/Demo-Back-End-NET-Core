@@ -1,19 +1,13 @@
-﻿using MarCorp.DemoBack.Domain.Interface;
+﻿using MarCorp.DemoBack.Data.Interface;
+using MarCorp.DemoBack.Domain.Interface;
 using MarCorp.DemoBack.Domain.Models.Entities;
-using MarCorp.DemoBack.Data.Interface;
-using System.Threading.Tasks;
-using System.Collections.Generic;
 
 namespace MarCorp.DemoBack.Domain.Core
 {
-    public class CustomerDomain : ICustomerDomain
+    public class CustomerDomain(ICustomerRepository customersRepository) : ICustomerDomain
     {
         // Aqui van las reglas de negocio aplicadas a los métodos de la interfaz ICustomerRepository de la capa de datos
-        private readonly ICustomerRepository _customerRepository;
-        public CustomerDomain(ICustomerRepository customersRepository)
-        {
-            _customerRepository = customersRepository;
-        }
+        private readonly ICustomerRepository _customerRepository = customersRepository;
 
         #region Métodos Síncronos
 
@@ -46,7 +40,7 @@ namespace MarCorp.DemoBack.Domain.Core
             // Logica de negocio
             return _customerRepository.GetAll();
         }
-
+        
         #endregion
 
         #region Métodos Asíncronos
@@ -77,7 +71,7 @@ namespace MarCorp.DemoBack.Domain.Core
 
         public async Task<IEnumerable<Customer>> GetAllAsync()
         {
-            // Logica de negocio
+            // Logica de negocio AllAsync
             return await _customerRepository.GetAllAsync();
         }
 

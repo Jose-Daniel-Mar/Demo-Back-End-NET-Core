@@ -16,9 +16,9 @@ namespace MarCorp.DemoBack.Domain.Core
         {
             _usersRepository = usersRepository;
         }
-        public User Authenticate(string userName, string password)
+        public async Task<User> AuthenticateAsync(string userName, string password)
         {
-            return _usersRepository.Authenticate(userName, password);
+            return await _usersRepository.AuthenticateAsync(userName, password);
         }
     }
 }

@@ -1,9 +1,8 @@
 ﻿using MarCorp.DemoBack.Application.DTO;
-using MarCorp.DemoBack.Application.Interface;
+using MarCorp.DemoBack.Application.Interface.UseCases;
 using MarCorp.DemoBack.Services.WebApi.Helpers;
 using MarCorp.DemoBack.Support.Common;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -41,10 +40,10 @@ namespace MarCorp.DemoBack.Services.WebApi.Controllers
         /// <param name="usersDto">The user data transfer object containing login information.</param>
         /// <returns>An IActionResult containing the authentication result.</returns>
         [AllowAnonymous]
-        [HttpPost("Authenticate")]
-        public IActionResult Authenticate([FromBody] UsersDTO usersDto)
+        [HttpPost("AuthenticateAsync")]
+        public async Task<IActionResult> AuthenticateAsync([FromBody] UserDTO usersDto)
         {
-            var response = _usersApplication.Authenticate(usersDto.UserName, usersDto.Password);
+            var response = await _usersApplication.AuthenticateAsync(usersDto.UserName, usersDto.Password);
             if (response.IsSuccess)
             {
                 if (response.Data != null)
@@ -53,10 +52,10 @@ namespace MarCorp.DemoBack.Services.WebApi.Controllers
                     return Ok(response);
                 }
                 else
-                    return NotFound(response.Message);
+                    return NotFound(response);
             }
 
-            return BadRequest(response.Message);
+            return BadRequest(response);
         }
 
         /// <summary>
@@ -64,7 +63,7 @@ namespace MarCorp.DemoBack.Services.WebApi.Controllers
         /// </summary>
         /// <param name="usersDto"></param>
         /// <returns></returns>
-        private string BuildToken(Response<UsersDTO> usersDto)
+        private string BuildToken(Response<UserDTO> usersDto)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret.PadRight(32));

@@ -1,0 +1,2482 @@
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                .github
+d----          12/21/2024 11:12 PM                MarCorp.DemoBack.Aplication.DTO
+d----          12/22/2024  1:23 AM                MarCorp.DemoBack.Aplication.Interface
+d----          12/22/2024  7:14 PM                MarCorp.DemoBack.Aplication.Main
+d----          12/22/2024  6:36 PM                MarCorp.DemoBack.Application.Test
+d----          12/21/2024 11:28 PM                MarCorp.DemoBack.Application.Validator
+d----          12/21/2024 11:28 PM                MarCorp.DemoBack.Data.Connections
+d----          12/22/2024  1:45 AM                MarCorp.DemoBack.Data.Interface
+d----          12/22/2024 10:51 PM                MarCorp.DemoBack.Data.Repository
+d----          12/23/2024  8:07 PM                MarCorp.DemoBack.Domain.Core
+d----          12/22/2024  1:25 AM                MarCorp.DemoBack.Domain.Interface
+d----          12/21/2024 11:11 PM                MarCorp.DemoBack.Domain.Models
+d----          12/22/2024 12:51 AM                MarCorp.DemoBack.Services.WebApi
+d----          12/21/2024 11:28 PM                MarCorp.DemoBack.Support.Common
+d----          12/21/2024 11:11 PM                MarCorp.DemoBack.Support.Logging
+d----          12/21/2024 11:11 PM                MarCorp.DemoBack.Support.Mapper
+-a---          12/21/2024 11:03 PM            422 .dockerignore
+-a---          12/21/2024 11:03 PM           2581 .gitattributes
+-a---          12/21/2024 11:03 PM           6585 .gitignore
+-a---          12/21/2024 11:03 PM           1090 LICENSE.txt
+-a---            2/5/2025 12:08 PM              0 lista_archivos.txt
+-a---          12/21/2024 11:28 PM          10870 MarCorp.DemoBack.sln
+-a---          12/21/2024 11:03 PM             18 README.md
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\.github
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                workflows
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.DTO
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:23 PM                bin
+d----           1/21/2025  8:50 AM                obj
+-a---          12/21/2024 11:03 PM            601 CustomerDTO.cs
+-a---          12/21/2024 11:03 PM            218 MarCorp.DemoBack.Application.DTO.csproj
+-a---          12/21/2024 11:03 PM            363 UsersDTO.cs
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.DTO\bin
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.DTO\bin\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.DTO\bin\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM            488 MarCorp.DemoBack.Application.DTO.deps.json
+-a---          12/21/2024 11:12 PM           7680 MarCorp.DemoBack.Application.DTO.dll
+-a---          12/21/2024 11:12 PM          12460 MarCorp.DemoBack.Application.DTO.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.DTO\bin\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.DTO\bin\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM            488 MarCorp.DemoBack.Application.DTO.deps.json
+-a---          12/22/2024 12:56 AM           7168 MarCorp.DemoBack.Application.DTO.dll
+-a---          12/22/2024 12:56 AM          12468 MarCorp.DemoBack.Application.DTO.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.DTO\obj
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+-a---           1/21/2025  8:50 AM           2757 MarCorp.DemoBack.Application.DTO.csproj.nuget.dgspec.json
+-a---          12/21/2024 11:12 PM           1313 MarCorp.DemoBack.Application.DTO.csproj.nuget.g.props
+-a---          12/21/2024 11:12 PM            150 MarCorp.DemoBack.Application.DTO.csproj.nuget.g.targets
+-a---           1/21/2025  8:50 AM           2607 project.assets.json
+-a---           1/21/2025  8:50 AM            274 project.nuget.cache
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.DTO\obj\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.DTO\obj\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                ref
+d----          12/21/2024 11:12 PM                refint
+-a---          12/21/2024 11:12 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/21/2024 11:12 PM           1110 MarCorp.DemoBack.Application.DTO.AssemblyInfo.cs
+-a---          12/21/2024 11:12 PM             66 MarCorp.DemoBack.Application.DTO.AssemblyInfoInputs.cache
+-a---          12/21/2024 11:12 PM            233 MarCorp.DemoBack.Application.DTO.assets.cache
+-a---          12/21/2024 11:12 PM              0 MarCorp.DemoBack.Application.DTO.csproj.BuildWithSkipAnalyzers
+-a---          12/21/2024 11:12 PM             66 MarCorp.DemoBack.Application.DTO.csproj.CoreCompileInputs.cache
+-a---          12/21/2024 11:12 PM           1783 MarCorp.DemoBack.Application.DTO.csproj.FileListAbsolute.txt
+-a---          12/21/2024 11:12 PM           7680 MarCorp.DemoBack.Application.DTO.dll
+-a---          12/21/2024 11:12 PM            746 MarCorp.DemoBack.Application.DTO.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:12 PM            295 MarCorp.DemoBack.Application.DTO.GlobalUsings.g.cs
+-a---          12/21/2024 11:12 PM          12460 MarCorp.DemoBack.Application.DTO.pdb
+-a---          12/21/2024 11:12 PM            188 MarCorp.DemoBack.Application.DTO.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.DTO\obj\Debug\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           7168 MarCorp.DemoBack.Application.DTO.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.DTO\obj\Debug\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           7168 MarCorp.DemoBack.Application.DTO.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.DTO\obj\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.DTO\obj\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                ref
+d----          12/22/2024 12:56 AM                refint
+-a---          12/21/2024 11:23 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/22/2024 12:56 AM           1112 MarCorp.DemoBack.Application.DTO.AssemblyInfo.cs
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Application.DTO.AssemblyInfoInputs.cache
+-a---           1/21/2025  8:50 AM            233 MarCorp.DemoBack.Application.DTO.assets.cache
+-a---          12/22/2024 12:56 AM              0 MarCorp.DemoBack.Application.DTO.csproj.BuildWithSkipAnalyzers
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Application.DTO.csproj.CoreCompileInputs.cache
+-a---          12/22/2024 12:56 AM           1807 MarCorp.DemoBack.Application.DTO.csproj.FileListAbsolute.txt
+-a---          12/22/2024 12:56 AM           7168 MarCorp.DemoBack.Application.DTO.dll
+-a---          12/22/2024 12:56 AM            746 MarCorp.DemoBack.Application.DTO.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:23 PM            295 MarCorp.DemoBack.Application.DTO.GlobalUsings.g.cs
+-a---          12/22/2024 12:56 AM          12468 MarCorp.DemoBack.Application.DTO.pdb
+-a---          12/22/2024 12:56 AM            188 MarCorp.DemoBack.Application.DTO.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.DTO\obj\Release\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM           7168 MarCorp.DemoBack.Application.DTO.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.DTO\obj\Release\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM           7168 MarCorp.DemoBack.Application.DTO.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Interface
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:23 PM                bin
+d----           1/21/2025  8:50 AM                obj
+-a---          12/21/2024 11:03 PM           1054 ICustomerApplication.cs
+-a---          12/22/2024  1:23 AM            283 IUsersApplication.cs
+-a---          12/21/2024 11:03 PM            478 MarCorp.DemoBack.Application.Interface.csproj
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Interface\bin
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Interface\bin\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Interface\bin\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           7680 MarCorp.DemoBack.Application.DTO.dll
+-a---          12/21/2024 11:12 PM          12460 MarCorp.DemoBack.Application.DTO.pdb
+-a---          12/21/2024 11:12 PM           1394 MarCorp.DemoBack.Application.Interface.deps.json
+-a---          12/21/2024 11:12 PM           5120 MarCorp.DemoBack.Application.Interface.dll
+-a---          12/21/2024 11:12 PM          11756 MarCorp.DemoBack.Application.Interface.pdb
+-a---          12/21/2024 11:12 PM           5632 MarCorp.DemoBack.Support.Common.dll
+-a---          12/21/2024 11:12 PM          11832 MarCorp.DemoBack.Support.Common.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Interface\bin\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024  1:40 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Interface\bin\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM           7168 MarCorp.DemoBack.Application.DTO.dll
+-a---          12/22/2024 12:56 AM          12468 MarCorp.DemoBack.Application.DTO.pdb
+-a---          12/22/2024 12:56 AM           2014 MarCorp.DemoBack.Application.Interface.deps.json
+-a---          12/22/2024  1:40 AM           5632 MarCorp.DemoBack.Application.Interface.dll
+-a---          12/22/2024  1:40 AM          11808 MarCorp.DemoBack.Application.Interface.pdb
+-a---          12/22/2024 12:56 AM           5632 MarCorp.DemoBack.Support.Common.dll
+-a---          12/22/2024 12:56 AM          11844 MarCorp.DemoBack.Support.Common.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Interface\obj
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+-a---           1/21/2025  8:50 AM           8763 MarCorp.DemoBack.Application.Interface.csproj.nuget.dgspec.json
+-a---          12/21/2024 11:12 PM           1313 MarCorp.DemoBack.Application.Interface.csproj.nuget.g.props
+-a---          12/21/2024 11:12 PM            150 MarCorp.DemoBack.Application.Interface.csproj.nuget.g.targets
+-a---           1/21/2025  8:50 AM           6077 project.assets.json
+-a---           1/21/2025  8:50 AM            403 project.nuget.cache
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Interface\obj\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Interface\obj\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                ref
+d----          12/21/2024 11:12 PM                refint
+-a---          12/21/2024 11:12 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/21/2024 11:12 PM              0 MarCorp..2677BBC4.Up2Date
+-a---          12/21/2024 11:12 PM           1128 MarCorp.DemoBack.Application.Interface.AssemblyInfo.cs
+-a---          12/21/2024 11:12 PM             66 MarCorp.DemoBack.Application.Interface.AssemblyInfoInputs.cache
+-a---          12/21/2024 11:12 PM            233 MarCorp.DemoBack.Application.Interface.assets.cache
+-a---          12/21/2024 11:12 PM           1300 MarCorp.DemoBack.Application.Interface.csproj.AssemblyReference.cache
+-a---          12/21/2024 11:12 PM              0 MarCorp.DemoBack.Application.Interface.csproj.BuildWithSkipAnalyzers
+-a---          12/21/2024 11:12 PM             66 MarCorp.DemoBack.Application.Interface.csproj.CoreCompileInputs.cache
+-a---          12/21/2024 11:12 PM           2811 MarCorp.DemoBack.Application.Interface.csproj.FileListAbsolute.txt
+-a---          12/21/2024 11:12 PM           5120 MarCorp.DemoBack.Application.Interface.dll
+-a---          12/21/2024 11:12 PM            758 MarCorp.DemoBack.Application.Interface.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:12 PM            295 MarCorp.DemoBack.Application.Interface.GlobalUsings.g.cs
+-a---          12/21/2024 11:12 PM          11756 MarCorp.DemoBack.Application.Interface.pdb
+-a---          12/21/2024 11:12 PM            188 MarCorp.DemoBack.Application.Interface.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Interface\obj\Debug\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           6144 MarCorp.DemoBack.Application.Interface.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Interface\obj\Debug\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           6144 MarCorp.DemoBack.Application.Interface.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Interface\obj\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Interface\obj\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                ref
+d----          12/22/2024 12:56 AM                refint
+-a---          12/21/2024 11:23 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/22/2024 12:56 AM              0 MarCorp..2677BBC4.Up2Date
+-a---          12/22/2024 12:56 AM           1130 MarCorp.DemoBack.Application.Interface.AssemblyInfo.cs
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Application.Interface.AssemblyInfoInputs.cache
+-a---           1/21/2025  8:50 AM            812 MarCorp.DemoBack.Application.Interface.assets.cache
+-a---          12/22/2024 12:56 AM           1856 MarCorp.DemoBack.Application.Interface.csproj.AssemblyReference.cache
+-a---          12/22/2024  2:37 AM              0 MarCorp.DemoBack.Application.Interface.csproj.BuildWithSkipAnalyzers
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Application.Interface.csproj.CoreCompileInputs.cache
+-a---          12/22/2024 12:56 AM           2847 MarCorp.DemoBack.Application.Interface.csproj.FileListAbsolute.txt
+-a---          12/22/2024  1:40 AM           5632 MarCorp.DemoBack.Application.Interface.dll
+-a---          12/22/2024 12:56 AM            758 MarCorp.DemoBack.Application.Interface.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:23 PM            295 MarCorp.DemoBack.Application.Interface.GlobalUsings.g.cs
+-a---          12/22/2024  1:40 AM          11808 MarCorp.DemoBack.Application.Interface.pdb
+-a---          12/22/2024 12:56 AM            188 MarCorp.DemoBack.Application.Interface.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Interface\obj\Release\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024  1:40 AM           6144 MarCorp.DemoBack.Application.Interface.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Interface\obj\Release\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024  1:40 AM           6144 MarCorp.DemoBack.Application.Interface.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Main
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:23 PM                bin
+d----           1/21/2025  8:50 AM                obj
+-a---          12/22/2024  7:14 PM           7667 CustomerApplication.cs
+-a---          12/21/2024 11:28 PM            927 MarCorp.DemoBack.Application.Main.csproj
+-a---          12/22/2024  2:42 AM           1919 UsersApplication.cs
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Main\bin
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:11 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Main\bin\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Main\bin\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           7680 MarCorp.DemoBack.Application.DTO.dll
+-a---          12/21/2024 11:12 PM          12460 MarCorp.DemoBack.Application.DTO.pdb
+-a---          12/21/2024 11:12 PM           5120 MarCorp.DemoBack.Application.Interface.dll
+-a---          12/21/2024 11:12 PM          11756 MarCorp.DemoBack.Application.Interface.pdb
+-a---          12/21/2024 11:12 PM           6129 MarCorp.DemoBack.Application.Main.deps.json
+-a---          12/21/2024 11:12 PM          13312 MarCorp.DemoBack.Application.Main.dll
+-a---          12/21/2024 11:12 PM          15148 MarCorp.DemoBack.Application.Main.pdb
+-a---          12/21/2024 11:12 PM           5120 MarCorp.DemoBack.Domain.Interface.dll
+-a---          12/21/2024 11:12 PM          11668 MarCorp.DemoBack.Domain.Interface.pdb
+-a---          12/21/2024 11:12 PM           8704 MarCorp.DemoBack.Domain.Models.dll
+-a---          12/21/2024 11:12 PM          12916 MarCorp.DemoBack.Domain.Models.pdb
+-a---          12/21/2024 11:12 PM           5632 MarCorp.DemoBack.Support.Common.dll
+-a---          12/21/2024 11:12 PM          11832 MarCorp.DemoBack.Support.Common.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Main\bin\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024  1:40 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Main\bin\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM           7168 MarCorp.DemoBack.Application.DTO.dll
+-a---          12/22/2024 12:56 AM          12468 MarCorp.DemoBack.Application.DTO.pdb
+-a---          12/22/2024  1:40 AM           5632 MarCorp.DemoBack.Application.Interface.dll
+-a---          12/22/2024  1:40 AM          11808 MarCorp.DemoBack.Application.Interface.pdb
+-a---          12/22/2024 12:56 AM           8263 MarCorp.DemoBack.Application.Main.deps.json
+-a---          12/22/2024  1:40 AM          13824 MarCorp.DemoBack.Application.Main.dll
+-a---          12/22/2024  1:40 AM          14912 MarCorp.DemoBack.Application.Main.pdb
+-a---          12/22/2024 12:56 AM           6144 MarCorp.DemoBack.Application.Validator.dll
+-a---          12/22/2024 12:56 AM          12036 MarCorp.DemoBack.Application.Validator.pdb
+-a---          12/22/2024  1:40 AM           5120 MarCorp.DemoBack.Domain.Interface.dll
+-a---          12/22/2024  1:40 AM          11672 MarCorp.DemoBack.Domain.Interface.pdb
+-a---          12/22/2024 12:56 AM           8704 MarCorp.DemoBack.Domain.Models.dll
+-a---          12/22/2024 12:56 AM          12924 MarCorp.DemoBack.Domain.Models.pdb
+-a---          12/22/2024 12:56 AM           5632 MarCorp.DemoBack.Support.Common.dll
+-a---          12/22/2024 12:56 AM          11844 MarCorp.DemoBack.Support.Common.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Main\obj
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:11 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+-a---           1/21/2025  8:50 AM          21918 MarCorp.DemoBack.Application.Main.csproj.nuget.dgspec.json
+-a---          12/21/2024 11:28 PM           1313 MarCorp.DemoBack.Application.Main.csproj.nuget.g.props
+-a---          12/21/2024 11:12 PM            150 MarCorp.DemoBack.Application.Main.csproj.nuget.g.targets
+-a---           1/21/2025  8:50 AM          19795 project.assets.json
+-a---           1/21/2025  8:50 AM           1279 project.nuget.cache
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Main\obj\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Main\obj\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                ref
+d----          12/21/2024 11:12 PM                refint
+-a---          12/21/2024 11:11 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/21/2024 11:12 PM              0 MarCorp..DA85F9AA.Up2Date
+-a---          12/21/2024 11:11 PM           1113 MarCorp.DemoBack.Application.Main.AssemblyInfo.cs
+-a---          12/21/2024 11:11 PM             66 MarCorp.DemoBack.Application.Main.AssemblyInfoInputs.cache
+-a---          12/21/2024 11:12 PM           3816 MarCorp.DemoBack.Application.Main.assets.cache
+-a---          12/21/2024 11:12 PM           5973 MarCorp.DemoBack.Application.Main.csproj.AssemblyReference.cache
+-a---          12/21/2024 11:12 PM              0 MarCorp.DemoBack.Application.Main.csproj.BuildWithSkipAnalyzers
+-a---          12/21/2024 11:12 PM             66 MarCorp.DemoBack.Application.Main.csproj.CoreCompileInputs.cache
+-a---          12/21/2024 11:12 PM           3500 MarCorp.DemoBack.Application.Main.csproj.FileListAbsolute.txt
+-a---          12/21/2024 11:12 PM          13312 MarCorp.DemoBack.Application.Main.dll
+-a---          12/21/2024 11:11 PM            748 MarCorp.DemoBack.Application.Main.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:11 PM            295 MarCorp.DemoBack.Application.Main.GlobalUsings.g.cs
+-a---          12/21/2024 11:12 PM          15148 MarCorp.DemoBack.Application.Main.pdb
+-a---          12/21/2024 11:12 PM            188 MarCorp.DemoBack.Application.Main.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Main\obj\Debug\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           8192 MarCorp.DemoBack.Application.Main.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Main\obj\Debug\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           8192 MarCorp.DemoBack.Application.Main.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Main\obj\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024  1:40 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Main\obj\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                ref
+d----          12/22/2024 12:56 AM                refint
+-a---          12/21/2024 11:23 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/22/2024  1:40 AM              0 MarCorp..DA85F9AA.Up2Date
+-a---          12/22/2024 12:56 AM           1115 MarCorp.DemoBack.Application.Main.AssemblyInfo.cs
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Application.Main.AssemblyInfoInputs.cache
+-a---           1/21/2025  8:50 AM           5099 MarCorp.DemoBack.Application.Main.assets.cache
+-a---          12/22/2024  1:40 AM           8199 MarCorp.DemoBack.Application.Main.csproj.AssemblyReference.cache
+-a---          12/22/2024  2:38 AM              0 MarCorp.DemoBack.Application.Main.csproj.BuildWithSkipAnalyzers
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Application.Main.csproj.CoreCompileInputs.cache
+-a---          12/22/2024 12:56 AM           3842 MarCorp.DemoBack.Application.Main.csproj.FileListAbsolute.txt
+-a---          12/22/2024  1:40 AM          13824 MarCorp.DemoBack.Application.Main.dll
+-a---          12/22/2024 12:56 AM            748 MarCorp.DemoBack.Application.Main.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:23 PM            295 MarCorp.DemoBack.Application.Main.GlobalUsings.g.cs
+-a---          12/22/2024  1:40 AM          14912 MarCorp.DemoBack.Application.Main.pdb
+-a---          12/22/2024 12:56 AM            188 MarCorp.DemoBack.Application.Main.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Main\obj\Release\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024  1:40 AM           9216 MarCorp.DemoBack.Application.Main.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Aplication.Main\obj\Release\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024  1:40 AM           9216 MarCorp.DemoBack.Application.Main.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Application.Test
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:28 PM                bin
+d----           1/21/2025  8:50 AM                obj
+-a---          12/21/2024 11:28 PM           1910 MarCorp.DemoBack.Application.Test.csproj
+-a---          12/21/2024 11:28 PM             64 MSTestSettings.cs
+-a---          12/22/2024  6:36 PM           4315 UsersApplicationTest.cs
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Application.Test\bin
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:28 PM                Release
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Application.Test\bin\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:28 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Application.Test\bin\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:28 PM          19404 .msCoverageExtensionSourceRootsMapping_MarCorp.DemoBack.Application.Test
+-a---          12/21/2024 11:28 PM          19404 .msCoverageSourceRootsMapping_MarCorp.DemoBack.Application.Test
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Application.Test\obj
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:28 PM                Release
+-a---           1/21/2025  8:50 AM          54162 MarCorp.DemoBack.Application.Test.csproj.nuget.dgspec.json
+-a---          12/21/2024 11:28 PM           4712 MarCorp.DemoBack.Application.Test.csproj.nuget.g.props
+-a---          12/21/2024 11:28 PM           2659 MarCorp.DemoBack.Application.Test.csproj.nuget.g.targets
+-a---           1/21/2025  8:50 AM         269246 project.assets.json
+-a---           1/21/2025  8:50 AM          12849 project.nuget.cache
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Application.Test\obj\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024  2:05 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Application.Test\obj\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:28 PM                ref
+d----          12/21/2024 11:28 PM                refint
+-a---          12/21/2024 11:28 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/21/2024 11:28 PM           1090 AutoRegisteredExtensions.cs
+-a---          12/21/2024 11:28 PM           1201 MarCorp.DemoBack.Application.Test.AssemblyInfo.cs
+-a---          12/21/2024 11:28 PM             66 MarCorp.DemoBack.Application.Test.AssemblyInfoInputs.cache
+-a---           1/21/2025  8:50 AM         125453 MarCorp.DemoBack.Application.Test.assets.cache
+-a---          12/22/2024  2:05 PM          47648 MarCorp.DemoBack.Application.Test.csproj.AssemblyReference.cache
+-a---          12/21/2024 11:33 PM              0 MarCorp.DemoBack.Application.Test.csproj.FileListAbsolute.txt
+-a---          12/21/2024 11:28 PM             66 MarCorp.DemoBack.Application.Test.genautoregisteredextensionsinputcache.cache
+-a---          12/21/2024 11:28 PM            749 MarCorp.DemoBack.Application.Test.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:28 PM             66 MarCorp.DemoBack.Application.Test.gentestingplatformentrypointinputcache.cache
+-a---          12/21/2024 11:28 PM            363 MarCorp.DemoBack.Application.Test.GlobalUsings.g.cs
+-a---          12/21/2024 11:28 PM            928 TestPlatformEntryPoint.cs
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Application.Validator
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:28 PM                bin
+d----           1/21/2025  8:50 AM                obj
+-a---          12/21/2024 11:28 PM            567 MarCorp.DemoBack.Application.Validator.csproj
+-a---          12/21/2024 11:28 PM            457 UsersDTOValidator.cs
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Application.Validator\bin
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:28 PM                Release
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Application.Validator\bin\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Application.Validator\bin\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM           7168 MarCorp.DemoBack.Application.DTO.dll
+-a---          12/22/2024 12:56 AM          12468 MarCorp.DemoBack.Application.DTO.pdb
+-a---          12/22/2024 12:56 AM           3206 MarCorp.DemoBack.Application.Validator.deps.json
+-a---          12/22/2024 12:56 AM           6144 MarCorp.DemoBack.Application.Validator.dll
+-a---          12/22/2024 12:56 AM          12036 MarCorp.DemoBack.Application.Validator.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Application.Validator\obj
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:28 PM                Release
+-a---           1/21/2025  8:50 AM           6046 MarCorp.DemoBack.Application.Validator.csproj.nuget.dgspec.json
+-a---          12/21/2024 11:28 PM           1313 MarCorp.DemoBack.Application.Validator.csproj.nuget.g.props
+-a---          12/21/2024 11:28 PM            150 MarCorp.DemoBack.Application.Validator.csproj.nuget.g.targets
+-a---           1/21/2025  8:50 AM           8064 project.assets.json
+-a---           1/21/2025  8:50 AM            762 project.nuget.cache
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Application.Validator\obj\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Application.Validator\obj\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                ref
+d----          12/22/2024 12:56 AM                refint
+-a---          12/21/2024 11:28 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/22/2024 12:56 AM              0 MarCorp..F7B7198B.Up2Date
+-a---          12/22/2024 12:56 AM           1130 MarCorp.DemoBack.Application.Validator.AssemblyInfo.cs
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Application.Validator.AssemblyInfoInputs.cache
+-a---           1/21/2025  8:50 AM           2870 MarCorp.DemoBack.Application.Validator.assets.cache
+-a---          12/22/2024 12:56 AM           2700 MarCorp.DemoBack.Application.Validator.csproj.AssemblyReference.cache
+-a---          12/22/2024  2:37 AM              0 MarCorp.DemoBack.Application.Validator.csproj.BuildWithSkipAnalyzers
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Application.Validator.csproj.CoreCompileInputs.cache
+-a---          12/22/2024 12:56 AM           2573 MarCorp.DemoBack.Application.Validator.csproj.FileListAbsolute.txt
+-a---          12/22/2024 12:56 AM           6144 MarCorp.DemoBack.Application.Validator.dll
+-a---          12/22/2024 12:56 AM            759 MarCorp.DemoBack.Application.Validator.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:28 PM            295 MarCorp.DemoBack.Application.Validator.GlobalUsings.g.cs
+-a---          12/22/2024 12:56 AM          12036 MarCorp.DemoBack.Application.Validator.pdb
+-a---          12/22/2024 12:56 AM            188 MarCorp.DemoBack.Application.Validator.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Application.Validator\obj\Release\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM           5632 MarCorp.DemoBack.Application.Validator.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Application.Validator\obj\Release\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM           5632 MarCorp.DemoBack.Application.Validator.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Connections
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:23 PM                bin
+d----           1/21/2025  8:50 AM                obj
+-a---          12/21/2024 11:28 PM            713 DapperContext.cs
+-a---          12/21/2024 11:28 PM            415 MarCorp.DemoBack.Data.Connections.csproj
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Connections\bin
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:11 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Connections\bin\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Connections\bin\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           7735 MarCorp.DemoBack.Data.Connections.deps.json
+-a---          12/21/2024 11:12 PM           5632 MarCorp.DemoBack.Data.Connections.dll
+-a---          12/21/2024 11:12 PM          12296 MarCorp.DemoBack.Data.Connections.pdb
+-a---          12/21/2024 11:12 PM           8704 MarCorp.DemoBack.Domain.Models.dll
+-a---          12/21/2024 11:12 PM          12916 MarCorp.DemoBack.Domain.Models.pdb
+-a---          12/21/2024 11:12 PM           5632 MarCorp.DemoBack.Support.Common.dll
+-a---          12/21/2024 11:12 PM          11832 MarCorp.DemoBack.Support.Common.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Connections\bin\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Connections\bin\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM          27053 MarCorp.DemoBack.Data.Connections.deps.json
+-a---          12/22/2024 12:56 AM           5632 MarCorp.DemoBack.Data.Connections.dll
+-a---          12/22/2024 12:56 AM          13000 MarCorp.DemoBack.Data.Connections.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Connections\obj
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:11 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+-a---           1/21/2025  8:50 AM           3090 MarCorp.DemoBack.Data.Connections.csproj.nuget.dgspec.json
+-a---          12/21/2024 11:12 PM           1313 MarCorp.DemoBack.Data.Connections.csproj.nuget.g.props
+-a---          12/21/2024 11:12 PM            150 MarCorp.DemoBack.Data.Connections.csproj.nuget.g.targets
+-a---           1/21/2025  8:50 AM          78305 project.assets.json
+-a---           1/21/2025  8:50 AM           5282 project.nuget.cache
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Connections\obj\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Connections\obj\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                ref
+d----          12/21/2024 11:12 PM                refint
+-a---          12/21/2024 11:11 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/21/2024 11:12 PM              0 MarCorp..D8FE28A6.Up2Date
+-a---          12/21/2024 11:11 PM           1113 MarCorp.DemoBack.Data.Connections.AssemblyInfo.cs
+-a---          12/21/2024 11:11 PM             66 MarCorp.DemoBack.Data.Connections.AssemblyInfoInputs.cache
+-a---          12/21/2024 11:12 PM           5239 MarCorp.DemoBack.Data.Connections.assets.cache
+-a---          12/21/2024 11:12 PM           3888 MarCorp.DemoBack.Data.Connections.csproj.AssemblyReference.cache
+-a---          12/21/2024 11:12 PM              0 MarCorp.DemoBack.Data.Connections.csproj.BuildWithSkipAnalyzers
+-a---          12/21/2024 11:12 PM             66 MarCorp.DemoBack.Data.Connections.csproj.CoreCompileInputs.cache
+-a---          12/21/2024 11:12 PM           2670 MarCorp.DemoBack.Data.Connections.csproj.FileListAbsolute.txt
+-a---          12/21/2024 11:12 PM           5632 MarCorp.DemoBack.Data.Connections.dll
+-a---          12/21/2024 11:11 PM            749 MarCorp.DemoBack.Data.Connections.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:11 PM            295 MarCorp.DemoBack.Data.Connections.GlobalUsings.g.cs
+-a---          12/21/2024 11:12 PM          12296 MarCorp.DemoBack.Data.Connections.pdb
+-a---          12/21/2024 11:12 PM            188 MarCorp.DemoBack.Data.Connections.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Connections\obj\Debug\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           5632 MarCorp.DemoBack.Data.Connections.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Connections\obj\Debug\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           5632 MarCorp.DemoBack.Data.Connections.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Connections\obj\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Connections\obj\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                ref
+d----          12/22/2024 12:56 AM                refint
+-a---          12/21/2024 11:23 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/22/2024 12:56 AM           1115 MarCorp.DemoBack.Data.Connections.AssemblyInfo.cs
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Data.Connections.AssemblyInfoInputs.cache
+-a---           1/21/2025  8:50 AM          24583 MarCorp.DemoBack.Data.Connections.assets.cache
+-a---          12/22/2024 12:56 AM          12725 MarCorp.DemoBack.Data.Connections.csproj.AssemblyReference.cache
+-a---          12/22/2024  2:37 AM              0 MarCorp.DemoBack.Data.Connections.csproj.BuildWithSkipAnalyzers
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Data.Connections.csproj.CoreCompileInputs.cache
+-a---          12/22/2024 12:56 AM           2013 MarCorp.DemoBack.Data.Connections.csproj.FileListAbsolute.txt
+-a---          12/22/2024 12:56 AM           5632 MarCorp.DemoBack.Data.Connections.dll
+-a---          12/22/2024 12:56 AM            749 MarCorp.DemoBack.Data.Connections.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:23 PM            295 MarCorp.DemoBack.Data.Connections.GlobalUsings.g.cs
+-a---          12/22/2024 12:56 AM          13000 MarCorp.DemoBack.Data.Connections.pdb
+-a---          12/22/2024 12:56 AM            188 MarCorp.DemoBack.Data.Connections.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Connections\obj\Release\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM           5632 MarCorp.DemoBack.Data.Connections.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Connections\obj\Release\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM           5632 MarCorp.DemoBack.Data.Connections.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Interface
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:23 PM                bin
+d----           1/21/2025  8:50 AM                obj
+-a---          12/21/2024 11:03 PM            750 ICustomerRepository.cs
+-a---          12/22/2024  1:45 AM            232 IGenericRepository.cs
+-a---          12/22/2024  1:10 AM            228 IUsersRepository.cs
+-a---          12/21/2024 11:03 PM            359 MarCorp.DemoBack.Data.Interface.csproj
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Interface\bin
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:11 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Interface\bin\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Interface\bin\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM            942 MarCorp.DemoBack.Data.Interface.deps.json
+-a---          12/21/2024 11:12 PM           5120 MarCorp.DemoBack.Data.Interface.dll
+-a---          12/21/2024 11:12 PM          11668 MarCorp.DemoBack.Data.Interface.pdb
+-a---          12/21/2024 11:12 PM           8704 MarCorp.DemoBack.Domain.Models.dll
+-a---          12/21/2024 11:12 PM          12916 MarCorp.DemoBack.Domain.Models.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Interface\bin\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024  2:37 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Interface\bin\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM            942 MarCorp.DemoBack.Data.Interface.deps.json
+-a---          12/22/2024  2:37 AM           5120 MarCorp.DemoBack.Data.Interface.dll
+-a---          12/22/2024  2:37 AM          11752 MarCorp.DemoBack.Data.Interface.pdb
+-a---          12/22/2024 12:56 AM           8704 MarCorp.DemoBack.Domain.Models.dll
+-a---          12/22/2024 12:56 AM          12924 MarCorp.DemoBack.Domain.Models.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Interface\obj
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:11 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+-a---           1/21/2025  8:50 AM           5632 MarCorp.DemoBack.Data.Interface.csproj.nuget.dgspec.json
+-a---          12/21/2024 11:12 PM           1313 MarCorp.DemoBack.Data.Interface.csproj.nuget.g.props
+-a---          12/21/2024 11:12 PM            150 MarCorp.DemoBack.Data.Interface.csproj.nuget.g.targets
+-a---           1/21/2025  8:50 AM           3608 project.assets.json
+-a---           1/21/2025  8:50 AM            273 project.nuget.cache
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Interface\obj\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Interface\obj\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                ref
+d----          12/21/2024 11:12 PM                refint
+-a---          12/21/2024 11:11 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/21/2024 11:12 PM              0 MarCorp..3E14D870.Up2Date
+-a---          12/21/2024 11:11 PM           1107 MarCorp.DemoBack.Data.Interface.AssemblyInfo.cs
+-a---          12/21/2024 11:11 PM             66 MarCorp.DemoBack.Data.Interface.AssemblyInfoInputs.cache
+-a---          12/21/2024 11:12 PM            233 MarCorp.DemoBack.Data.Interface.assets.cache
+-a---          12/21/2024 11:12 PM            603 MarCorp.DemoBack.Data.Interface.csproj.AssemblyReference.cache
+-a---          12/21/2024 11:12 PM              0 MarCorp.DemoBack.Data.Interface.csproj.BuildWithSkipAnalyzers
+-a---          12/21/2024 11:12 PM             66 MarCorp.DemoBack.Data.Interface.csproj.CoreCompileInputs.cache
+-a---          12/21/2024 11:12 PM           2334 MarCorp.DemoBack.Data.Interface.csproj.FileListAbsolute.txt
+-a---          12/21/2024 11:12 PM           5120 MarCorp.DemoBack.Data.Interface.dll
+-a---          12/21/2024 11:11 PM            745 MarCorp.DemoBack.Data.Interface.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:11 PM            295 MarCorp.DemoBack.Data.Interface.GlobalUsings.g.cs
+-a---          12/21/2024 11:12 PM          11668 MarCorp.DemoBack.Data.Interface.pdb
+-a---          12/21/2024 11:12 PM            188 MarCorp.DemoBack.Data.Interface.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Interface\obj\Debug\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           6144 MarCorp.DemoBack.Data.Interface.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Interface\obj\Debug\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           6144 MarCorp.DemoBack.Data.Interface.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Interface\obj\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Interface\obj\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                ref
+d----          12/22/2024 12:56 AM                refint
+-a---          12/21/2024 11:23 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/22/2024 12:56 AM              0 MarCorp..3E14D870.Up2Date
+-a---          12/22/2024 12:56 AM           1109 MarCorp.DemoBack.Data.Interface.AssemblyInfo.cs
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Data.Interface.AssemblyInfoInputs.cache
+-a---           1/21/2025  8:50 AM            233 MarCorp.DemoBack.Data.Interface.assets.cache
+-a---          12/22/2024 12:56 AM            607 MarCorp.DemoBack.Data.Interface.csproj.AssemblyReference.cache
+-a---          12/22/2024  2:37 AM              0 MarCorp.DemoBack.Data.Interface.csproj.BuildWithSkipAnalyzers
+-a---          12/22/2024  2:37 AM             66 MarCorp.DemoBack.Data.Interface.csproj.CoreCompileInputs.cache
+-a---          12/22/2024 12:56 AM           2366 MarCorp.DemoBack.Data.Interface.csproj.FileListAbsolute.txt
+-a---          12/22/2024  2:37 AM           5120 MarCorp.DemoBack.Data.Interface.dll
+-a---          12/22/2024 12:56 AM            745 MarCorp.DemoBack.Data.Interface.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:23 PM            295 MarCorp.DemoBack.Data.Interface.GlobalUsings.g.cs
+-a---          12/22/2024  2:37 AM          11752 MarCorp.DemoBack.Data.Interface.pdb
+-a---          12/22/2024 12:56 AM            188 MarCorp.DemoBack.Data.Interface.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Interface\obj\Release\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024  2:37 AM           6144 MarCorp.DemoBack.Data.Interface.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Interface\obj\Release\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024  2:37 AM           6144 MarCorp.DemoBack.Data.Interface.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Repository
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:23 PM                bin
+d----           1/21/2025  8:50 AM                obj
+-a---          12/22/2024 10:51 PM           7932 CustomerRepository.cs
+-a---          12/22/2024 12:46 AM            568 MarCorp.DemoBack.Data.Repository.csproj
+-a---          12/22/2024  1:16 AM           1044 UsersRepository.cs
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Repository\bin
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Repository\bin\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Repository\bin\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           5632 MarCorp.DemoBack.Data.Connections.dll
+-a---          12/21/2024 11:12 PM          12296 MarCorp.DemoBack.Data.Connections.pdb
+-a---          12/21/2024 11:12 PM           5120 MarCorp.DemoBack.Data.Interface.dll
+-a---          12/21/2024 11:12 PM          11668 MarCorp.DemoBack.Data.Interface.pdb
+-a---          12/21/2024 11:12 PM           9290 MarCorp.DemoBack.Data.Repository.deps.json
+-a---          12/21/2024 11:12 PM          16384 MarCorp.DemoBack.Data.Repository.dll
+-a---          12/21/2024 11:12 PM          14852 MarCorp.DemoBack.Data.Repository.pdb
+-a---          12/21/2024 11:12 PM           8704 MarCorp.DemoBack.Domain.Models.dll
+-a---          12/21/2024 11:12 PM          12916 MarCorp.DemoBack.Domain.Models.pdb
+-a---          12/21/2024 11:12 PM           5632 MarCorp.DemoBack.Support.Common.dll
+-a---          12/21/2024 11:12 PM          11832 MarCorp.DemoBack.Support.Common.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Repository\bin\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024  2:38 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Repository\bin\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM           5632 MarCorp.DemoBack.Data.Connections.dll
+-a---          12/22/2024 12:56 AM          13000 MarCorp.DemoBack.Data.Connections.pdb
+-a---          12/22/2024  2:37 AM           5120 MarCorp.DemoBack.Data.Interface.dll
+-a---          12/22/2024  2:37 AM          11752 MarCorp.DemoBack.Data.Interface.pdb
+-a---          12/22/2024 12:56 AM          28918 MarCorp.DemoBack.Data.Repository.deps.json
+-a---          12/22/2024  2:38 AM          16384 MarCorp.DemoBack.Data.Repository.dll
+-a---          12/22/2024  2:38 AM          15272 MarCorp.DemoBack.Data.Repository.pdb
+-a---          12/22/2024 12:56 AM           8704 MarCorp.DemoBack.Domain.Models.dll
+-a---          12/22/2024 12:56 AM          12924 MarCorp.DemoBack.Domain.Models.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Repository\obj
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+-a---           1/21/2025  8:50 AM          11913 MarCorp.DemoBack.Data.Repository.csproj.nuget.dgspec.json
+-a---          12/21/2024 11:12 PM           1313 MarCorp.DemoBack.Data.Repository.csproj.nuget.g.props
+-a---          12/21/2024 11:12 PM            150 MarCorp.DemoBack.Data.Repository.csproj.nuget.g.targets
+-a---           1/21/2025  8:50 AM          81918 project.assets.json
+-a---           1/21/2025  8:50 AM           5372 project.nuget.cache
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Repository\obj\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Repository\obj\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                ref
+d----          12/21/2024 11:12 PM                refint
+-a---          12/21/2024 11:12 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/21/2024 11:12 PM              0 MarCorp..9833A43B.Up2Date
+-a---          12/21/2024 11:12 PM           1110 MarCorp.DemoBack.Data.Repository.AssemblyInfo.cs
+-a---          12/21/2024 11:12 PM             66 MarCorp.DemoBack.Data.Repository.AssemblyInfoInputs.cache
+-a---          12/21/2024 11:12 PM           5552 MarCorp.DemoBack.Data.Repository.assets.cache
+-a---          12/21/2024 11:12 PM           5870 MarCorp.DemoBack.Data.Repository.csproj.AssemblyReference.cache
+-a---          12/21/2024 11:12 PM              0 MarCorp.DemoBack.Data.Repository.csproj.BuildWithSkipAnalyzers
+-a---          12/21/2024 11:12 PM             66 MarCorp.DemoBack.Data.Repository.csproj.CoreCompileInputs.cache
+-a---          12/21/2024 11:12 PM           3195 MarCorp.DemoBack.Data.Repository.csproj.FileListAbsolute.txt
+-a---          12/21/2024 11:12 PM          16384 MarCorp.DemoBack.Data.Repository.dll
+-a---          12/21/2024 11:12 PM            747 MarCorp.DemoBack.Data.Repository.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:12 PM            295 MarCorp.DemoBack.Data.Repository.GlobalUsings.g.cs
+-a---          12/21/2024 11:12 PM          14852 MarCorp.DemoBack.Data.Repository.pdb
+-a---          12/21/2024 11:12 PM            188 MarCorp.DemoBack.Data.Repository.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Repository\obj\Debug\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           8192 MarCorp.DemoBack.Data.Repository.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Repository\obj\Debug\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           8192 MarCorp.DemoBack.Data.Repository.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Repository\obj\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024  2:37 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Repository\obj\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                ref
+d----          12/22/2024 12:56 AM                refint
+-a---          12/21/2024 11:23 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/22/2024  2:38 AM              0 MarCorp..9833A43B.Up2Date
+-a---          12/22/2024 12:56 AM           1112 MarCorp.DemoBack.Data.Repository.AssemblyInfo.cs
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Data.Repository.AssemblyInfoInputs.cache
+-a---           1/21/2025  8:50 AM          24884 MarCorp.DemoBack.Data.Repository.assets.cache
+-a---          12/22/2024  2:37 AM          15230 MarCorp.DemoBack.Data.Repository.csproj.AssemblyReference.cache
+-a---          12/22/2024  2:38 AM              0 MarCorp.DemoBack.Data.Repository.csproj.BuildWithSkipAnalyzers
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Data.Repository.csproj.CoreCompileInputs.cache
+-a---          12/22/2024 12:56 AM           2959 MarCorp.DemoBack.Data.Repository.csproj.FileListAbsolute.txt
+-a---          12/22/2024  2:38 AM          16384 MarCorp.DemoBack.Data.Repository.dll
+-a---          12/22/2024 12:56 AM            747 MarCorp.DemoBack.Data.Repository.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:23 PM            295 MarCorp.DemoBack.Data.Repository.GlobalUsings.g.cs
+-a---          12/22/2024  2:38 AM          15272 MarCorp.DemoBack.Data.Repository.pdb
+-a---          12/22/2024 12:56 AM            188 MarCorp.DemoBack.Data.Repository.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Repository\obj\Release\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024  1:40 AM           8704 MarCorp.DemoBack.Data.Repository.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Data.Repository\obj\Release\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024  2:38 AM           8704 MarCorp.DemoBack.Data.Repository.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Core
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:23 PM                bin
+d----           1/21/2025  8:50 AM                obj
+-a---          12/23/2024  8:07 PM           2405 CustomerDomain.cs
+-a---          12/21/2024 11:03 PM            583 MarCorp.DemoBack.Domain.Core.csproj
+-a---          12/22/2024  1:32 AM            744 UsersDomain.cs
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Core\bin
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:11 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Core\bin\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Core\bin\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           5120 MarCorp.DemoBack.Data.Interface.dll
+-a---          12/21/2024 11:12 PM          11668 MarCorp.DemoBack.Data.Interface.pdb
+-a---          12/21/2024 11:12 PM           1971 MarCorp.DemoBack.Domain.Core.deps.json
+-a---          12/21/2024 11:12 PM           9728 MarCorp.DemoBack.Domain.Core.dll
+-a---          12/21/2024 11:12 PM          13084 MarCorp.DemoBack.Domain.Core.pdb
+-a---          12/21/2024 11:12 PM           5120 MarCorp.DemoBack.Domain.Interface.dll
+-a---          12/21/2024 11:12 PM          11668 MarCorp.DemoBack.Domain.Interface.pdb
+-a---          12/21/2024 11:12 PM           8704 MarCorp.DemoBack.Domain.Models.dll
+-a---          12/21/2024 11:12 PM          12916 MarCorp.DemoBack.Domain.Models.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Core\bin\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024  2:38 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Core\bin\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024  2:37 AM           5120 MarCorp.DemoBack.Data.Interface.dll
+-a---          12/22/2024  2:37 AM          11752 MarCorp.DemoBack.Data.Interface.pdb
+-a---          12/22/2024 12:56 AM           1971 MarCorp.DemoBack.Domain.Core.deps.json
+-a---          12/22/2024  2:38 AM          10240 MarCorp.DemoBack.Domain.Core.dll
+-a---          12/22/2024  2:38 AM          12864 MarCorp.DemoBack.Domain.Core.pdb
+-a---          12/22/2024  1:40 AM           5120 MarCorp.DemoBack.Domain.Interface.dll
+-a---          12/22/2024  1:40 AM          11672 MarCorp.DemoBack.Domain.Interface.pdb
+-a---          12/22/2024 12:56 AM           8704 MarCorp.DemoBack.Domain.Models.dll
+-a---          12/22/2024 12:56 AM          12924 MarCorp.DemoBack.Domain.Models.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Core\obj
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:11 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+-a---           1/21/2025  8:50 AM          12062 MarCorp.DemoBack.Domain.Core.csproj.nuget.dgspec.json
+-a---          12/21/2024 11:12 PM           1313 MarCorp.DemoBack.Domain.Core.csproj.nuget.g.props
+-a---          12/21/2024 11:12 PM            150 MarCorp.DemoBack.Domain.Core.csproj.nuget.g.targets
+-a---           1/21/2025  8:50 AM           5786 project.assets.json
+-a---           1/21/2025  8:50 AM            267 project.nuget.cache
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Core\obj\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Core\obj\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                ref
+d----          12/21/2024 11:12 PM                refint
+-a---          12/21/2024 11:11 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/21/2024 11:12 PM              0 MarCorp..20BA8408.Up2Date
+-a---          12/21/2024 11:11 PM           1098 MarCorp.DemoBack.Domain.Core.AssemblyInfo.cs
+-a---          12/21/2024 11:11 PM             66 MarCorp.DemoBack.Domain.Core.AssemblyInfoInputs.cache
+-a---          12/21/2024 11:12 PM            233 MarCorp.DemoBack.Domain.Core.assets.cache
+-a---          12/21/2024 11:12 PM           1997 MarCorp.DemoBack.Domain.Core.csproj.AssemblyReference.cache
+-a---          12/21/2024 11:12 PM              0 MarCorp.DemoBack.Domain.Core.csproj.BuildWithSkipAnalyzers
+-a---          12/21/2024 11:12 PM             66 MarCorp.DemoBack.Domain.Core.csproj.CoreCompileInputs.cache
+-a---          12/21/2024 11:12 PM           2787 MarCorp.DemoBack.Domain.Core.csproj.FileListAbsolute.txt
+-a---          12/21/2024 11:12 PM           9728 MarCorp.DemoBack.Domain.Core.dll
+-a---          12/21/2024 11:11 PM            739 MarCorp.DemoBack.Domain.Core.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:11 PM            295 MarCorp.DemoBack.Domain.Core.GlobalUsings.g.cs
+-a---          12/21/2024 11:12 PM          13084 MarCorp.DemoBack.Domain.Core.pdb
+-a---          12/21/2024 11:12 PM            188 MarCorp.DemoBack.Domain.Core.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Core\obj\Debug\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           8192 MarCorp.DemoBack.Domain.Core.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Core\obj\Debug\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           8192 MarCorp.DemoBack.Domain.Core.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Core\obj\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024  2:38 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Core\obj\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                ref
+d----          12/22/2024 12:56 AM                refint
+-a---          12/21/2024 11:23 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/22/2024  2:38 AM              0 MarCorp..20BA8408.Up2Date
+-a---          12/22/2024 12:56 AM           1100 MarCorp.DemoBack.Domain.Core.AssemblyInfo.cs
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Domain.Core.AssemblyInfoInputs.cache
+-a---           1/21/2025  8:50 AM            233 MarCorp.DemoBack.Domain.Core.assets.cache
+-a---          12/22/2024  2:38 AM           2009 MarCorp.DemoBack.Domain.Core.csproj.AssemblyReference.cache
+-a---          12/22/2024  2:38 AM              0 MarCorp.DemoBack.Domain.Core.csproj.BuildWithSkipAnalyzers
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Domain.Core.csproj.CoreCompileInputs.cache
+-a---          12/22/2024 12:56 AM           2827 MarCorp.DemoBack.Domain.Core.csproj.FileListAbsolute.txt
+-a---          12/22/2024  2:38 AM          10240 MarCorp.DemoBack.Domain.Core.dll
+-a---          12/22/2024 12:56 AM            739 MarCorp.DemoBack.Domain.Core.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:23 PM            295 MarCorp.DemoBack.Domain.Core.GlobalUsings.g.cs
+-a---          12/22/2024  2:38 AM          12864 MarCorp.DemoBack.Domain.Core.pdb
+-a---          12/22/2024 12:56 AM            188 MarCorp.DemoBack.Domain.Core.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Core\obj\Release\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024  1:40 AM           8192 MarCorp.DemoBack.Domain.Core.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Core\obj\Release\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024  2:38 AM           8192 MarCorp.DemoBack.Domain.Core.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Interface
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:23 PM                bin
+d----           1/21/2025  8:50 AM                obj
+-a---          12/21/2024 11:03 PM            900 ICustomerDomain.cs
+-a---          12/22/2024  1:25 AM            230 IUsersDomain.cs
+-a---          12/21/2024 11:03 PM            359 MarCorp.DemoBack.Domain.Interface.csproj
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Interface\bin
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:11 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Interface\bin\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Interface\bin\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM            948 MarCorp.DemoBack.Domain.Interface.deps.json
+-a---          12/21/2024 11:12 PM           5120 MarCorp.DemoBack.Domain.Interface.dll
+-a---          12/21/2024 11:12 PM          11668 MarCorp.DemoBack.Domain.Interface.pdb
+-a---          12/21/2024 11:12 PM           8704 MarCorp.DemoBack.Domain.Models.dll
+-a---          12/21/2024 11:12 PM          12916 MarCorp.DemoBack.Domain.Models.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Interface\bin\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024  1:40 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Interface\bin\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM            948 MarCorp.DemoBack.Domain.Interface.deps.json
+-a---          12/22/2024  1:40 AM           5120 MarCorp.DemoBack.Domain.Interface.dll
+-a---          12/22/2024  1:40 AM          11672 MarCorp.DemoBack.Domain.Interface.pdb
+-a---          12/22/2024 12:56 AM           8704 MarCorp.DemoBack.Domain.Models.dll
+-a---          12/22/2024 12:56 AM          12924 MarCorp.DemoBack.Domain.Models.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Interface\obj
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:11 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+-a---           1/21/2025  8:50 AM           5652 MarCorp.DemoBack.Domain.Interface.csproj.nuget.dgspec.json
+-a---          12/21/2024 11:12 PM           1313 MarCorp.DemoBack.Domain.Interface.csproj.nuget.g.props
+-a---          12/21/2024 11:12 PM            150 MarCorp.DemoBack.Domain.Interface.csproj.nuget.g.targets
+-a---           1/21/2025  8:50 AM           3620 project.assets.json
+-a---           1/21/2025  8:50 AM            277 project.nuget.cache
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Interface\obj\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Interface\obj\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                ref
+d----          12/21/2024 11:12 PM                refint
+-a---          12/21/2024 11:11 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/21/2024 11:12 PM              0 MarCorp..C36E0CE7.Up2Date
+-a---          12/21/2024 11:11 PM           1113 MarCorp.DemoBack.Domain.Interface.AssemblyInfo.cs
+-a---          12/21/2024 11:11 PM             66 MarCorp.DemoBack.Domain.Interface.AssemblyInfoInputs.cache
+-a---          12/21/2024 11:12 PM            233 MarCorp.DemoBack.Domain.Interface.assets.cache
+-a---          12/21/2024 11:12 PM            603 MarCorp.DemoBack.Domain.Interface.csproj.AssemblyReference.cache
+-a---          12/21/2024 11:12 PM              0 MarCorp.DemoBack.Domain.Interface.csproj.BuildWithSkipAnalyzers
+-a---          12/21/2024 11:12 PM             66 MarCorp.DemoBack.Domain.Interface.csproj.CoreCompileInputs.cache
+-a---          12/21/2024 11:12 PM           2392 MarCorp.DemoBack.Domain.Interface.csproj.FileListAbsolute.txt
+-a---          12/21/2024 11:12 PM           5120 MarCorp.DemoBack.Domain.Interface.dll
+-a---          12/21/2024 11:11 PM            749 MarCorp.DemoBack.Domain.Interface.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:11 PM            295 MarCorp.DemoBack.Domain.Interface.GlobalUsings.g.cs
+-a---          12/21/2024 11:12 PM          11668 MarCorp.DemoBack.Domain.Interface.pdb
+-a---          12/21/2024 11:12 PM            188 MarCorp.DemoBack.Domain.Interface.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Interface\obj\Debug\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           6144 MarCorp.DemoBack.Domain.Interface.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Interface\obj\Debug\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           6144 MarCorp.DemoBack.Domain.Interface.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Interface\obj\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Interface\obj\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                ref
+d----          12/22/2024 12:56 AM                refint
+-a---          12/21/2024 11:23 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/22/2024 12:56 AM              0 MarCorp..C36E0CE7.Up2Date
+-a---          12/22/2024 12:56 AM           1115 MarCorp.DemoBack.Domain.Interface.AssemblyInfo.cs
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Domain.Interface.AssemblyInfoInputs.cache
+-a---           1/21/2025  8:50 AM            233 MarCorp.DemoBack.Domain.Interface.assets.cache
+-a---          12/22/2024 12:56 AM            607 MarCorp.DemoBack.Domain.Interface.csproj.AssemblyReference.cache
+-a---          12/22/2024  2:37 AM              0 MarCorp.DemoBack.Domain.Interface.csproj.BuildWithSkipAnalyzers
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Domain.Interface.csproj.CoreCompileInputs.cache
+-a---          12/22/2024 12:56 AM           2424 MarCorp.DemoBack.Domain.Interface.csproj.FileListAbsolute.txt
+-a---          12/22/2024  1:40 AM           5120 MarCorp.DemoBack.Domain.Interface.dll
+-a---          12/22/2024 12:56 AM            749 MarCorp.DemoBack.Domain.Interface.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:23 PM            295 MarCorp.DemoBack.Domain.Interface.GlobalUsings.g.cs
+-a---          12/22/2024  1:40 AM          11672 MarCorp.DemoBack.Domain.Interface.pdb
+-a---          12/22/2024 12:56 AM            188 MarCorp.DemoBack.Domain.Interface.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Interface\obj\Release\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024  1:40 AM           6144 MarCorp.DemoBack.Domain.Interface.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Interface\obj\Release\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024  1:40 AM           6144 MarCorp.DemoBack.Domain.Interface.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Models
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:23 PM                bin
+d----          12/21/2024 11:03 PM                Entities
+d----           1/21/2025  8:50 AM                obj
+-a---          12/21/2024 11:03 PM            218 MarCorp.DemoBack.Domain.Models.csproj
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Models\bin
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:11 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Models\bin\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Models\bin\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM            482 MarCorp.DemoBack.Domain.Models.deps.json
+-a---          12/21/2024 11:12 PM           8704 MarCorp.DemoBack.Domain.Models.dll
+-a---          12/21/2024 11:12 PM          12916 MarCorp.DemoBack.Domain.Models.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Models\bin\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Models\bin\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM            482 MarCorp.DemoBack.Domain.Models.deps.json
+-a---          12/22/2024 12:56 AM           8704 MarCorp.DemoBack.Domain.Models.dll
+-a---          12/22/2024 12:56 AM          12924 MarCorp.DemoBack.Domain.Models.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Models\Entities
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:03 PM            290 Category.cs
+-a---          12/21/2024 11:03 PM            605 Customer.cs
+-a---          12/21/2024 11:03 PM            318 Discount.cs
+-a---          12/21/2024 11:03 PM            366 User.cs
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Models\obj
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:11 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+-a---           1/21/2025  8:50 AM           2742 MarCorp.DemoBack.Domain.Models.csproj.nuget.dgspec.json
+-a---          12/21/2024 11:12 PM           1313 MarCorp.DemoBack.Domain.Models.csproj.nuget.g.props
+-a---          12/21/2024 11:12 PM            150 MarCorp.DemoBack.Domain.Models.csproj.nuget.g.targets
+-a---           1/21/2025  8:50 AM           2598 project.assets.json
+-a---           1/21/2025  8:50 AM            271 project.nuget.cache
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Models\obj\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Models\obj\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                ref
+d----          12/21/2024 11:12 PM                refint
+-a---          12/21/2024 11:11 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/21/2024 11:11 PM           1104 MarCorp.DemoBack.Domain.Models.AssemblyInfo.cs
+-a---          12/21/2024 11:11 PM             66 MarCorp.DemoBack.Domain.Models.AssemblyInfoInputs.cache
+-a---          12/21/2024 11:12 PM            233 MarCorp.DemoBack.Domain.Models.assets.cache
+-a---          12/21/2024 11:12 PM              0 MarCorp.DemoBack.Domain.Models.csproj.BuildWithSkipAnalyzers
+-a---          12/21/2024 11:12 PM             66 MarCorp.DemoBack.Domain.Models.csproj.CoreCompileInputs.cache
+-a---          12/21/2024 11:12 PM           1747 MarCorp.DemoBack.Domain.Models.csproj.FileListAbsolute.txt
+-a---          12/21/2024 11:12 PM           8704 MarCorp.DemoBack.Domain.Models.dll
+-a---          12/21/2024 11:11 PM            743 MarCorp.DemoBack.Domain.Models.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:11 PM            295 MarCorp.DemoBack.Domain.Models.GlobalUsings.g.cs
+-a---          12/21/2024 11:12 PM          12916 MarCorp.DemoBack.Domain.Models.pdb
+-a---          12/21/2024 11:12 PM            188 MarCorp.DemoBack.Domain.Models.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Models\obj\Debug\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           7680 MarCorp.DemoBack.Domain.Models.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Models\obj\Debug\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           7680 MarCorp.DemoBack.Domain.Models.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Models\obj\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Models\obj\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                ref
+d----          12/22/2024 12:56 AM                refint
+-a---          12/21/2024 11:23 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/22/2024 12:56 AM           1106 MarCorp.DemoBack.Domain.Models.AssemblyInfo.cs
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Domain.Models.AssemblyInfoInputs.cache
+-a---           1/21/2025  8:50 AM            233 MarCorp.DemoBack.Domain.Models.assets.cache
+-a---          12/22/2024 12:56 AM              0 MarCorp.DemoBack.Domain.Models.csproj.BuildWithSkipAnalyzers
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Domain.Models.csproj.CoreCompileInputs.cache
+-a---          12/22/2024 12:56 AM           1771 MarCorp.DemoBack.Domain.Models.csproj.FileListAbsolute.txt
+-a---          12/22/2024 12:56 AM           8704 MarCorp.DemoBack.Domain.Models.dll
+-a---          12/22/2024 12:56 AM            743 MarCorp.DemoBack.Domain.Models.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:23 PM            295 MarCorp.DemoBack.Domain.Models.GlobalUsings.g.cs
+-a---          12/22/2024 12:56 AM          12924 MarCorp.DemoBack.Domain.Models.pdb
+-a---          12/22/2024 12:56 AM            188 MarCorp.DemoBack.Domain.Models.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Models\obj\Release\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM           7680 MarCorp.DemoBack.Domain.Models.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Domain.Models\obj\Release\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM           7680 MarCorp.DemoBack.Domain.Models.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:23 PM                bin
+d----          12/22/2024  1:32 AM                Controllers
+d----          12/21/2024 11:28 PM                Helpers
+d----          12/21/2024 11:28 PM                Modules
+d----           1/21/2025  8:50 AM                obj
+d----          12/21/2024 11:03 PM                Properties
+-a---          12/21/2024 11:03 PM            127 appsettings.Development.json
+-a---          12/22/2024 12:51 AM            505 appsettings.json
+-a---          12/21/2024 11:28 PM            503 Dockerfile
+-a---          12/21/2024 11:28 PM           2884 MarCorp.DemoBack.Services.WebApi.csproj
+-a---          12/21/2024 11:12 PM            396 MarCorp.DemoBack.Services.WebApi.csproj.user
+-a---          12/21/2024 11:03 PM            177 MarCorp.DemoBack.Services.WebApi.http
+-a---          12/21/2024 11:28 PM           1226 Program.cs
+-a---          12/21/2024 11:28 PM            869 WeatherForecast.cs
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:11 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                runtimes
+-a---          12/21/2024 11:03 PM            127 appsettings.Development.json
+-a---          12/21/2024 11:03 PM            477 appsettings.json
+-a---            2/7/2024  3:45 PM         274944 AutoMapper.dll
+-a---            3/6/2024  9:03 AM         243712 Dapper.dll
+-a---          12/21/2024 11:12 PM           7680 MarCorp.DemoBack.Application.DTO.dll
+-a---          12/21/2024 11:12 PM          12460 MarCorp.DemoBack.Application.DTO.pdb
+-a---          12/21/2024 11:12 PM           5120 MarCorp.DemoBack.Application.Interface.dll
+-a---          12/21/2024 11:12 PM          11756 MarCorp.DemoBack.Application.Interface.pdb
+-a---          12/21/2024 11:12 PM          13312 MarCorp.DemoBack.Application.Main.dll
+-a---          12/21/2024 11:12 PM          15148 MarCorp.DemoBack.Application.Main.pdb
+-a---          12/21/2024 11:12 PM           5632 MarCorp.DemoBack.Data.Connections.dll
+-a---          12/21/2024 11:12 PM          12296 MarCorp.DemoBack.Data.Connections.pdb
+-a---          12/21/2024 11:12 PM           5120 MarCorp.DemoBack.Data.Interface.dll
+-a---          12/21/2024 11:12 PM          11668 MarCorp.DemoBack.Data.Interface.pdb
+-a---          12/21/2024 11:12 PM          16384 MarCorp.DemoBack.Data.Repository.dll
+-a---          12/21/2024 11:12 PM          14852 MarCorp.DemoBack.Data.Repository.pdb
+-a---          12/21/2024 11:12 PM           9728 MarCorp.DemoBack.Domain.Core.dll
+-a---          12/21/2024 11:12 PM          13084 MarCorp.DemoBack.Domain.Core.pdb
+-a---          12/21/2024 11:12 PM           5120 MarCorp.DemoBack.Domain.Interface.dll
+-a---          12/21/2024 11:12 PM          11668 MarCorp.DemoBack.Domain.Interface.pdb
+-a---          12/21/2024 11:12 PM           8704 MarCorp.DemoBack.Domain.Models.dll
+-a---          12/21/2024 11:12 PM          12916 MarCorp.DemoBack.Domain.Models.pdb
+-a---          12/21/2024 11:12 PM          31106 MarCorp.DemoBack.Services.WebApi.deps.json
+-a---          12/21/2024 11:12 PM          27136 MarCorp.DemoBack.Services.WebApi.dll
+-a---          12/21/2024 11:12 PM         145920 MarCorp.DemoBack.Services.WebApi.exe
+-a---          12/21/2024 11:12 PM          28608 MarCorp.DemoBack.Services.WebApi.pdb
+-a---          12/21/2024 11:12 PM            416 MarCorp.DemoBack.Services.WebApi.runtimeconfig.json
+-a---          12/21/2024 11:12 PM             68 MarCorp.DemoBack.Services.WebApi.staticwebassets.endpoints.json
+-a---          12/21/2024 11:12 PM           6029 MarCorp.DemoBack.Services.WebApi.xml
+-a---          12/21/2024 11:12 PM           5632 MarCorp.DemoBack.Support.Common.dll
+-a---          12/21/2024 11:12 PM          11832 MarCorp.DemoBack.Support.Common.pdb
+-a---          12/21/2024 11:12 PM           5632 MarCorp.DemoBack.Support.Logging.dll
+-a---          12/21/2024 11:12 PM          12324 MarCorp.DemoBack.Support.Logging.pdb
+-a---          12/21/2024 11:12 PM           5120 MarCorp.DemoBack.Support.Mapper.dll
+-a---          12/21/2024 11:12 PM          12128 MarCorp.DemoBack.Support.Mapper.pdb
+-a---          10/29/2024  7:30 AM          52008 Microsoft.AspNetCore.Authentication.JwtBearer.dll
+-a---          10/29/2024  7:30 AM         192800 Microsoft.AspNetCore.OpenApi.dll
+-a---           12/4/2024 12:04 PM          19512 Microsoft.IdentityModel.Abstractions.dll
+-a---           12/4/2024 12:05 PM         165432 Microsoft.IdentityModel.JsonWebTokens.dll
+-a---           12/4/2024 12:05 PM          36920 Microsoft.IdentityModel.Logging.dll
+-a---           7/22/2024  5:38 PM          40880 Microsoft.IdentityModel.Protocols.dll
+-a---           7/22/2024  5:38 PM         137144 Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+-a---           12/4/2024 12:05 PM         356408 Microsoft.IdentityModel.Tokens.dll
+-a---           9/30/2024  3:56 AM         243744 Microsoft.OpenApi.dll
+-a---            3/8/2023  1:09 AM         712464 Newtonsoft.Json.dll
+-a---          12/10/2024 11:18 AM          17920 Swashbuckle.AspNetCore.Swagger.dll
+-a---          12/10/2024 11:18 AM         149504 Swashbuckle.AspNetCore.SwaggerGen.dll
+-a---          12/10/2024 11:18 AM        2254848 Swashbuckle.AspNetCore.SwaggerUI.dll
+-a---            7/7/2017  8:30 PM        4129280 Swashbuckle.Core.dll
+-a---          11/12/2024  3:47 PM         171800 System.Data.SqlClient.dll
+-a---           12/4/2024 12:05 PM          90680 System.IdentityModel.Tokens.Jwt.dll
+-a---            8/8/2012 12:58 PM         168544 System.Net.Http.Formatting.dll
+-a---            8/8/2012 12:58 PM         323168 System.Web.Http.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Debug\net9.0\runtimes
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                unix
+d----          12/21/2024 11:12 PM                win
+d----          12/21/2024 11:12 PM                win-arm64
+d----          12/21/2024 11:12 PM                win-x64
+d----          12/21/2024 11:12 PM                win-x86
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Debug\net9.0\runtimes\unix
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                lib
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Debug\net9.0\runtimes\unix\lib
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net8.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Debug\net9.0\runtimes\unix\lib\net8.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          11/12/2024  3:47 PM         958744 System.Data.SqlClient.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Debug\net9.0\runtimes\win
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                lib
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Debug\net9.0\runtimes\win\lib
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net8.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Debug\net9.0\runtimes\win\lib\net8.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          11/12/2024  3:47 PM        1027336 System.Data.SqlClient.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Debug\net9.0\runtimes\win-arm64
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                native
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Debug\net9.0\runtimes\win-arm64\native
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           7/12/2017 11:24 AM         174224 sni.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Debug\net9.0\runtimes\win-x64
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                native
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Debug\net9.0\runtimes\win-x64\native
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           7/12/2017 11:24 AM         160040 sni.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Debug\net9.0\runtimes\win-x86
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                native
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Debug\net9.0\runtimes\win-x86\native
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           7/12/2017 11:24 AM         136488 sni.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024  2:38 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                de
+d----          12/22/2024 12:56 AM                es
+d----          12/22/2024 12:56 AM                fr
+d----          12/22/2024 12:56 AM                it
+d----          12/22/2024 12:56 AM                ja
+d----          12/22/2024 12:56 AM                ko
+d----          12/22/2024 12:56 AM                pt-BR
+d----          12/22/2024 12:56 AM                ru
+d----          12/22/2024 12:47 AM                runtimes
+d----          12/22/2024 12:56 AM                zh-Hans
+d----          12/22/2024 12:56 AM                zh-Hant
+-a---          12/21/2024 11:03 PM            127 appsettings.Development.json
+-a---          12/22/2024 12:51 AM            505 appsettings.json
+-a---            2/7/2024  3:45 PM         274944 AutoMapper.dll
+-a---           2/26/2024  9:24 AM         400936 Azure.Core.dll
+-a---           6/10/2024 10:43 AM         342960 Azure.Identity.dll
+-a---            3/6/2024  9:03 AM         243712 Dapper.dll
+-a---          11/16/2024  1:43 PM          17408 FluentValidation.DependencyInjectionExtensions.dll
+-a---          11/16/2024  1:43 PM         492032 FluentValidation.dll
+-a---          12/22/2024 12:56 AM           7168 MarCorp.DemoBack.Application.DTO.dll
+-a---          12/22/2024 12:56 AM          12468 MarCorp.DemoBack.Application.DTO.pdb
+-a---          12/22/2024  1:40 AM           5632 MarCorp.DemoBack.Application.Interface.dll
+-a---          12/22/2024  1:40 AM          11808 MarCorp.DemoBack.Application.Interface.pdb
+-a---          12/22/2024  1:40 AM          13824 MarCorp.DemoBack.Application.Main.dll
+-a---          12/22/2024  1:40 AM          14912 MarCorp.DemoBack.Application.Main.pdb
+-a---          12/22/2024 12:56 AM           6144 MarCorp.DemoBack.Application.Validator.dll
+-a---          12/22/2024 12:56 AM          12036 MarCorp.DemoBack.Application.Validator.pdb
+-a---          12/22/2024 12:56 AM           5632 MarCorp.DemoBack.Data.Connections.dll
+-a---          12/22/2024 12:56 AM          13000 MarCorp.DemoBack.Data.Connections.pdb
+-a---          12/22/2024  2:37 AM           5120 MarCorp.DemoBack.Data.Interface.dll
+-a---          12/22/2024  2:37 AM          11752 MarCorp.DemoBack.Data.Interface.pdb
+-a---          12/22/2024  2:38 AM          16384 MarCorp.DemoBack.Data.Repository.dll
+-a---          12/22/2024  2:38 AM          15272 MarCorp.DemoBack.Data.Repository.pdb
+-a---          12/22/2024  2:38 AM          10240 MarCorp.DemoBack.Domain.Core.dll
+-a---          12/22/2024  2:38 AM          12864 MarCorp.DemoBack.Domain.Core.pdb
+-a---          12/22/2024  1:40 AM           5120 MarCorp.DemoBack.Domain.Interface.dll
+-a---          12/22/2024  1:40 AM          11672 MarCorp.DemoBack.Domain.Interface.pdb
+-a---          12/22/2024 12:56 AM           8704 MarCorp.DemoBack.Domain.Models.dll
+-a---          12/22/2024 12:56 AM          12924 MarCorp.DemoBack.Domain.Models.pdb
+-a---          12/22/2024 12:56 AM          44615 MarCorp.DemoBack.Services.WebApi.deps.json
+-a---          12/22/2024  2:38 AM          28160 MarCorp.DemoBack.Services.WebApi.dll
+-a---          12/22/2024  2:38 AM         145920 MarCorp.DemoBack.Services.WebApi.exe
+-a---          12/22/2024  2:38 AM          30252 MarCorp.DemoBack.Services.WebApi.pdb
+-a---          12/22/2024 12:56 AM            488 MarCorp.DemoBack.Services.WebApi.runtimeconfig.json
+-a---          12/22/2024 12:56 AM             68 MarCorp.DemoBack.Services.WebApi.staticwebassets.endpoints.json
+-a---          12/22/2024  2:38 AM          12209 MarCorp.DemoBack.Services.WebApi.xml
+-a---          12/22/2024 12:56 AM           5632 MarCorp.DemoBack.Support.Common.dll
+-a---          12/22/2024 12:56 AM          11844 MarCorp.DemoBack.Support.Common.pdb
+-a---          12/22/2024 12:56 AM           5632 MarCorp.DemoBack.Support.Logging.dll
+-a---          12/22/2024 12:56 AM          12352 MarCorp.DemoBack.Support.Logging.pdb
+-a---          12/22/2024 12:56 AM           5120 MarCorp.DemoBack.Support.Mapper.dll
+-a---          12/22/2024 12:56 AM          12128 MarCorp.DemoBack.Support.Mapper.pdb
+-a---          10/29/2024  7:30 AM          52008 Microsoft.AspNetCore.Authentication.JwtBearer.dll
+-a---          10/29/2024  7:30 AM         192800 Microsoft.AspNetCore.OpenApi.dll
+-a---           4/14/2020 10:39 PM          14720 Microsoft.Bcl.AsyncInterfaces.dll
+-a---           8/27/2024 12:46 PM         911480 Microsoft.Data.SqlClient.dll
+-a---            6/6/2024  4:09 PM        1005600 Microsoft.Identity.Client.dll
+-a---            6/6/2024  4:14 PM          66592 Microsoft.Identity.Client.Extensions.Msal.dll
+-a---           12/4/2024 12:04 PM          19512 Microsoft.IdentityModel.Abstractions.dll
+-a---           12/4/2024 12:05 PM         165432 Microsoft.IdentityModel.JsonWebTokens.dll
+-a---           12/4/2024 12:05 PM          36920 Microsoft.IdentityModel.Logging.dll
+-a---           7/22/2024  5:38 PM          40880 Microsoft.IdentityModel.Protocols.dll
+-a---           7/22/2024  5:38 PM         137144 Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+-a---           12/4/2024 12:05 PM         356408 Microsoft.IdentityModel.Tokens.dll
+-a---           9/30/2024  3:56 AM         243744 Microsoft.OpenApi.dll
+-a---           1/27/2022 11:19 AM          23976 Microsoft.SqlServer.Server.dll
+-a---            3/8/2023  1:09 AM         712464 Newtonsoft.Json.dll
+-a---          12/10/2024 11:18 AM          17920 Swashbuckle.AspNetCore.Swagger.dll
+-a---          12/10/2024 11:18 AM         149504 Swashbuckle.AspNetCore.SwaggerGen.dll
+-a---          12/10/2024 11:18 AM        2254848 Swashbuckle.AspNetCore.SwaggerUI.dll
+-a---            7/7/2017  8:30 PM        4129280 Swashbuckle.Core.dll
+-a---            1/3/2024 11:43 AM          28608 System.ClientModel.dll
+-a---          10/31/2023  8:59 AM         442632 System.Configuration.ConfigurationManager.dll
+-a---           12/4/2024 12:05 PM          90680 System.IdentityModel.Tokens.Jwt.dll
+-a---            4/8/2021 11:45 AM          21368 System.Memory.Data.dll
+-a---            8/8/2012 12:58 PM         168544 System.Net.Http.Formatting.dll
+-a---          10/31/2023  9:05 AM          90288 System.Runtime.Caching.dll
+-a---          10/31/2023  8:59 AM          36616 System.Security.Cryptography.ProtectedData.dll
+-a---            8/8/2012 12:58 PM         323168 System.Web.Http.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\de
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           8/27/2024 12:46 PM         270456 Microsoft.Data.SqlClient.resources.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\es
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           8/27/2024 12:46 PM         262280 Microsoft.Data.SqlClient.resources.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\fr
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           8/27/2024 12:46 PM         271496 Microsoft.Data.SqlClient.resources.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\it
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           8/27/2024 12:47 PM         263832 Microsoft.Data.SqlClient.resources.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\ja
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           8/27/2024 12:47 PM         292880 Microsoft.Data.SqlClient.resources.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\ko
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           8/27/2024 12:47 PM         270992 Microsoft.Data.SqlClient.resources.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\pt-BR
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           8/27/2024 12:46 PM         258064 Microsoft.Data.SqlClient.resources.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\ru
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           8/27/2024 12:46 PM         349320 Microsoft.Data.SqlClient.resources.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\runtimes
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:23 PM                unix
+d----          12/21/2024 11:23 PM                win
+d----          12/22/2024 12:47 AM                win-arm
+d----          12/21/2024 11:23 PM                win-arm64
+d----          12/21/2024 11:23 PM                win-x64
+d----          12/21/2024 11:23 PM                win-x86
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\runtimes\unix
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:23 PM                lib
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\runtimes\unix\lib
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                net8.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\runtimes\unix\lib\net8.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           8/27/2024 12:46 PM        2081400 Microsoft.Data.SqlClient.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\runtimes\win
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:23 PM                lib
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\runtimes\win\lib
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                net8.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\runtimes\win\lib\net8.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           8/27/2024 12:46 PM        2131064 Microsoft.Data.SqlClient.dll
+-a---          10/31/2023  9:00 AM          92936 System.Runtime.Caching.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\runtimes\win-arm
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                native
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\runtimes\win-arm\native
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           2/20/2024  4:29 PM         379328 Microsoft.Data.SqlClient.SNI.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\runtimes\win-arm64
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                native
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\runtimes\win-arm64\native
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           2/20/2024  4:29 PM         491952 Microsoft.Data.SqlClient.SNI.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\runtimes\win-x64
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                native
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\runtimes\win-x64\native
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           2/20/2024  4:30 PM         503728 Microsoft.Data.SqlClient.SNI.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\runtimes\win-x86
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                native
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\runtimes\win-x86\native
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           2/20/2024  4:28 PM         412096 Microsoft.Data.SqlClient.SNI.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\zh-Hans
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           8/27/2024 12:46 PM         228472 Microsoft.Data.SqlClient.resources.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\bin\Release\net9.0\zh-Hant
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           8/27/2024 12:46 PM         232056 Microsoft.Data.SqlClient.resources.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\Controllers
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:03 PM           7136 CustomerController.cs
+-a---          12/22/2024  1:32 AM           3471 UsersController.cs
+-a---          12/21/2024 11:03 PM           1099 WeatherForecastController.cs
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\Helpers
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:28 PM            688 AppSettings.cs
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\Modules
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:28 PM                Authentication
+d----          12/22/2024 12:47 AM                Injection
+d----          12/21/2024 11:28 PM                Mapper
+d----          12/21/2024 11:28 PM                Swagger
+d----          12/21/2024 11:28 PM                Validator
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\Modules\Authentication
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:28 PM           3118 AuthenticationExtensions.cs
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\Modules\Injection
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:47 AM           1762 InjectionExtensions.cs
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\Modules\Mapper
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:28 PM            804 MapperExtensions.cs
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\Modules\Swagger
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:28 PM           2887 SwaggerExtensions.cs
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\Modules\Validator
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:28 PM            870 ValidatorExtensions.cs
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\obj
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:11 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+-a---           1/21/2025  8:50 AM          49664 MarCorp.DemoBack.Services.WebApi.csproj.nuget.dgspec.json
+-a---          12/21/2024 11:28 PM           2908 MarCorp.DemoBack.Services.WebApi.csproj.nuget.g.props
+-a---          12/21/2024 11:12 PM           1499 MarCorp.DemoBack.Services.WebApi.csproj.nuget.g.targets
+-a---           1/21/2025  8:50 AM         136183 project.assets.json
+-a---           1/21/2025  8:50 AM          10091 project.nuget.cache
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\obj\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:13 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\obj\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                ref
+d----          12/21/2024 11:12 PM                refint
+d----          12/21/2024 11:12 PM                staticwebassets
+-a---          12/21/2024 11:11 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/21/2024 11:19 PM           5164 ApiEndpoints.json
+-a---          12/21/2024 11:12 PM         145920 apphost.exe
+-a---          12/21/2024 11:12 PM              0 MarCorp..84CB7E06.Up2Date
+-a---          12/21/2024 11:11 PM           1233 MarCorp.DemoBack.Services.WebApi.AssemblyInfo.cs
+-a---          12/21/2024 11:11 PM             66 MarCorp.DemoBack.Services.WebApi.AssemblyInfoInputs.cache
+-a---          12/21/2024 11:12 PM          23980 MarCorp.DemoBack.Services.WebApi.assets.cache
+-a---          12/21/2024 11:12 PM          21896 MarCorp.DemoBack.Services.WebApi.csproj.AssemblyReference.cache
+-a---          12/21/2024 11:12 PM              0 MarCorp.DemoBack.Services.WebApi.csproj.BuildWithSkipAnalyzers
+-a---          12/21/2024 11:12 PM             66 MarCorp.DemoBack.Services.WebApi.csproj.CoreCompileInputs.cache
+-a---          12/21/2024 11:12 PM          12080 MarCorp.DemoBack.Services.WebApi.csproj.FileListAbsolute.txt
+-a---          12/21/2024 11:12 PM          27136 MarCorp.DemoBack.Services.WebApi.dll
+-a---          12/21/2024 11:11 PM           1142 MarCorp.DemoBack.Services.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:12 PM             66 MarCorp.DemoBack.Services.WebApi.genruntimeconfig.cache
+-a---          12/21/2024 11:11 PM            770 MarCorp.DemoBack.Services.WebApi.GlobalUsings.g.cs
+-a---          12/21/2024 11:12 PM              0 MarCorp.DemoBack.Services.WebApi.MvcApplicationPartsAssemblyInfo.cache
+-a---          12/21/2024 11:12 PM            737 MarCorp.DemoBack.Services.WebApi.MvcApplicationPartsAssemblyInfo.cs
+-a---          12/21/2024 11:12 PM          28608 MarCorp.DemoBack.Services.WebApi.pdb
+-a---          12/21/2024 11:12 PM            188 MarCorp.DemoBack.Services.WebApi.sourcelink.json
+-a---          12/21/2024 11:12 PM           6029 MarCorp.DemoBack.Services.WebApi.xml
+-a---          12/21/2024 11:12 PM             68 staticwebassets.build.endpoints.json
+-a---          12/21/2024 11:12 PM            345 staticwebassets.build.json
+-a---          12/21/2024 11:12 PM              0 staticwebassets.references.upToDateCheck.txt
+-a---          12/21/2024 11:11 PM              0 staticwebassets.removed.txt
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\obj\Debug\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM          11776 MarCorp.DemoBack.Services.WebApi.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\obj\Debug\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM          11776 MarCorp.DemoBack.Services.WebApi.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\obj\Debug\net9.0\staticwebassets
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM            166 msbuild.build.MarCorp.DemoBack.Services.WebApi.props
+-a---          12/21/2024 11:12 PM             96 msbuild.buildMultiTargeting.MarCorp.DemoBack.Services.WebApi.props
+-a---          12/21/2024 11:12 PM            110 msbuild.buildTransitive.MarCorp.DemoBack.Services.WebApi.props
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\obj\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024  2:38 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\obj\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                ref
+d----          12/22/2024 12:56 AM                refint
+d----          12/22/2024 12:56 AM                staticwebassets
+-a---          12/21/2024 11:23 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/22/2024  2:38 AM           5174 ApiEndpoints.json
+-a---          12/22/2024  2:38 AM         145920 apphost.exe
+-a---          12/22/2024  2:38 AM              0 MarCorp..84CB7E06.Up2Date
+-a---          12/22/2024 12:56 AM           1235 MarCorp.DemoBack.Services.WebApi.AssemblyInfo.cs
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Services.WebApi.AssemblyInfoInputs.cache
+-a---           1/21/2025  8:50 AM          38139 MarCorp.DemoBack.Services.WebApi.assets.cache
+-a---          12/22/2024  2:38 AM          29806 MarCorp.DemoBack.Services.WebApi.csproj.AssemblyReference.cache
+-a---          12/22/2024  2:38 AM              0 MarCorp.DemoBack.Services.WebApi.csproj.BuildWithSkipAnalyzers
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Services.WebApi.csproj.CoreCompileInputs.cache
+-a---          12/22/2024 12:56 AM          16180 MarCorp.DemoBack.Services.WebApi.csproj.FileListAbsolute.txt
+-a---          12/22/2024  2:38 AM          28160 MarCorp.DemoBack.Services.WebApi.dll
+-a---          12/22/2024 12:56 AM           1142 MarCorp.DemoBack.Services.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Services.WebApi.genruntimeconfig.cache
+-a---          12/21/2024 11:23 PM            770 MarCorp.DemoBack.Services.WebApi.GlobalUsings.g.cs
+-a---          12/22/2024 12:56 AM              0 MarCorp.DemoBack.Services.WebApi.MvcApplicationPartsAssemblyInfo.cache
+-a---          12/22/2024 12:56 AM            737 MarCorp.DemoBack.Services.WebApi.MvcApplicationPartsAssemblyInfo.cs
+-a---          12/22/2024  2:38 AM          30252 MarCorp.DemoBack.Services.WebApi.pdb
+-a---          12/22/2024 12:56 AM            188 MarCorp.DemoBack.Services.WebApi.sourcelink.json
+-a---          12/22/2024  2:38 AM          12209 MarCorp.DemoBack.Services.WebApi.xml
+-a---          12/22/2024 12:56 AM             68 staticwebassets.build.endpoints.json
+-a---          12/22/2024 12:56 AM            345 staticwebassets.build.json
+-a---          12/21/2024 11:23 PM              0 staticwebassets.references.upToDateCheck.txt
+-a---          12/21/2024 11:23 PM              0 staticwebassets.removed.txt
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\obj\Release\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024  1:40 AM          13312 MarCorp.DemoBack.Services.WebApi.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\obj\Release\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024  2:38 AM          13312 MarCorp.DemoBack.Services.WebApi.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\obj\Release\net9.0\staticwebassets
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM            166 msbuild.build.MarCorp.DemoBack.Services.WebApi.props
+-a---          12/22/2024 12:56 AM             96 msbuild.buildMultiTargeting.MarCorp.DemoBack.Services.WebApi.props
+-a---          12/22/2024 12:56 AM            110 msbuild.buildTransitive.MarCorp.DemoBack.Services.WebApi.props
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Services.WebApi\Properties
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:03 PM           1090 launchSettings.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Common
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:23 PM                bin
+d----           1/21/2025  8:50 AM                obj
+-a---          12/21/2024 11:03 PM            300 IAppLogger.cs
+-a---          12/21/2024 11:28 PM            322 MarCorp.DemoBack.Support.Common.csproj
+-a---          12/21/2024 11:28 PM            361 Response.cs
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Common\bin
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:11 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Common\bin\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Common\bin\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM            485 MarCorp.DemoBack.Support.Common.deps.json
+-a---          12/21/2024 11:12 PM           5632 MarCorp.DemoBack.Support.Common.dll
+-a---          12/21/2024 11:12 PM          11832 MarCorp.DemoBack.Support.Common.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Common\bin\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Common\bin\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM           1105 MarCorp.DemoBack.Support.Common.deps.json
+-a---          12/22/2024 12:56 AM           5632 MarCorp.DemoBack.Support.Common.dll
+-a---          12/22/2024 12:56 AM          11844 MarCorp.DemoBack.Support.Common.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Common\obj
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:11 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+-a---           1/21/2025  8:50 AM           2921 MarCorp.DemoBack.Support.Common.csproj.nuget.dgspec.json
+-a---          12/21/2024 11:12 PM           1313 MarCorp.DemoBack.Support.Common.csproj.nuget.g.props
+-a---          12/21/2024 11:12 PM            150 MarCorp.DemoBack.Support.Common.csproj.nuget.g.targets
+-a---           1/21/2025  8:50 AM           4147 project.assets.json
+-a---           1/21/2025  8:50 AM            390 project.nuget.cache
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Common\obj\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Common\obj\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                ref
+d----          12/21/2024 11:12 PM                refint
+-a---          12/21/2024 11:11 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/21/2024 11:11 PM           1107 MarCorp.DemoBack.Support.Common.AssemblyInfo.cs
+-a---          12/21/2024 11:11 PM             66 MarCorp.DemoBack.Support.Common.AssemblyInfoInputs.cache
+-a---          12/21/2024 11:12 PM            233 MarCorp.DemoBack.Support.Common.assets.cache
+-a---          12/21/2024 11:12 PM              0 MarCorp.DemoBack.Support.Common.csproj.BuildWithSkipAnalyzers
+-a---          12/21/2024 11:12 PM             66 MarCorp.DemoBack.Support.Common.csproj.CoreCompileInputs.cache
+-a---          12/21/2024 11:12 PM           1771 MarCorp.DemoBack.Support.Common.csproj.FileListAbsolute.txt
+-a---          12/21/2024 11:12 PM           5632 MarCorp.DemoBack.Support.Common.dll
+-a---          12/21/2024 11:11 PM            745 MarCorp.DemoBack.Support.Common.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:11 PM            295 MarCorp.DemoBack.Support.Common.GlobalUsings.g.cs
+-a---          12/21/2024 11:12 PM          11832 MarCorp.DemoBack.Support.Common.pdb
+-a---          12/21/2024 11:12 PM            188 MarCorp.DemoBack.Support.Common.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Common\obj\Debug\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           6144 MarCorp.DemoBack.Support.Common.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Common\obj\Debug\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           6144 MarCorp.DemoBack.Support.Common.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Common\obj\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Common\obj\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                ref
+d----          12/22/2024 12:56 AM                refint
+-a---          12/21/2024 11:23 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/22/2024 12:56 AM           1109 MarCorp.DemoBack.Support.Common.AssemblyInfo.cs
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Support.Common.AssemblyInfoInputs.cache
+-a---           1/21/2025  8:50 AM           1000 MarCorp.DemoBack.Support.Common.assets.cache
+-a---          12/22/2024 12:56 AM            556 MarCorp.DemoBack.Support.Common.csproj.AssemblyReference.cache
+-a---          12/22/2024  2:37 AM              0 MarCorp.DemoBack.Support.Common.csproj.BuildWithSkipAnalyzers
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Support.Common.csproj.CoreCompileInputs.cache
+-a---          12/22/2024 12:56 AM           1961 MarCorp.DemoBack.Support.Common.csproj.FileListAbsolute.txt
+-a---          12/22/2024 12:56 AM           5632 MarCorp.DemoBack.Support.Common.dll
+-a---          12/22/2024 12:56 AM            745 MarCorp.DemoBack.Support.Common.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:23 PM            295 MarCorp.DemoBack.Support.Common.GlobalUsings.g.cs
+-a---          12/22/2024 12:56 AM          11844 MarCorp.DemoBack.Support.Common.pdb
+-a---          12/22/2024 12:56 AM            188 MarCorp.DemoBack.Support.Common.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Common\obj\Release\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM           6144 MarCorp.DemoBack.Support.Common.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Common\obj\Release\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM           6144 MarCorp.DemoBack.Support.Common.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Logging
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:23 PM                bin
+d----           1/21/2025  8:50 AM                obj
+-a---          12/21/2024 11:03 PM            809 LoggerAdapter.cs
+-a---          12/21/2024 11:03 PM            475 MarCorp.DemoBack.Support.Logging.csproj
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Logging\bin
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:11 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Logging\bin\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Logging\bin\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           5632 MarCorp.DemoBack.Support.Common.dll
+-a---          12/21/2024 11:12 PM          11832 MarCorp.DemoBack.Support.Common.pdb
+-a---          12/21/2024 11:12 PM           5449 MarCorp.DemoBack.Support.Logging.deps.json
+-a---          12/21/2024 11:12 PM           5632 MarCorp.DemoBack.Support.Logging.dll
+-a---          12/21/2024 11:12 PM          12324 MarCorp.DemoBack.Support.Logging.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Logging\bin\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Logging\bin\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM           5632 MarCorp.DemoBack.Support.Common.dll
+-a---          12/22/2024 12:56 AM          11844 MarCorp.DemoBack.Support.Common.pdb
+-a---          12/22/2024 12:56 AM           6069 MarCorp.DemoBack.Support.Logging.deps.json
+-a---          12/22/2024 12:56 AM           5632 MarCorp.DemoBack.Support.Logging.dll
+-a---          12/22/2024 12:56 AM          12352 MarCorp.DemoBack.Support.Logging.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Logging\obj
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:11 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+-a---           1/21/2025  8:50 AM           6002 MarCorp.DemoBack.Support.Logging.csproj.nuget.dgspec.json
+-a---          12/21/2024 11:12 PM           1313 MarCorp.DemoBack.Support.Logging.csproj.nuget.g.props
+-a---          12/21/2024 11:12 PM            857 MarCorp.DemoBack.Support.Logging.csproj.nuget.g.targets
+-a---           1/21/2025  8:50 AM          23639 project.assets.json
+-a---           1/21/2025  8:50 AM           1302 project.nuget.cache
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Logging\obj\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Logging\obj\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                ref
+d----          12/21/2024 11:12 PM                refint
+-a---          12/21/2024 11:11 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/21/2024 11:12 PM              0 MarCorp..5FF7BAF8.Up2Date
+-a---          12/21/2024 11:11 PM           1110 MarCorp.DemoBack.Support.Logging.AssemblyInfo.cs
+-a---          12/21/2024 11:11 PM             66 MarCorp.DemoBack.Support.Logging.AssemblyInfoInputs.cache
+-a---          12/21/2024 11:12 PM           4942 MarCorp.DemoBack.Support.Logging.assets.cache
+-a---          12/21/2024 11:12 PM           4720 MarCorp.DemoBack.Support.Logging.csproj.AssemblyReference.cache
+-a---          12/21/2024 11:12 PM              0 MarCorp.DemoBack.Support.Logging.csproj.BuildWithSkipAnalyzers
+-a---          12/21/2024 11:12 PM             66 MarCorp.DemoBack.Support.Logging.csproj.CoreCompileInputs.cache
+-a---          12/21/2024 11:12 PM           2365 MarCorp.DemoBack.Support.Logging.csproj.FileListAbsolute.txt
+-a---          12/21/2024 11:12 PM           5632 MarCorp.DemoBack.Support.Logging.dll
+-a---          12/21/2024 11:11 PM            747 MarCorp.DemoBack.Support.Logging.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:11 PM            295 MarCorp.DemoBack.Support.Logging.GlobalUsings.g.cs
+-a---          12/21/2024 11:12 PM          12324 MarCorp.DemoBack.Support.Logging.pdb
+-a---          12/21/2024 11:12 PM            188 MarCorp.DemoBack.Support.Logging.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Logging\obj\Debug\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           6144 MarCorp.DemoBack.Support.Logging.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Logging\obj\Debug\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           6144 MarCorp.DemoBack.Support.Logging.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Logging\obj\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Logging\obj\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                ref
+d----          12/22/2024 12:56 AM                refint
+-a---          12/21/2024 11:23 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/22/2024 12:56 AM              0 MarCorp..5FF7BAF8.Up2Date
+-a---          12/22/2024 12:56 AM           1112 MarCorp.DemoBack.Support.Logging.AssemblyInfo.cs
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Support.Logging.AssemblyInfoInputs.cache
+-a---           1/21/2025  8:50 AM           5420 MarCorp.DemoBack.Support.Logging.assets.cache
+-a---          12/22/2024 12:56 AM           5272 MarCorp.DemoBack.Support.Logging.csproj.AssemblyReference.cache
+-a---          12/22/2024  2:37 AM              0 MarCorp.DemoBack.Support.Logging.csproj.BuildWithSkipAnalyzers
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Support.Logging.csproj.CoreCompileInputs.cache
+-a---          12/22/2024 12:56 AM           2397 MarCorp.DemoBack.Support.Logging.csproj.FileListAbsolute.txt
+-a---          12/22/2024 12:56 AM           5632 MarCorp.DemoBack.Support.Logging.dll
+-a---          12/22/2024 12:56 AM            747 MarCorp.DemoBack.Support.Logging.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:23 PM            295 MarCorp.DemoBack.Support.Logging.GlobalUsings.g.cs
+-a---          12/22/2024 12:56 AM          12352 MarCorp.DemoBack.Support.Logging.pdb
+-a---          12/22/2024 12:56 AM            188 MarCorp.DemoBack.Support.Logging.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Logging\obj\Release\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM           6144 MarCorp.DemoBack.Support.Logging.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Logging\obj\Release\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM           6144 MarCorp.DemoBack.Support.Logging.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Mapper
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:23 PM                bin
+d----           1/21/2025  8:50 AM                obj
+-a---          12/21/2024 11:03 PM            393 MappingsProfile.cs
+-a---          12/21/2024 11:03 PM            567 MarCorp.DemoBack.Support.Mapper.csproj
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Mapper\bin
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:11 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Mapper\bin\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Mapper\bin\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           7680 MarCorp.DemoBack.Application.DTO.dll
+-a---          12/21/2024 11:12 PM          12460 MarCorp.DemoBack.Application.DTO.pdb
+-a---          12/21/2024 11:12 PM           8704 MarCorp.DemoBack.Domain.Models.dll
+-a---          12/21/2024 11:12 PM          12916 MarCorp.DemoBack.Domain.Models.pdb
+-a---          12/21/2024 11:12 PM           4633 MarCorp.DemoBack.Support.Mapper.deps.json
+-a---          12/21/2024 11:12 PM           5120 MarCorp.DemoBack.Support.Mapper.dll
+-a---          12/21/2024 11:12 PM          12128 MarCorp.DemoBack.Support.Mapper.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Mapper\bin\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Mapper\bin\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM           7168 MarCorp.DemoBack.Application.DTO.dll
+-a---          12/22/2024 12:56 AM          12468 MarCorp.DemoBack.Application.DTO.pdb
+-a---          12/22/2024 12:56 AM           8704 MarCorp.DemoBack.Domain.Models.dll
+-a---          12/22/2024 12:56 AM          12924 MarCorp.DemoBack.Domain.Models.pdb
+-a---          12/22/2024 12:56 AM           4633 MarCorp.DemoBack.Support.Mapper.deps.json
+-a---          12/22/2024 12:56 AM           5120 MarCorp.DemoBack.Support.Mapper.dll
+-a---          12/22/2024 12:56 AM          12128 MarCorp.DemoBack.Support.Mapper.pdb
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Mapper\obj
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:11 PM                Debug
+d----          12/21/2024 11:23 PM                Release
+-a---           1/21/2025  8:50 AM           8679 MarCorp.DemoBack.Support.Mapper.csproj.nuget.dgspec.json
+-a---          12/21/2024 11:12 PM           1313 MarCorp.DemoBack.Support.Mapper.csproj.nuget.g.props
+-a---          12/21/2024 11:12 PM            150 MarCorp.DemoBack.Support.Mapper.csproj.nuget.g.targets
+-a---           1/21/2025  8:50 AM          12638 project.assets.json
+-a---           1/21/2025  8:50 AM            988 project.nuget.cache
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Mapper\obj\Debug
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Mapper\obj\Debug\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/21/2024 11:12 PM                ref
+d----          12/21/2024 11:12 PM                refint
+-a---          12/21/2024 11:11 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/21/2024 11:12 PM              0 MarCorp..6B4C22A3.Up2Date
+-a---          12/21/2024 11:11 PM           1107 MarCorp.DemoBack.Support.Mapper.AssemblyInfo.cs
+-a---          12/21/2024 11:11 PM             66 MarCorp.DemoBack.Support.Mapper.AssemblyInfoInputs.cache
+-a---          12/21/2024 11:12 PM           3682 MarCorp.DemoBack.Support.Mapper.assets.cache
+-a---          12/21/2024 11:12 PM           3761 MarCorp.DemoBack.Support.Mapper.csproj.AssemblyReference.cache
+-a---          12/21/2024 11:12 PM              0 MarCorp.DemoBack.Support.Mapper.csproj.BuildWithSkipAnalyzers
+-a---          12/21/2024 11:12 PM             66 MarCorp.DemoBack.Support.Mapper.csproj.CoreCompileInputs.cache
+-a---          12/21/2024 11:12 PM           2610 MarCorp.DemoBack.Support.Mapper.csproj.FileListAbsolute.txt
+-a---          12/21/2024 11:12 PM           5120 MarCorp.DemoBack.Support.Mapper.dll
+-a---          12/21/2024 11:11 PM            745 MarCorp.DemoBack.Support.Mapper.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:11 PM            295 MarCorp.DemoBack.Support.Mapper.GlobalUsings.g.cs
+-a---          12/21/2024 11:12 PM          12128 MarCorp.DemoBack.Support.Mapper.pdb
+-a---          12/21/2024 11:12 PM            188 MarCorp.DemoBack.Support.Mapper.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Mapper\obj\Debug\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           5632 MarCorp.DemoBack.Support.Mapper.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Mapper\obj\Debug\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/21/2024 11:12 PM           5632 MarCorp.DemoBack.Support.Mapper.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Mapper\obj\Release
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                net9.0
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Mapper\obj\Release\net9.0
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          12/22/2024 12:56 AM                ref
+d----          12/22/2024 12:56 AM                refint
+-a---          12/21/2024 11:23 PM            198 .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+-a---          12/22/2024 12:56 AM              0 MarCorp..6B4C22A3.Up2Date
+-a---          12/22/2024 12:56 AM           1109 MarCorp.DemoBack.Support.Mapper.AssemblyInfo.cs
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Support.Mapper.AssemblyInfoInputs.cache
+-a---           1/21/2025  8:50 AM           3682 MarCorp.DemoBack.Support.Mapper.assets.cache
+-a---          12/22/2024 12:56 AM           3769 MarCorp.DemoBack.Support.Mapper.csproj.AssemblyReference.cache
+-a---          12/22/2024  2:37 AM              0 MarCorp.DemoBack.Support.Mapper.csproj.BuildWithSkipAnalyzers
+-a---          12/22/2024 12:56 AM             66 MarCorp.DemoBack.Support.Mapper.csproj.CoreCompileInputs.cache
+-a---          12/22/2024 12:56 AM           2646 MarCorp.DemoBack.Support.Mapper.csproj.FileListAbsolute.txt
+-a---          12/22/2024 12:56 AM           5120 MarCorp.DemoBack.Support.Mapper.dll
+-a---          12/22/2024 12:56 AM            745 MarCorp.DemoBack.Support.Mapper.GeneratedMSBuildEditorConfig.editorconfig
+-a---          12/21/2024 11:23 PM            295 MarCorp.DemoBack.Support.Mapper.GlobalUsings.g.cs
+-a---          12/22/2024 12:56 AM          12128 MarCorp.DemoBack.Support.Mapper.pdb
+-a---          12/22/2024 12:56 AM            188 MarCorp.DemoBack.Support.Mapper.sourcelink.json
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Mapper\obj\Release\net9.0\ref
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM           5632 MarCorp.DemoBack.Support.Mapper.dll
+
+    Directory: C:\Users\Daniel Mar\Desktop\repos\MarCorp.DemoBack\MarCorp.DemoBack.Support.Mapper\obj\Release\net9.0\refint
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          12/22/2024 12:56 AM           5632 MarCorp.DemoBack.Support.Mapper.dll
+

@@ -1,150 +1,116 @@
-using MarCorp.DemoBack.Application.Interface;
-using MarCorp.DemoBack.Application.Main;
-using MarCorp.DemoBack.Data.Connections;
-using MarCorp.DemoBack.Data.Interface;
-using MarCorp.DemoBack.Data.Repository;
-using MarCorp.DemoBack.Domain.Core;
-using MarCorp.DemoBack.Domain.Interface;
-using MarCorp.DemoBack.Services.WebApi.Helpers;
-using MarCorp.DemoBack.Support.Common;
-using MarCorp.DemoBack.Support.Logging;
-using MarCorp.DemoBack.Support.Mapper;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
-using System.Reflection;
-using System.Text;
+using HealthChecks.UI.Client;
+using MarCorp.DemoBack.Persistence;
+using MarCorp.DemoBack.Application.UseCases;
+using MarCorp.DemoBack.Services.WebApi.Modules;
+using MarCorp.DemoBack.Services.WebApi.Modules.Authentication;
+using MarCorp.DemoBack.Services.WebApi.Modules.Cors;
+using MarCorp.DemoBack.Services.WebApi.Modules.HealthCheck;
+using MarCorp.DemoBack.Services.WebApi.Modules.Injection;
+using MarCorp.DemoBack.Services.WebApi.Modules.RateLimiter;
+using MarCorp.DemoBack.Services.WebApi.Modules.Redis;
+using MarCorp.DemoBack.Services.WebApi.Modules.Swagger;
+using MarCorp.DemoBack.Services.WebApi.Modules.Validator;
+using MarCorp.DemoBack.Services.WebApi.Modules.Watch;
+using WatchDog;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 
+// 1. Configuración inicial ---------------------------------------------------
 var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddControllers();
-builder.Services.AddOpenApi();
-
-var appSettingsSection = builder.Configuration.GetSection("Config");
-builder.Services.Configure<AppSettings>(appSettingsSection);
-
 var configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", optional: true, reloadOnChange: true).Build();
-builder.Services.AddSingleton<IConfiguration>(configuration);
 
-builder.Services.AddSingleton<IConnectionFactory, ConnectionFactory>();
-builder.Services.AddScoped<ICustomerApplication, CustomerApplication>();
-builder.Services.AddScoped<ICustomerDomain, CustomerDomain>();
-builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
-builder.Services.AddScoped<IUsersRepository, UsersRepository>();
-builder.Services.AddScoped<IUsersApplication, UsersApplication>();
-builder.Services.AddScoped<IUsersDomain, UsersDomain>();
-builder.Services.AddAutoMapper(typeof(MappingsProfile));
-builder.Services.AddScoped(typeof(IAppLogger<>), typeof(LoggerAdapter<>));
-builder.Services.AddSwaggerGen(c =>
+// 2. Registro de servicios y dependencias --------------------------------------------------
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddOpenApi();
+builder.Services.AddFCors(configuration);
+builder.Services.AddPersistenceServices();
+builder.Services.AddApplicationServices();
+builder.Services.AddSwagger();
+//builder.Services.AddAuthentication(configuration);
+builder.Services.AddMapper();
+builder.Services.AddInjection(configuration);
+builder.Services.AddValidator();
+//builder.Services.AddHealthCheck(configuration);
+builder.Services.AddWatchDog(configuration);
+builder.Services.AddRedisCache(configuration);
+builder.Services.AddRatelimiting(configuration);
+builder.Services.AddSession(options =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo
-    {
-        Version = "v1",
-        Title = "MarCorp Technology Services API",
-        Description = "Example ASP.NET Core Web API",
-        TermsOfService = new Uri("https://example.com/terms"),
-        Contact = new OpenApiContact
-        {
-            Name = "Daniel Mar",
-            Email = "daniel.mar.iest.edu.mx",
-            Url = new Uri("https://example.com/contacto")
-        },
-        License = new OpenApiLicense
-        {
-            Name = "Use under LICX",
-            Url = new Uri("https://example.com/licencia")
-        }
-    });
-    // Set the comments path for the Swagger JSON and UI.
-    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-    c.IncludeXmlComments(xmlPath);
-    c.AddSecurityDefinition("Authorization", new OpenApiSecurityScheme
-    {
-        Description = "Authorization by API key.",
-        In = ParameterLocation.Header,
-        Type = SecuritySchemeType.ApiKey,
-        Name = "Authorization"
-    });
-
-    c.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
-        {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference
-                {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Authorization"
-                }
-            },
-            new string[] { }
-        }
-    });
-});
-
-var appSettings = appSettingsSection.Get<AppSettings>();
-var key = Encoding.ASCII.GetBytes(appSettings.Secret);
-var Issuer = appSettings.Issuer;
-var Audience = appSettings.Audience;
-
-builder.Services.AddAuthentication(x =>
-{
-    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-}).AddJwtBearer(x =>
-{
-    x.Events = new JwtBearerEvents
-    {
-        OnTokenValidated = context =>
-        {
-            var userId = int.Parse(context.Principal.Identity.Name);
-            return Task.CompletedTask;
-        },
-
-        OnAuthenticationFailed = context =>
-        {
-            if (context.Exception.GetType() == typeof(SecurityTokenExpiredException))
-            {
-                context.Response.Headers.Add("Token-Expired", "true");
-            }
-            return Task.CompletedTask;
-        }
-    };
-    x.RequireHttpsMetadata = false;
-    x.SaveToken = false;
-    x.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(key),
-        ValidateIssuer = true,
-        ValidIssuer = Issuer,
-        ValidateAudience = true,
-        ValidAudience = Audience,
-        ValidateLifetime = true,
-        ClockSkew = TimeSpan.Zero
-    };
+    options.IdleTimeout = TimeSpan.FromMinutes(20);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
 });
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+// Herramientas de desarrollo
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
     app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "MarCorp API v1");
+        c.EnablePersistAuthorization();
+        c.RoutePrefix = "swagger";
+    });
+    
 }
 
-app.UseSwagger();
-app.UseSwaggerUI(c =>
-{
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "MarCorp API v1");
-    c.RoutePrefix = string.Empty; // Swagger en la raíz
-}
-                              );
+app.UseWatchDogExceptionLogger();  // Middleware de monitoreo
 
-app.UseAuthentication();
-app.UseAuthorization();
+// Seguridad y protocolos
+app.UseHttpsRedirection();  // Redirección HTTP a HTTPS
+
+// Políticas CORS (debe estar después de Routing y antes de Auth)
+app.UseCors("policyApiMarCorp");
+
+// Autenticación y autorización (orden crítico)
+app.UseRouting();
+app.UseSession();           // Sessions middleware
+
+// Limitación de tasa de peticiones
+app.UseRateLimiter();
+
+// WatchDog (monitoreo en tiempo real)
+app.UseWatchDog(conf => {
+    conf.WatchPageUsername = builder.Configuration["WatchDog:WatchPageUsername"];
+    conf.WatchPagePassword = builder.Configuration["WatchDog:WatchPagePassword"];
+});
+
 app.MapControllers();
 
+// Usa una rama de middleware condicional
+app.UseWhen(
+    context => !context.Request.Path.StartsWithSegments("/wtchdlogger", StringComparison.OrdinalIgnoreCase) &&
+               !context.Request.Path.StartsWithSegments("/WTCHDwatchpage", StringComparison.OrdinalIgnoreCase),
+              
+    appBuilder => {
+        //appBuilder.UseAuthentication();
+        //appBuilder.UseAuthorization();
+    }
+);
+
+// Identity
+//app.UseAuthentication();
+
+// Policies/Roles
+//app.UseAuthorization(); 
+
+// Health Checks Configuration
+//app.MapHealthChecksUI();  // UI de monitoreo
+//app.MapHealthChecks("/health", new HealthCheckOptions
+//{
+//    Predicate = _ => true,  // Incluir todos los checks
+//    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+//});
+
 app.Run();
+
+/// <summary>
+/// The main entry point for the application.
+/// Nota: Esta clase partial es requerida para integración con tests.
+/// </summary>
+public partial class Program { };

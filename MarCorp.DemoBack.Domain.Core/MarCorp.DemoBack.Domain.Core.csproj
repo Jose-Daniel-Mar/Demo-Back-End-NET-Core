@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MarCorp.DemoBack.Data.Interface\MarCorp.DemoBack.Data.Interface.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Domain.Interface\MarCorp.DemoBack.Domain.Interface.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Domain.Models\MarCorp.DemoBack.Domain.Models.csproj" />
   </ItemGroup>
