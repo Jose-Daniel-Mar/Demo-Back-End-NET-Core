@@ -1,8 +1,7 @@
-MarCorp.DemoBack
-Enterprise .NET Core 9.0 Application – A Modular, Scalable Solution
+MarCorp.DemoBack Enterprise .NET Core 9.0 Application – Clean Architecture Solution
 
 Description
-MarCorp.DemoBack is an enterprise-level application built using a layered architecture that clearly separates responsibilities. Developed on .NET Core 9.0, the project leverages modern technologies such as Dapper for efficient data access, AutoMapper for object mapping, FluentValidation for model validation, JWT for token-based authentication, and Swashbuckle for API documentation (Swagger/OpenAPI). The solution is organized into distinct layers—Application, Data, Domain, Services.WebApi, and Support—making it easier to maintain, test, and scale while also integrating with Docker and CI/CD pipelines via GitHub Actions.
+MarCorp.DemoBack is an enterprise-grade application built following Clean Architecture principles, designed to maximize maintainability, scalability, and testability. Developed on .NET 9.0, it integrates modern technologies like Dapper for efficient data access, AutoMapper for object mapping, FluentValidation for model validation, JWT for authentication, and Swagger for API documentation. The solution is organized into independent layers (Core, Application, Infrastructure, and Presentation) with unidirectional dependencies, implementing advanced features like health checks, rate limiting, and real-time monitoring with WatchDog, and Support—making it easier to maintain, test, and scale while also integrating with Docker and CI/CD pipelines via GitHub Actions.
 
 Table of Contents:
 Installation and Setup
@@ -41,38 +40,58 @@ Usage
 Running the API
 To start the web API, navigate to the Services.WebApi folder and run:
 dotnet run --project Services.WebApi/Services.WebApi.csproj
-The API will be available (e.g., at http://localhost:5000), and its interactive documentation can be accessed via Swagger at http://localhost:5000/swagger.
+The API will be available (e.g., at http://localhost:xxxx), and its interactive documentation can be accessed via Swagger at http://localhost:xxxx/swagger.
+
+Access:
+API: http://localhost:xxxx
+
+Swagger UI: 
+http://localhost:xxxx/swagger
+
+Health Checks: 
+https://localhost:44379/healthchecks-ui#/healthchecks
+http://localhost:xxxx/health
+
+WatchDog: 
+http://localhost:xxxx/watchdog
 
 Running Tests
 Currently, there is a test in UsersApplicationTest.cs. To run the tests, execute:
 dotnet test
-Note: It is recommended to expand the unit and integration test coverage to include additional components.
 
 Project Architecture
-PENDING......
+
+![image](https://github.com/user-attachments/assets/0ea94484-2d1f-4d6e-bc90-cb9e4b247731)
+
+![image](https://github.com/user-attachments/assets/9c706a67-c2ec-49db-9e41-fc12c6a58bdf)
+
+
+Key Modules (under Services.WebApi/Modules):
+
+Authentication: JWT configuration
+HealthCheck: Dependency monitoring
+RateLimiter: Request throttling
+WatchDog: Real-time monitoring
+Validator: Centralized validations
 
 Key Technologies
-.NET 9.0: Core framework for the project.
-Dapper: A lightweight micro-ORM for data access.
-AutoMapper: Simplifies mapping between DTOs and domain entities.
-FluentValidation: Provides declarative validation of models.
-Swashbuckle (Swagger): Generates interactive API documentation.
-JWT: Handles authentication via tokens.
-xUnit/MSTest: Frameworks used for unit testing.
+.NET 9.0
+Dapper (High-performance data access)
+JWT (Token-based authentication)
+Swashbuckle (OpenAPI documentation)
+AutoMapper (Object mapping)
+FluentValidation (Declarative validations)
+Redis (Distributed caching)
+WatchDog (Real-time monitoring)
+Polly (Resilience & retries - planned)
 
-Data Flow Example
-Request Reception:
-The UsersController.cs (in the API layer) receives an HTTP request.
-DTO Validation:
-The UsersDTO.cs is validated using UsersDTOValidator.cs.
-Application Logic:
-The UsersApplication.cs service orchestrates the business process.
-Data Access:
-The UsersRepository.cs accesses the database via Dapper.
-Domain Rules:
-The UsersDomain.cs applies core business rules.
-Object Mapping:
-MappingsProfile.cs (located in Support/Mapper) transforms data between layers.
+Data Flow
+HTTP Request: Received by UsersController (Presentation)
+Validation: UsersDTOValidator validates model (Application)
+Use Case: UsersApplication executes business logic (Application)
+Data Access: UsersRepository interacts with DB via Dapper (Infrastructure)
+Domain Rules: Entities in UsersDomain apply core logic (Core)
+Mapping: MappingsProfile transforms data between layers
 
 Recommendations and Future Improvements
 
@@ -85,16 +104,6 @@ Consider implementing role-based authorization.
 
 Optimization:
 Integrate caching mechanisms in the repositories.
-Enhance centralized logging (e.g., using Serilog with Elasticsearch).
-
-Documentation:
-Ensure API endpoints are well-documented in Swagger.
-Use XML comments in the code for comprehensive technical documentation.
-
-Infrastructure & Resilience:
-Separate environment configurations (e.g., appsettings.Development.json vs. production).
-Add health check endpoints (e.g., /health, /metrics).
-Implement resilience patterns (such as circuit breakers using Polly) and audit critical database changes.
 
 Contributing
 
