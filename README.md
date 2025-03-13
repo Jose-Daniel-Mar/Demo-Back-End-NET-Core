@@ -40,17 +40,17 @@ Usage
 Running the API
 To start the web API, navigate to the Services.WebApi folder and run:
 dotnet run --project Services.WebApi/Services.WebApi.csproj
-The API will be available (e.g., at http://localhost:xxxx), and its interactive documentation can be accessed via Swagger at http://localhost:xxxx/swagger.
+The API will be available (e.g., at http://localhost:xxxx), and its interactive documentation can be accessed via Swagger at http://localhost:xxxxx/swagger.
 
 Access:
-API: http://localhost:xxxx
+API: http://localhost:xxxxx
 
 Swagger UI: 
-http://localhost:xxxx/swagger
+http://localhost:xxxxx/swagger
 
 Health Checks: 
-https://localhost:44379/healthchecks-ui#/healthchecks
-http://localhost:xxxx/health
+https://localhost:xxxxx/healthchecks-ui#/healthchecks
+http://localhost:xxxxx/health
 
 WatchDog: 
 http://localhost:xxxx/watchdog
