@@ -32,7 +32,7 @@ builder.Services.AddInjection(configuration);
 builder.Services.AddValidator();
 builder.Services.AddHealthCheck(configuration);
 builder.Services.AddWatchDog(configuration);
-builder.Services.AddRedisCache(configuration);
+//builder.Services.AddRedisCache(configuration);
 builder.Services.AddRatelimiting(configuration);
 //builder.Services.AddSession(options => {
 //    options.IdleTimeout = TimeSpan.FromMinutes(20);
@@ -69,11 +69,10 @@ app.UseCors("policyApiMarCorp");
 //app.UseRouting();
 //app.UseSession();
 
+app.MapControllers();
+
 // Limitación de tasa de peticiones
 app.UseRateLimiter();
-
-
-app.MapControllers();
 
 // Health Checks Configuration
 app.MapHealthChecksUI();  // UI de monitoreo
