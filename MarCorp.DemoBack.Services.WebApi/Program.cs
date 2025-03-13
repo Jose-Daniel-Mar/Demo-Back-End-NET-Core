@@ -26,20 +26,18 @@ builder.Services.AddFCors(configuration);
 builder.Services.AddPersistenceServices();
 builder.Services.AddApplicationServices();
 builder.Services.AddSwagger();
-//builder.Services.AddAuthentication(configuration);
+builder.Services.AddAuthentication(configuration);
 builder.Services.AddMapper();
 builder.Services.AddInjection(configuration);
 builder.Services.AddValidator();
-//builder.Services.AddHealthCheck(configuration);
+builder.Services.AddHealthCheck(configuration);
 builder.Services.AddWatchDog(configuration);
 builder.Services.AddRedisCache(configuration);
 builder.Services.AddRatelimiting(configuration);
-builder.Services.AddSession(options =>
-{
-    options.IdleTimeout = TimeSpan.FromMinutes(20);
-    options.Cookie.HttpOnly = true;
-    options.Cookie.IsEssential = true;
-});
+//builder.Services.AddSession(options => {
+//    options.IdleTimeout = TimeSpan.FromMinutes(20);
+//    options.Cookie.HttpOnly = true;
+//    options.Cookie.IsEssential = true;});
 
 var app = builder.Build();
 
@@ -59,7 +57,8 @@ if (app.Environment.IsDevelopment())
     
 }
 
-app.UseWatchDogExceptionLogger();  // Middleware de monitoreo
+// Middleware de monitoreo
+app.UseWatchDogExceptionLogger();
 
 // Seguridad y protocolos
 app.UseHttpsRedirection();  // Redirección HTTP a HTTPS
@@ -67,12 +66,22 @@ app.UseHttpsRedirection();  // Redirección HTTP a HTTPS
 // Políticas CORS (debe estar después de Routing y antes de Auth)
 app.UseCors("policyApiMarCorp");
 
-// Autenticación y autorización (orden crítico)
-app.UseRouting();
-app.UseSession();           // Sessions middleware
+//app.UseRouting();
+//app.UseSession();
 
 // Limitación de tasa de peticiones
 app.UseRateLimiter();
+
+
+app.MapControllers();
+
+// Health Checks Configuration
+app.MapHealthChecksUI();  // UI de monitoreo
+app.MapHealthChecks("/health", new HealthCheckOptions
+{
+    Predicate = _ => true,  // Incluir todos los checks
+    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+});
 
 // WatchDog (monitoreo en tiempo real)
 app.UseWatchDog(conf => {
@@ -80,32 +89,12 @@ app.UseWatchDog(conf => {
     conf.WatchPagePassword = builder.Configuration["WatchDog:WatchPagePassword"];
 });
 
-app.MapControllers();
-
-// Usa una rama de middleware condicional
-app.UseWhen(
-    context => !context.Request.Path.StartsWithSegments("/wtchdlogger", StringComparison.OrdinalIgnoreCase) &&
-               !context.Request.Path.StartsWithSegments("/WTCHDwatchpage", StringComparison.OrdinalIgnoreCase),
-              
-    appBuilder => {
-        //appBuilder.UseAuthentication();
-        //appBuilder.UseAuthorization();
-    }
-);
 
 // Identity
 //app.UseAuthentication();
 
 // Policies/Roles
 //app.UseAuthorization(); 
-
-// Health Checks Configuration
-//app.MapHealthChecksUI();  // UI de monitoreo
-//app.MapHealthChecks("/health", new HealthCheckOptions
-//{
-//    Predicate = _ => true,  // Incluir todos los checks
-//    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
-//});
 
 app.Run();
 

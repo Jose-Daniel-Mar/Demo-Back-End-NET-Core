@@ -17,8 +17,7 @@
 
             services.AddCors(options => options.AddPolicy(myPolicy, builder => builder.WithOrigins(configuration["Config:OriginCors"])
                 .AllowAnyHeader()
-                .AllowAnyMethod()
-                .AllowAnyOrigin()));
+                .AllowAnyMethod()));
 
             services.AddMvc();
 
