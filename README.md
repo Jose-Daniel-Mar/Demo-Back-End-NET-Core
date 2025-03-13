@@ -49,38 +49,7 @@ dotnet test
 Note: It is recommended to expand the unit and integration test coverage to include additional components.
 
 Project Architecture
-
-The project is organized as follows:
-MarCorp.DemoBack/
-├── .github/                   # GitHub Actions configuration (CI/CD)
-├── Application/               # Business logic and use cases
-│   ├── DTO/                   # Data Transfer Objects
-│   ├── Interface/             # Application service interfaces
-│   ├── Main/                  # Service implementations
-│   └── Validator/             # Model validations using FluentValidation
-├── Data/                      # Data access layer
-│   ├── Connections/           # Connection configurations (using Dapper)
-│   ├── Interface/             # Repository interfaces
-│   └── Repository/            # Repository implementations
-├── Domain/                    # Core domain logic
-│   ├── Core/                  # Domain entities and services
-│   ├── Interface/             # Domain interfaces
-│   └── Models/                # Database models/entities
-├── Services.WebApi/           # Presentation layer (REST API)
-│   ├── Controllers/           # HTTP endpoints
-│   ├── Modules/               # Modular configurations (Authentication, Swagger)
-│   └── Properties/            # Environment settings
-└── Support/                   # Cross-cutting utilities
-    ├── Common/                # Helpers and standardized responses
-    ├── Logging/               # Logging implementation
-    └── Mapper/                # AutoMapper configuration
-    
-Each layer has defined responsibilities:
-Application: Orchestrates business logic, handles DTOs, and performs validations.
-Data: Manages data access via Dapper, implementing the Repository pattern.
-Domain: Contains core entities and business rules.
-Services.WebApi: Exposes functionality through HTTP endpoints and configures modules such as JWT authentication and Swagger.
-Support: Provides common utilities, centralized logging, and object mapping configurations.
+PENDING......
 
 Key Technologies
 .NET 9.0: Core framework for the project.
