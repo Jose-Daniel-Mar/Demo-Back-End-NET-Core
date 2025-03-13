@@ -34,14 +34,12 @@ builder.Services.AddHealthCheck(configuration);
 builder.Services.AddWatchDog(configuration);
 //builder.Services.AddRedisCache(configuration);
 builder.Services.AddRatelimiting(configuration);
-//builder.Services.AddSession(options => {
-//    options.IdleTimeout = TimeSpan.FromMinutes(20);
-//    options.Cookie.HttpOnly = true;
-//    options.Cookie.IsEssential = true;});
+
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+
 // Herramientas de desarrollo
 if (app.Environment.IsDevelopment())
 {
@@ -61,13 +59,16 @@ if (app.Environment.IsDevelopment())
 app.UseWatchDogExceptionLogger();
 
 // Seguridad y protocolos
-app.UseHttpsRedirection();  // Redirección HTTP a HTTPS
+app.UseHttpsRedirection();
 
 // Políticas CORS (debe estar después de Routing y antes de Auth)
 app.UseCors("policyApiMarCorp");
 
-//app.UseRouting();
-//app.UseSession();
+// Identity
+app.UseAuthentication();
+
+// Policies/Roles
+app.UseAuthorization(); 
 
 app.MapControllers();
 
@@ -75,7 +76,7 @@ app.MapControllers();
 app.UseRateLimiter();
 
 // Health Checks Configuration
-app.MapHealthChecksUI();  // UI de monitoreo
+app.MapHealthChecksUI();
 app.MapHealthChecks("/health", new HealthCheckOptions
 {
     Predicate = _ => true,  // Incluir todos los checks
@@ -87,13 +88,6 @@ app.UseWatchDog(conf => {
     conf.WatchPageUsername = builder.Configuration["WatchDog:WatchPageUsername"];
     conf.WatchPagePassword = builder.Configuration["WatchDog:WatchPagePassword"];
 });
-
-
-// Identity
-//app.UseAuthentication();
-
-// Policies/Roles
-//app.UseAuthorization(); 
 
 app.Run();
 
