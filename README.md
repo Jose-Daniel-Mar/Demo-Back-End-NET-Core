@@ -41,7 +41,7 @@ Usage
 Running the API
 To start the web API, navigate to the Services.WebApi folder and run:
 dotnet run --project Services.WebApi/Services.WebApi.csproj
-The API will be available (e.g., at http://localhost:5000), and its interactive documentation can be accessed via Swagger at http://localhost:5000/swagger.
+The API will be available (e.g., at http://localhost:xxxx), and its interactive documentation can be accessed via Swagger at http://localhost:xxxx/swagger.
 
 Running Tests
 Currently, there is a test in UsersApplicationTest.cs. To run the tests, execute:
