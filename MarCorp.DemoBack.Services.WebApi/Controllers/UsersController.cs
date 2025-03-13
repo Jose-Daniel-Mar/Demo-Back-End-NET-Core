@@ -37,13 +37,13 @@ namespace MarCorp.DemoBack.Services.WebApi.Controllers
         /// <summary>
         /// Authenticates a user and returns a token if successful.
         /// </summary>
-        /// <param name="usersDto">The user data transfer object containing login information.</param>
+        /// <param name="usersDTO">The user data transfer object containing login information.</param>
         /// <returns>An IActionResult containing the authentication result.</returns>
         [AllowAnonymous]
         [HttpPost("AuthenticateAsync")]
-        public async Task<IActionResult> AuthenticateAsync([FromBody] UserDTO usersDto)
+        public async Task<IActionResult> AuthenticateAsync([FromBody] UserDTO usersDTO)
         {
-            var response = await _usersApplication.AuthenticateAsync(usersDto.UserName, usersDto.Password);
+            var response = await _usersApplication.AuthenticateAsync(usersDTO.UserName, usersDTO.Password);
             if (response.IsSuccess)
             {
                 if (response.Data != null)
@@ -61,9 +61,9 @@ namespace MarCorp.DemoBack.Services.WebApi.Controllers
         /// <summary>
         /// Builds a token for the user.
         /// </summary>
-        /// <param name="usersDto"></param>
+        /// <param name="usersDTO"></param>
         /// <returns></returns>
-        private string BuildToken(Response<UserDTO> usersDto)
+        private string BuildToken(Response<UserDTO> usersDTO)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret.PadRight(32));
@@ -71,7 +71,7 @@ namespace MarCorp.DemoBack.Services.WebApi.Controllers
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                        new Claim(ClaimTypes.Name, usersDto.Data.UserId.ToString())
+                        new Claim(ClaimTypes.Name, usersDTO.Data.UserId.ToString())
                 }),
                 Expires = DateTime.UtcNow.AddMinutes(10),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature),

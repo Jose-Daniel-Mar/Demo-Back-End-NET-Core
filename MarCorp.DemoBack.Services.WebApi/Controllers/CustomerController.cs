@@ -30,14 +30,14 @@ namespace MarCorp.DemoBack.Services.WebApi.Controllers
         /// <summary>
         /// Inserts a new customer.
         /// </summary>
-        /// <param name="customerDto">The customer data transfer object.</param>
+        /// <param name="customerDTO">The customer data transfer object.</param>
         /// <returns>The result of the insert operation.</returns>
         [HttpPost("Insert")]
-        public IActionResult Insert([FromBody] CustomerDTO customerDto)
+        public IActionResult Insert([FromBody] CustomerDTO customerDTO)
         {
-            if (customerDto == null)
+            if (customerDTO == null)
                 return BadRequest();
-            var response = _customerApplication.Insert(customerDto);
+            var response = _customerApplication.Insert(customerDTO);
             if (response.IsSuccess)
                 return Ok(response);
 
@@ -47,14 +47,14 @@ namespace MarCorp.DemoBack.Services.WebApi.Controllers
         /// <summary>
         /// Updates an existing customer.
         /// </summary>
-        /// <param name="customerDto">The customer data transfer object.</param>
+        /// <param name="customerDTO">The customer data transfer object.</param>
         /// <returns>The result of the update operation.</returns>
         [HttpPut("Update")]
-        public IActionResult Update([FromBody] CustomerDTO customerDto)
+        public IActionResult Update([FromBody] CustomerDTO customerDTO)
         {
-            if (customerDto == null)
+            if (customerDTO == null)
                 return BadRequest();
-            var response = _customerApplication.Update(customerDto);
+            var response = _customerApplication.Update(customerDTO);
             if (response.IsSuccess)
                 return Ok(response);
 
@@ -115,14 +115,14 @@ namespace MarCorp.DemoBack.Services.WebApi.Controllers
         /// <summary>
         /// Asynchronously inserts a new customer.
         /// </summary>
-        /// <param name="customerDto">The customer data transfer object.</param>
+        /// <param name="customerDTO">The customer data transfer object.</param>
         /// <returns>The result of the insert operation.</returns>
         [HttpPost("InsertAsync")]
-        public async Task<IActionResult> InsertAsync([FromBody] CustomerDTO customerDto)
+        public async Task<IActionResult> InsertAsync([FromBody] CustomerDTO customerDTO)
         {
-            if (customerDto == null)
+            if (customerDTO == null)
                 return BadRequest();
-            var response = await _customerApplication.InsertAsync(customerDto);
+            var response = await _customerApplication.InsertAsync(customerDTO);
             if (response.IsSuccess)
                 return Ok(response);
 
@@ -132,14 +132,14 @@ namespace MarCorp.DemoBack.Services.WebApi.Controllers
         /// <summary>
         /// Asynchronously updates an existing customer.
         /// </summary>
-        /// <param name="customerDto">The customer data transfer object.</param>
+        /// <param name="customerDTO">The customer data transfer object.</param>
         /// <returns>The result of the update operation.</returns>
         [HttpPut("UpdateAsync")]
-        public async Task<IActionResult> UpdateAsync([FromBody] CustomerDTO customerDto)
+        public async Task<IActionResult> UpdateAsync([FromBody] CustomerDTO customerDTO)
         {
-            if (customerDto == null)
+            if (customerDTO == null)
                 return BadRequest();
-            var response = await _customerApplication.UpdateAsync(customerDto);
+            var response = await _customerApplication.UpdateAsync(customerDTO);
             if (response.IsSuccess)
                 return Ok(response);
 

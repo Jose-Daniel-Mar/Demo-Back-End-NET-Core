@@ -32,6 +32,7 @@ builder.Services.AddInjection(configuration);
 builder.Services.AddValidator();
 builder.Services.AddHealthCheck(configuration);
 builder.Services.AddWatchDog(configuration);
+// DESCOMENTAR PARA USAR REDIS
 //builder.Services.AddRedisCache(configuration);
 builder.Services.AddRatelimiting(configuration);
 
@@ -61,7 +62,7 @@ app.UseWatchDogExceptionLogger();
 // Seguridad y protocolos
 app.UseHttpsRedirection();
 
-// Políticas CORS (debe estar después de Routing y antes de Auth)
+// Políticas CORS
 app.UseCors("policyApiMarCorp");
 
 // Identity

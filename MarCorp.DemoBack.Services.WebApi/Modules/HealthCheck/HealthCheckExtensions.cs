@@ -22,7 +22,9 @@ namespace MarCorp.DemoBack.Services.WebApi.Modules.HealthCheck
             services.AddHealthChecks()
                 .AddSqlServer(configuration.GetConnectionString("NorthwindConnection"), tags: new[] { "database" })
                 .AddCheck<HealthCheckCustom>("HealthCheckCustomRandom", tags: new[] { "custom" })
-                .AddCheck("redis", new RedisHealthCheck(configuration, logger), tags: new[] { "cache" });
+                // DESCOMENTAR PARA USAR REDIS
+                //.AddCheck("redis", new RedisHealthCheck(configuration, logger), tags: new[] { "cache" })
+                ;
             services.AddHealthChecksUI().AddInMemoryStorage();
 
             return services;
