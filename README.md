@@ -60,8 +60,8 @@ Currently, there is a test in UsersApplicationTest.cs. To run the tests, execute
 dotnet test
 
 Project Architecture
-![image](https://github.com/user-attachments/assets/0ea94484-2d1f-4d6e-bc90-cb9e4b247731)
 
+![image](https://github.com/user-attachments/assets/0ea94484-2d1f-4d6e-bc90-cb9e4b247731)
 
 ![image](https://github.com/user-attachments/assets/9c706a67-c2ec-49db-9e41-fc12c6a58bdf)
 
