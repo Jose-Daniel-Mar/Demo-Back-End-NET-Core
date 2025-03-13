@@ -1,4 +1,5 @@
 ﻿using WatchDog;
+using WatchDog.src.Enums;
 
 namespace MarCorp.DemoBack.Services.WebApi.Modules.Watch
 {
@@ -18,9 +19,9 @@ namespace MarCorp.DemoBack.Services.WebApi.Modules.Watch
             services.AddWatchDogServices(opt =>
             {
                 opt.SetExternalDbConnString = configuration.GetConnectionString("NorthwindConnection");
-                opt.DbDriverOption = WatchDog.src.Enums.WatchDogDbDriverEnum.MSSQL;
+                opt.DbDriverOption = WatchDogDbDriverEnum.MSSQL;
                 opt.IsAutoClear = true;
-                opt.ClearTimeSchedule = WatchDog.src.Enums.WatchDogAutoClearScheduleEnum.Monthly;
+                opt.ClearTimeSchedule = WatchDogAutoClearScheduleEnum.Monthly;                
             });
             return services;
         }

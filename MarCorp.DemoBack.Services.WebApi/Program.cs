@@ -26,11 +26,11 @@ builder.Services.AddFCors(configuration);
 builder.Services.AddPersistenceServices();
 builder.Services.AddApplicationServices();
 builder.Services.AddSwagger();
-builder.Services.AddAuthentication(configuration);
+//builder.Services.AddAuthentication(configuration);
 builder.Services.AddMapper();
 builder.Services.AddInjection(configuration);
 builder.Services.AddValidator();
-builder.Services.AddHealthCheck(configuration);
+//builder.Services.AddHealthCheck(configuration);
 builder.Services.AddWatchDog(configuration);
 builder.Services.AddRedisCache(configuration);
 builder.Services.AddRatelimiting(configuration);
@@ -59,6 +59,8 @@ if (app.Environment.IsDevelopment())
     
 }
 
+app.UseWatchDogExceptionLogger();  // Middleware de monitoreo
+
 // Seguridad y protocolos
 app.UseHttpsRedirection();  // Redirección HTTP a HTTPS
 
@@ -69,46 +71,41 @@ app.UseCors("policyApiMarCorp");
 app.UseRouting();
 app.UseSession();           // Sessions middleware
 
+// Limitación de tasa de peticiones
+app.UseRateLimiter();
+
 // WatchDog (monitoreo en tiempo real)
 app.UseWatchDog(conf => {
     conf.WatchPageUsername = builder.Configuration["WatchDog:WatchPageUsername"];
     conf.WatchPagePassword = builder.Configuration["WatchDog:WatchPagePassword"];
 });
-app.Use(async (context, next) =>
-{
-    if (context.Request.Path.StartsWithSegments("/wtchdlogger") ||
-        context.Request.Path.StartsWithSegments("/WTCHDwatchpage"))
-    {
-        // Para rutas de WatchDog, saltarse la autenticación JWT
-        await next();
+
+app.MapControllers();
+
+// Usa una rama de middleware condicional
+app.UseWhen(
+    context => !context.Request.Path.StartsWithSegments("/wtchdlogger", StringComparison.OrdinalIgnoreCase) &&
+               !context.Request.Path.StartsWithSegments("/WTCHDwatchpage", StringComparison.OrdinalIgnoreCase),
+              
+    appBuilder => {
+        //appBuilder.UseAuthentication();
+        //appBuilder.UseAuthorization();
     }
-    else
-    {
-        // Para otras rutas, aplicar autenticación normal
-        context.Request.Headers.Authorization = context.Request.Headers.Authorization;
-        await next();
-    }
-});
+);
 
 // Identity
-app.UseAuthentication();
+//app.UseAuthentication();
 
 // Policies/Roles
-app.UseAuthorization(); 
-
-// Limitación de tasa de peticiones
-app.UseRateLimiter();
+//app.UseAuthorization(); 
 
 // Health Checks Configuration
-app.MapHealthChecksUI();  // UI de monitoreo
-app.MapHealthChecks("/health", new HealthCheckOptions
-{
-    Predicate = _ => true,  // Incluir todos los checks
-    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
-});
-
-// Endpoints finales
-app.MapControllers();
+//app.MapHealthChecksUI();  // UI de monitoreo
+//app.MapHealthChecks("/health", new HealthCheckOptions
+//{
+//    Predicate = _ => true,  // Incluir todos los checks
+//    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+//});
 
 app.Run();
 
