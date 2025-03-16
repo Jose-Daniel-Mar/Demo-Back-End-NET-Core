@@ -9,7 +9,7 @@ namespace MarCorp.DemoBack.Services.WebApi.Controllers
     /// Controller to manage categories.
     /// </summary>
     [Authorize]
-    [EnableRateLimiting("FixedWindowpolicy")]
+    [EnableRateLimiting("fixedWindow")]
     [Route("api/[controller]")]
     [ApiController]
     public class CategoriesController : ControllerBase

@@ -15,7 +15,7 @@ namespace MarCorp.DemoBack.Services.WebApi.Modules.RateLimiter
         /// <returns>The IServiceCollection with the rate limiting services added.</returns>
         public static IServiceCollection AddRatelimiting(this IServiceCollection services, IConfiguration configuration)
         {
-            var fixedWindowPolicy = "FixedWindowpolicy";
+            var fixedWindowPolicy = "fixedWindow";
             services.AddRateLimiter(configureOptions =>
             {
                 configureOptions.AddFixedWindowLimiter(policyName: fixedWindowPolicy, fixedWindow =>

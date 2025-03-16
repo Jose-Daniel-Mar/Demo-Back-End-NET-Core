@@ -71,10 +71,10 @@ app.UseAuthentication();
 // Policies/Roles
 app.UseAuthorization(); 
 
-app.MapControllers();
-
 // Limitación de tasa de peticiones
 app.UseRateLimiter();
+
+app.MapControllers();
 
 // Health Checks Configuration
 app.MapHealthChecksUI();
