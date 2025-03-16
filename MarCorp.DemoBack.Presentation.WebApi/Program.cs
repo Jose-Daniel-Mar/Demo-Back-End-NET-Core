@@ -14,16 +14,16 @@ using MarCorp.DemoBack.Services.WebApi.Modules.Watch;
 using WatchDog;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 
-// 1. Configuración inicial ---------------------------------------------------
+// Configuración inicial ---------------------------------------------------
 var builder = WebApplication.CreateBuilder(args);
 var configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", optional: true, reloadOnChange: true).Build();
 
-// 2. Registro de servicios y dependencias --------------------------------------------------
+// Registro de servicios y dependencias --------------------------------------------------
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddOpenApi();
 builder.Services.AddFCors(configuration);
-builder.Services.AddPersistenceServices();
+builder.Services.AddPersistenceServices(configuration);
 builder.Services.AddApplicationServices();
 builder.Services.AddSwagger();
 builder.Services.AddAuthentication(configuration);
@@ -36,10 +36,7 @@ builder.Services.AddWatchDog(configuration);
 //builder.Services.AddRedisCache(configuration);
 builder.Services.AddRatelimiting(configuration);
 
-
 var app = builder.Build();
-
-// Configure the HTTP request pipeline.
 
 // Herramientas de desarrollo
 if (app.Environment.IsDevelopment())
@@ -53,8 +50,10 @@ if (app.Environment.IsDevelopment())
         c.EnablePersistAuthorization();
         c.RoutePrefix = "swagger";
     });
-    
 }
+
+// Routing
+app.UseRouting();
 
 // Middleware de monitoreo
 app.UseWatchDogExceptionLogger();
@@ -65,14 +64,14 @@ app.UseHttpsRedirection();
 // Políticas CORS
 app.UseCors("policyApiMarCorp");
 
+// Limitación de tasa de peticiones
+app.UseRateLimiter();
+
 // Identity
 app.UseAuthentication();
 
 // Policies/Roles
 app.UseAuthorization(); 
-
-// Limitación de tasa de peticiones
-app.UseRateLimiter();
 
 app.MapControllers();
 

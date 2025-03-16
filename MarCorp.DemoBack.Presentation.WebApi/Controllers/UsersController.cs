@@ -4,6 +4,7 @@ using MarCorp.DemoBack.Services.WebApi.Helpers;
 using MarCorp.DemoBack.Support.Common;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -16,6 +17,7 @@ namespace MarCorp.DemoBack.Services.WebApi.Controllers
     /// Controller for managing user-related actions.
     /// </summary>
     [Authorize]
+    [EnableRateLimiting("fixedWindow")]
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
@@ -29,10 +31,7 @@ namespace MarCorp.DemoBack.Services.WebApi.Controllers
         /// <param name="authApplication">The user application service.</param>
         /// <param name="appSettings">The application settings.</param>
         public UsersController(IUsersApplication authApplication, IOptions<AppSettings> appSettings)
-        {
-            _usersApplication = authApplication;
-            _appSettings = appSettings.Value;
-        }
+            => (_usersApplication, _appSettings) = (authApplication, appSettings.Value);
 
         /// <summary>
         /// Authenticates a user and returns a token if successful.
@@ -69,11 +68,8 @@ namespace MarCorp.DemoBack.Services.WebApi.Controllers
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret.PadRight(32));
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = new ClaimsIdentity(new Claim[]
-                {
-                        new Claim(ClaimTypes.Name, usersDTO.Data.UserId.ToString())
-                }),
-                Expires = DateTime.UtcNow.AddMinutes(10),
+                Subject = new ClaimsIdentity(new Claim[] { new Claim(ClaimTypes.Name, usersDTO.Data.UserId.ToString()) }),
+                Expires = DateTime.UtcNow.AddMinutes(100),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature),
                 Issuer = _appSettings.Issuer,
                 Audience = _appSettings.Audience
