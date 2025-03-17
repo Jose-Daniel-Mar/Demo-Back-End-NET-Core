@@ -14,11 +14,11 @@ using MarCorp.DemoBack.Services.WebApi.Modules.Watch;
 using WatchDog;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 
-// Configuración inicial ---------------------------------------------------
+// Configuración inicial
 var builder = WebApplication.CreateBuilder(args);
 var configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", optional: true, reloadOnChange: true).Build();
 
-// Registro de servicios y dependencias --------------------------------------------------
+// Registro de servicios y dependencias
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddOpenApi();

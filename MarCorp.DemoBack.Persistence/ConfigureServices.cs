@@ -29,7 +29,8 @@ namespace MarCorp.DemoBack.Persistence
             services.AddScoped<ICustomersRepository, CustomersRepository>();
             services.AddScoped<IUsersRepository, UsersRepository>();
             services.AddScoped<ICategoriesRepository, CategoriesRepository>();
-            
+            services.AddScoped<IDiscountRepository, DiscountRepository>();
+
             return services;
         }
     }
