@@ -1,7 +1,6 @@
 using HealthChecks.UI.Client;
 using MarCorp.DemoBack.Persistence;
 using MarCorp.DemoBack.Application.UseCases;
-using MarCorp.DemoBack.Services.WebApi.Modules;
 using MarCorp.DemoBack.Services.WebApi.Modules.Authentication;
 using MarCorp.DemoBack.Services.WebApi.Modules.Cors;
 using MarCorp.DemoBack.Services.WebApi.Modules.HealthCheck;
@@ -9,7 +8,6 @@ using MarCorp.DemoBack.Services.WebApi.Modules.Injection;
 using MarCorp.DemoBack.Services.WebApi.Modules.RateLimiter;
 using MarCorp.DemoBack.Services.WebApi.Modules.Redis;
 using MarCorp.DemoBack.Services.WebApi.Modules.Swagger;
-using MarCorp.DemoBack.Services.WebApi.Modules.Validator;
 using MarCorp.DemoBack.Services.WebApi.Modules.Watch;
 using WatchDog;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
@@ -19,7 +17,6 @@ var builder = WebApplication.CreateBuilder(args);
 var configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", optional: true, reloadOnChange: true).Build();
 
 // Registro de servicios y dependencias
-builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddOpenApi();
 builder.Services.AddFCors(configuration);
@@ -27,9 +24,7 @@ builder.Services.AddPersistenceServices(configuration);
 builder.Services.AddApplicationServices();
 builder.Services.AddSwagger();
 builder.Services.AddAuthentication(configuration);
-builder.Services.AddMapper();
 builder.Services.AddInjection(configuration);
-builder.Services.AddValidator();
 builder.Services.AddHealthCheck(configuration);
 builder.Services.AddWatchDog(configuration);
 // DESCOMENTAR PARA USAR REDIS

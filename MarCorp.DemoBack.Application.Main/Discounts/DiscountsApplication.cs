@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using FluentValidation;
 using MarCorp.DemoBack.Application.DTO;
 using MarCorp.DemoBack.Application.Interface.Persistence;
 using MarCorp.DemoBack.Application.Interface.UseCases;
@@ -12,9 +13,9 @@ namespace Pacagroup.Ecommerce.Application.UseCases.Discounts
     {
         private readonly IDiscountRepository _discountRepository;
         private readonly IMapper _mapper;
-        private readonly DiscountDTOValidator _discountDTOValidator;
+        private readonly IValidator<DiscountDTO> _discountDTOValidator;
 
-        public DiscountsApplication(IDiscountRepository discountRepository, IMapper mapper, DiscountDTOValidator discountDTOValidator)
+        public DiscountsApplication(IDiscountRepository discountRepository, IMapper mapper, IValidator<DiscountDTO> discountDTOValidator)
         {
             _discountRepository = discountRepository;
             _mapper = mapper;

@@ -1,4 +1,6 @@
-﻿namespace MarCorp.DemoBack.Services.WebApi.Modules.Cors
+﻿using System.Text.Json.Serialization;
+
+namespace MarCorp.DemoBack.Services.WebApi.Modules.Cors
 {
     /// <summary>
     /// Extension methods for configuring CORS in the application.
@@ -20,6 +22,11 @@
                 .AllowAnyMethod()));
 
             services.AddMvc();
+            services.AddControllers().AddJsonOptions(options =>
+            {
+                var enumConverter = new JsonStringEnumConverter();
+                options.JsonSerializerOptions.Converters.Add(enumConverter);
+            });
 
             return services;
         }

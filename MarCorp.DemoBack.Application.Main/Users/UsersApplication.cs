@@ -13,11 +13,11 @@ namespace MarCorp.DemoBack.Application.UseCases.Users
         private readonly IMapper _mapper;
         private readonly IValidator<UserDTO> _usersDtoValidator;
 
-        public UsersApplication(IUsersRepository usersRepository, IMapper iMapper, IValidator<UserDTO> usersDtoValidator)
+        public UsersApplication(IUsersRepository usersRepository, IMapper iMapper, IValidator<UserDTO> usersDTOValidator)
         {
             _usersRepository = usersRepository;
             _mapper = iMapper;
-            _usersDtoValidator = usersDtoValidator;
+            _usersDtoValidator = usersDTOValidator;
         }
         public async Task<Response<UserDTO>> AuthenticateAsync(string username, string password)
         {
