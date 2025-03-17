@@ -1,10 +1,12 @@
 ﻿using AutoMapper;
 using FluentValidation;
 using MarCorp.DemoBack.Application.DTO;
+using MarCorp.DemoBack.Application.Interface.Infrastructure;
 using MarCorp.DemoBack.Application.Interface.Persistence;
 using MarCorp.DemoBack.Application.Interface.UseCases;
 using MarCorp.DemoBack.Application.Validator;
 using MarCorp.DemoBack.Domain.Models.Entities;
+using MarCorp.DemoBack.Domain.Models.Events;
 using MarCorp.DemoBack.Support.Common;
 
 namespace Pacagroup.Ecommerce.Application.UseCases.Discounts
@@ -13,12 +15,14 @@ namespace Pacagroup.Ecommerce.Application.UseCases.Discounts
     {
         private readonly IDiscountRepository _discountRepository;
         private readonly IMapper _mapper;
+        private readonly IEventBus _eventBus;
         private readonly IValidator<DiscountDTO> _discountDTOValidator;
 
-        public DiscountsApplication(IDiscountRepository discountRepository, IMapper mapper, IValidator<DiscountDTO> discountDTOValidator)
+        public DiscountsApplication(IDiscountRepository discountRepository, IMapper mapper, IEventBus eventBus, IValidator<DiscountDTO> discountDTOValidator)
         {
             _discountRepository = discountRepository;
             _mapper = mapper;
+            _eventBus = eventBus;
             _discountDTOValidator = discountDTOValidator;
         }
 
@@ -46,6 +50,10 @@ namespace Pacagroup.Ecommerce.Application.UseCases.Discounts
                 {
                     response.IsSuccess = true;
                     response.Message = "Registro Exitoso!!!";
+
+                    /* Publicamos el evento */
+                    var discountCreatedEvent = _mapper.Map<DiscountCreatedEvent>(discount);
+                    _eventBus.Publish(discountCreatedEvent);
                 }
             }
             catch (Exception e)

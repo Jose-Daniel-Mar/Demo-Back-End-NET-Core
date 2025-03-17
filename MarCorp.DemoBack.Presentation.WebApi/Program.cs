@@ -11,6 +11,7 @@ using MarCorp.DemoBack.Services.WebApi.Modules.Swagger;
 using MarCorp.DemoBack.Services.WebApi.Modules.Watch;
 using WatchDog;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using MarCorp.DemoBack.Infrastructure;
 
 // Configuración inicial
 var builder = WebApplication.CreateBuilder(args);
@@ -21,6 +22,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddOpenApi();
 builder.Services.AddFCors(configuration);
 builder.Services.AddPersistenceServices(configuration);
+builder.Services.AddInfrastructureServices();
 builder.Services.AddApplicationServices();
 builder.Services.AddSwagger();
 builder.Services.AddAuthentication(configuration);

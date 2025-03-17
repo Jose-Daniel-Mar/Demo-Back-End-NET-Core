@@ -44,6 +44,7 @@
     <ProjectReference Include="..\MarCorp.DemoBack.Application.Main\MarCorp.DemoBack.Application.UseCases.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Application.Validator\MarCorp.DemoBack.Application.Validator.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Domain.Models\MarCorp.DemoBack.Domain.Models.csproj" />
+    <ProjectReference Include="..\MarCorp.DemoBack.Infrastructure\MarCorp.DemoBack.Infrastructure.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Persistence\MarCorp.DemoBack.Persistence.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Support.Common\MarCorp.DemoBack.Support.Common.csproj" />
     <ProjectReference Include="..\MarCorp.DemoBack.Support.Logging\MarCorp.DemoBack.Support.Logging.csproj" />
