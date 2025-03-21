@@ -39,7 +39,6 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
-    app.MapOpenApi();
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
@@ -48,6 +47,17 @@ if (app.Environment.IsDevelopment())
         c.RoutePrefix = "swagger";
     });
 }
+
+//-------------- Swagger to test in containers its recommended eliminate this code in production --------------
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "MarCorp API v1");
+    c.EnablePersistAuthorization();
+    c.RoutePrefix = "swagger";
+});
+//--------------------------------------------------------------------------------------------------------------
+
 
 // Routing
 app.UseRouting();
