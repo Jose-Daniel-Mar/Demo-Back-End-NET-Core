@@ -77,7 +77,13 @@ app.UseRateLimiter();
 app.UseAuthentication();
 
 // Policies/Roles
-app.UseAuthorization(); 
+app.UseAuthorization();
+
+// WatchDog (monitoreo en tiempo real)
+app.UseWatchDog(conf => {
+    conf.WatchPageUsername = builder.Configuration["WatchDog:WatchPageUsername"];
+    conf.WatchPagePassword = builder.Configuration["WatchDog:WatchPagePassword"];
+});
 
 app.MapControllers();
 
@@ -87,12 +93,6 @@ app.MapHealthChecks("/health", new HealthCheckOptions
 {
     Predicate = _ => true,  // Incluir todos los checks
     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
-});
-
-// WatchDog (monitoreo en tiempo real)
-app.UseWatchDog(conf => {
-    conf.WatchPageUsername = builder.Configuration["WatchDog:WatchPageUsername"];
-    conf.WatchPagePassword = builder.Configuration["WatchDog:WatchPagePassword"];
 });
 
 app.Run();
