@@ -1,5 +1,4 @@
-﻿using MarCorp.DemoBack.Application.UseCases.Categories;
-using MarCorp.DemoBack.Support.Common;
+﻿using MarCorp.DemoBack.Support.Common;
 
 namespace MarCorp.DemoBack.Services.WebApi.Modules.HealthCheck
 {
@@ -22,9 +21,7 @@ namespace MarCorp.DemoBack.Services.WebApi.Modules.HealthCheck
             services.AddHealthChecks()
                 .AddSqlServer(configuration.GetConnectionString("NorthwindConnection"), tags: new[] { "database" })
                 .AddCheck<HealthCheckCustom>("HealthCheckCustomRandom", tags: new[] { "custom" })
-                // DESCOMENTAR PARA USAR REDIS
-                //.AddCheck("redis", new RedisHealthCheck(configuration, logger), tags: new[] { "cache" })
-                ;
+                .AddCheck("redis", new RedisHealthCheck(configuration, logger), tags: new[] { "cache" });
             services.AddHealthChecksUI().AddInMemoryStorage();
 
             return services;
