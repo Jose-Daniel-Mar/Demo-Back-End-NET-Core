@@ -33,10 +33,8 @@ namespace MarCorp.DemoBack.Application.UseCases.Categories
             // 1. Intento obtener datos de Redis con manejo específico de excepciones
             try
             {
-                // DESCOMENTAR PARA USAR REDIS
-                //var redisCategories = await _distributedCache.GetAsync(cacheKey);
-                byte[] redisCategories = null;
-                
+                var redisCategories = await _distributedCache.GetAsync(cacheKey);
+
                 if (redisCategories != null)
                 {
                     response.Data = JsonSerializer.Deserialize<IEnumerable<CategoryDTO>>(redisCategories);
@@ -64,8 +62,7 @@ namespace MarCorp.DemoBack.Application.UseCases.Categories
                 }
 
                 // 3. Intentar cachear solo si Redis estaba disponible
-                // DESCOMENTAR PARA USAR REDIS
-                if (false)//redisAvailable)
+                if (redisAvailable)
                 {
                     try
                     {

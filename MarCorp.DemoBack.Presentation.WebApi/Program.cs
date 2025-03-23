@@ -29,8 +29,7 @@ builder.Services.AddAuthentication(configuration);
 builder.Services.AddInjection(configuration);
 builder.Services.AddHealthCheck(configuration);
 builder.Services.AddWatchDog(configuration);
-// DESCOMENTAR PARA USAR REDIS
-//builder.Services.AddRedisCache(configuration);
+builder.Services.AddRedisCache(configuration);
 builder.Services.AddRatelimiting(configuration);
 
 var app = builder.Build();
