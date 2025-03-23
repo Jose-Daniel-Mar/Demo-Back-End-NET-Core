@@ -45,15 +45,27 @@ if (app.Environment.IsDevelopment())
         c.EnablePersistAuthorization();
         c.RoutePrefix = "swagger";
     });
+    app.UseReDoc(c =>
+    {
+        c.RoutePrefix = "redoc";
+        c.SpecUrl = "/swagger/v1/swagger.json";
+        c.DocumentTitle = "MarCorp ReDoc API v1";
+    }); 
 }
 
-//-------------- Swagger to test in containers its recommended eliminate this code in production --------------
+//-------------- Swagger ReDoc to test in containers its recommended eliminate this code in production --------------
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "MarCorp API v1");
     c.EnablePersistAuthorization();
     c.RoutePrefix = "swagger";
+});
+app.UseReDoc(c =>
+{
+    c.RoutePrefix = "redoc";
+    c.SpecUrl = "/swagger/v1/swagger.json";
+    c.DocumentTitle = "MarCorp ReDoc API v1";
 });
 //--------------------------------------------------------------------------------------------------------------
 
