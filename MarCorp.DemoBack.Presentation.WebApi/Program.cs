@@ -12,6 +12,7 @@ using MarCorp.DemoBack.Services.WebApi.Modules.Watch;
 using WatchDog;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using MarCorp.DemoBack.Infrastructure;
+using MarCorp.DemoBack.Presentation.WebApi.Modules.Middleware;
 
 // Configuración inicial
 var builder = WebApplication.CreateBuilder(args);
@@ -97,6 +98,7 @@ app.UseWatchDog(conf => {
     conf.WatchPagePassword = builder.Configuration["WatchDog:WatchPagePassword"];
 });
 
+// Controladores
 app.MapControllers();
 
 // Health Checks Configuration
@@ -107,6 +109,10 @@ app.MapHealthChecks("/health", new HealthCheckOptions
     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
 });
 
+// Middleware de excepciones
+app.AddMiddleware();
+
+// Ejecución de la aplicación
 app.Run();
 
 /// <summary>

@@ -18,7 +18,7 @@ namespace MarCorp.DemoBack.Presentation.WebApi.Controllers
         private readonly IDiscountsApplication _discountsApplication;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DiscountsController"/> class.
+        /// Asynchronously Initializes a new instance of the <see cref="DiscountsController"/> class.
         /// </summary>
         /// <param name="discountsApplication">The discounts application service.</param>
         public DiscountsController(IDiscountsApplication discountsApplication)
@@ -27,16 +27,16 @@ namespace MarCorp.DemoBack.Presentation.WebApi.Controllers
         }
 
         /// <summary>
-        /// Creates a new discount.
+        /// Asynchronously Creates a new discount.
         /// </summary>
         /// <param name="discountDTO">The discount data transfer object.</param>
         /// <returns>The result of the creation operation.</returns>
-        [HttpPost("Create")]
-        public async Task<IActionResult> Create([FromBody] DiscountDTO discountDTO)
+        [HttpPost("CreateAsync")]
+        public async Task<IActionResult> CreateAsync([FromBody] DiscountDTO discountDTO)
         {
             if (discountDTO == null)
                 return BadRequest();
-            var response = await _discountsApplication.Create(discountDTO);
+            var response = await _discountsApplication.CreateAsync(discountDTO);
             if (response.IsSuccess)
                 return Ok(response);
 
@@ -44,21 +44,21 @@ namespace MarCorp.DemoBack.Presentation.WebApi.Controllers
         }
 
         /// <summary>
-        /// Updates an existing discount.
+        /// Asynchronously Updates an existing discount.
         /// </summary>
         /// <param name="id">The discount identifier.</param>
         /// <param name="discountDTO">The discount data transfer object.</param>
         /// <returns>The result of the update operation.</returns>
-        [HttpPut("Update/{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] DiscountDTO discountDTO)
+        [HttpPut("UpdateAsync/{id}")]
+        public async Task<IActionResult> UpdateAsync(int id, [FromBody] DiscountDTO discountDTO)
         {
-            var customerDTOExists = await _discountsApplication.Get(id);
+            var customerDTOExists = await _discountsApplication.GetAsync(id);
             if (customerDTOExists.Data == null)
                 return NotFound(customerDTOExists);
 
             if (discountDTO == null)
                 return BadRequest();
-            var response = await _discountsApplication.Update(discountDTO);
+            var response = await _discountsApplication.UpdateAsync(discountDTO);
             if (response.IsSuccess)
                 return Ok(response);
 
@@ -66,14 +66,14 @@ namespace MarCorp.DemoBack.Presentation.WebApi.Controllers
         }
 
         /// <summary>
-        /// Deletes a discount.
+        /// Asynchronously Deletes a discount.
         /// </summary>
         /// <param name="id">The discount identifier.</param>
         /// <returns>The result of the deletion operation.</returns>
-        [HttpDelete("Delete/{id}")]
-        public async Task<IActionResult> Delete(int id)
+        [HttpDelete("DeleteAsync/{id}")]
+        public async Task<IActionResult> DeleteAsync(int id)
         {
-            var response = await _discountsApplication.Delete(id);
+            var response = await _discountsApplication.DeleteAsync(id);
             if (response.IsSuccess)
                 return Ok(response);
 
@@ -81,14 +81,14 @@ namespace MarCorp.DemoBack.Presentation.WebApi.Controllers
         }
 
         /// <summary>
-        /// Gets a discount by identifier.
+        /// Asynchronously Gets a discount by identifier.
         /// </summary>
         /// <param name="id">The discount identifier.</param>
         /// <returns>The discount data transfer object.</returns>
-        [HttpGet("Get/{id}")]
-        public async Task<IActionResult> Get(int id)
+        [HttpGet("GetAsync/{id}")]
+        public async Task<IActionResult> GetAsync(int id)
         {
-            var response = await _discountsApplication.Get(id);
+            var response = await _discountsApplication.GetAsync(id);
             if (response.IsSuccess)
                 return Ok(response);
 
@@ -96,13 +96,13 @@ namespace MarCorp.DemoBack.Presentation.WebApi.Controllers
         }
 
         /// <summary>
-        /// Gets all discounts.
+        /// Asynchronously Gets all discounts.
         /// </summary>
         /// <returns>A list of discount data transfer objects.</returns>
-        [HttpGet("GetAll")]
-        public async Task<IActionResult> GetAll()
+        [HttpGet("GetAllAsync")]
+        public async Task<IActionResult> GetAllAsync()
         {
-            var response = await _discountsApplication.GetAll();
+            var response = await _discountsApplication.GetAllAsync();
             if (response.IsSuccess)
                 return Ok(response);
 

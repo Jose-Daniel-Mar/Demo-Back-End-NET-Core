@@ -1,4 +1,5 @@
-﻿using MarCorp.DemoBack.Support.Common;
+﻿using MarCorp.DemoBack.Presentation.WebApi.Modules.GlobalException;
+using MarCorp.DemoBack.Support.Common;
 using MarCorp.DemoBack.Support.Logging;
 
 namespace MarCorp.DemoBack.Services.WebApi.Modules.Injection
@@ -18,6 +19,7 @@ namespace MarCorp.DemoBack.Services.WebApi.Modules.Injection
         {
             services.AddSingleton<IConfiguration>(configuration);
             services.AddScoped(typeof(IAppLogger<>), typeof(LoggerAdapter<>));
+            services.AddTransient<GlobalExceptionHandler>();
 
             return services;
         }

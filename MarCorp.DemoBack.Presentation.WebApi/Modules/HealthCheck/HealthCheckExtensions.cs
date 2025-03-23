@@ -1,4 +1,5 @@
 ﻿using MarCorp.DemoBack.Support.Common;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace MarCorp.DemoBack.Services.WebApi.Modules.HealthCheck
 {
@@ -22,8 +23,13 @@ namespace MarCorp.DemoBack.Services.WebApi.Modules.HealthCheck
                 .AddSqlServer(configuration.GetConnectionString("NorthwindConnection"), tags: new[] { "database" })
                 .AddCheck<HealthCheckCustom>("HealthCheckCustomRandom", tags: new[] { "custom" })
                 .AddCheck("redis", new RedisHealthCheck(configuration, logger), tags: new[] { "cache" });
-            services.AddHealthChecksUI().AddInMemoryStorage();
+            services.AddHealthChecksUI()
+                // SQL Server storage for production uncomment this line
+                //.AddSqlServerStorage(configuration.GetConnectionString("NorthwindConnection"))
 
+                // Memory storage for development
+                .AddInMemoryStorage();
+                
             return services;
         }
     }
