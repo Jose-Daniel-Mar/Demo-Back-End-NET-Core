@@ -2,11 +2,6 @@
 using MarCorp.DemoBack.Domain.Models.Entities;
 using MarCorp.DemoBack.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MarCorp.DemoBack.Persistence.Repositories
 {
